@@ -1,4 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AbstractChallenge" syncable="YES">
+        <attribute name="challengeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="challengeID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="challengeSponsor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sponsor" inverseName="sponsorsChallenges" inverseEntity="Sponsor" syncable="YES"/>
+        <relationship name="milestones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Milestones" syncable="YES"/>
+    </entity>
+    <entity name="GroupChallenge" parentEntity="AbstractChallenge" syncable="YES"/>
+    <entity name="GroupCyclingChallenge" parentEntity="GroupChallenge" syncable="YES"/>
+    <entity name="GroupRunningChallenge" parentEntity="GroupChallenge" syncable="YES"/>
+    <entity name="GroupWalkingChallenge" parentEntity="GroupChallenge" syncable="YES"/>
+    <entity name="Milestones" syncable="YES">
+        <relationship name="rewardLinkedToMilestones" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reward" inverseName="milestonesLinkedToReward" inverseEntity="Reward" syncable="YES"/>
+    </entity>
+    <entity name="Reward" syncable="YES">
+        <relationship name="milestonesLinkedToReward" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Milestones" inverseName="rewardLinkedToMilestones" inverseEntity="Milestones" syncable="YES"/>
+    </entity>
+    <entity name="SoloChallenge" parentEntity="AbstractChallenge" syncable="YES"/>
+    <entity name="SoloCyclingChallenge" parentEntity="SoloChallenge" syncable="YES"/>
+    <entity name="SoloRunningChallenge" parentEntity="SoloChallenge" syncable="YES"/>
+    <entity name="SoloWalkingChallenge" parentEntity="SoloChallenge" syncable="YES">
+        <attribute name="goal" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfStepsDone" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Sponsor" syncable="YES">
+        <relationship name="sponsorsChallenges" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AbstractChallenge" inverseName="challengeSponsor" inverseEntity="AbstractChallenge" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="150" defaultValueString="0" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="totalCyclingDistance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalRunningDistance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalSteps" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalWalkingDistance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="usersChallenges" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AbstractChallenge" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AbstractChallenge" positionX="151" positionY="-148" width="128" height="103"/>
+        <element name="SoloWalkingChallenge" positionX="88" positionY="225" width="128" height="73"/>
+        <element name="Milestones" positionX="358" positionY="-54" width="128" height="58"/>
+        <element name="SoloChallenge" positionX="-45" positionY="110" width="128" height="43"/>
+        <element name="GroupChallenge" positionX="331" positionY="110" width="128" height="43"/>
+        <element name="SoloRunningChallenge" positionX="-47" positionY="225" width="128" height="43"/>
+        <element name="SoloCyclingChallenge" positionX="-182" positionY="227" width="128" height="43"/>
+        <element name="GroupWalkingChallenge" positionX="511" positionY="225" width="128" height="43"/>
+        <element name="GroupCyclingChallenge" positionX="225" positionY="225" width="128" height="43"/>
+        <element name="GroupRunningChallenge" positionX="369" positionY="227" width="128" height="43"/>
+        <element name="User" positionX="-119" positionY="-234" width="128" height="208"/>
+        <element name="Sponsor" positionX="322" positionY="-360" width="128" height="58"/>
+        <element name="Reward" positionX="529" positionY="-117" width="128" height="58"/>
+    </elements>
 </model>
