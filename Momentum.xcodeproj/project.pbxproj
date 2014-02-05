@@ -54,6 +54,12 @@
 		D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A51888A51700EDEA6D /* RegisterViewContainer.xib */; };
 		D86CE0A81888CB4200EDEA6D /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A71888CB4200EDEA6D /* SignInView.xib */; };
 		D86CE0AB1888CBAE00EDEA6D /* SignInView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86CE0AA1888CBAE00EDEA6D /* SignInView.m */; };
+		D8AE52FE189B07E80059D0C1 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE52FD189B07E80059D0C1 /* WindowsAzureMobileServices.framework */; };
+		D8AE539B189F125F0059D0C1 /* AuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE539A189F125F0059D0C1 /* AuthService.m */; };
+		D8AE539E189F21640059D0C1 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE539C189F21640059D0C1 /* KeychainWrapper.m */; };
+		D8AE53A4189F52260059D0C1 /* FacebookSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */; };
+		D8AE53A8189F65170059D0C1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */; };
+		D8AE53AA189FA94D0059D0C1 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */; };
 		D8F084D0188F2B1600A1DF2D /* ExternalLoginAndRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */; };
 		D8F084D6188F517400A1DF2D /* Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084D2188F517400A1DF2D /* Moon.png */; };
 		D8F084D7188F517400A1DF2D /* Sunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084D3188F517400A1DF2D /* Sunrise.png */; };
@@ -67,6 +73,10 @@
 		D8F084E8188F798900A1DF2D /* SignInOrRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084E7188F798900A1DF2D /* SignInOrRegisterController.m */; };
 		D8F084EB188F826100A1DF2D /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084EA188F826100A1DF2D /* RegisterController.m */; };
 		D8F084F21890B7AA00A1DF2D /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084F11890B7AA00A1DF2D /* AppLogo.png */; };
+		D8F084F61891D3A000A1DF2D /* ChallengeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084F51891D3A000A1DF2D /* ChallengeNavigationController.m */; };
+		D8F39AA218A305E5000FB29F /* waitakere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8F39A9F18A305E5000FB29F /* waitakere.jpg */; };
+		D8F39AA318A305E5000FB29F /* tourdefrance.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F39AA018A305E5000FB29F /* tourdefrance.png */; };
+		D8F39AA418A305E5000FB29F /* riseandshine.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F39AA118A305E5000FB29F /* riseandshine.png */; };
 		D8F990E51885DC8C0064E872 /* SignInRegister.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F990E41885DC8C0064E872 /* SignInRegister.png */; };
 		D8F9910918860C9D0064E872 /* Adidas white 60px.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F9910018860C9D0064E872 /* Adidas white 60px.png */; };
 		D8F9910A18860C9D0064E872 /* Burton white 60px.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F9910118860C9D0064E872 /* Burton white 60px.png */; };
@@ -154,6 +164,16 @@
 		D86CE0A71888CB4200EDEA6D /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
 		D86CE0A91888CBAE00EDEA6D /* SignInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInView.h; sourceTree = "<group>"; };
 		D86CE0AA1888CBAE00EDEA6D /* SignInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInView.m; sourceTree = "<group>"; };
+		D8AE52FD189B07E80059D0C1 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		D8AE5399189F125F0059D0C1 /* AuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
+		D8AE539A189F125F0059D0C1 /* AuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthService.m; sourceTree = "<group>"; };
+		D8AE539C189F21640059D0C1 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		D8AE539D189F21640059D0C1 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		D8AE539F189F22C60059D0C1 /* KeychainConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainConstants.h; sourceTree = "<group>"; };
+		D8AE53A2189F52260059D0C1 /* FacebookSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookSingleton.h; sourceTree = "<group>"; };
+		D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSingleton.m; sourceTree = "<group>"; };
+		D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		D8F084CE188F2B1600A1DF2D /* ExternalLoginAndRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalLoginAndRegister.h; sourceTree = "<group>"; };
 		D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalLoginAndRegister.m; sourceTree = "<group>"; };
 		D8F084D2188F517400A1DF2D /* Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Moon.png; path = ../Moon.png; sourceTree = "<group>"; };
@@ -172,6 +192,11 @@
 		D8F084E9188F826100A1DF2D /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		D8F084EA188F826100A1DF2D /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		D8F084F11890B7AA00A1DF2D /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
+		D8F084F41891D3A000A1DF2D /* ChallengeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeNavigationController.h; sourceTree = "<group>"; };
+		D8F084F51891D3A000A1DF2D /* ChallengeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeNavigationController.m; sourceTree = "<group>"; };
+		D8F39A9F18A305E5000FB29F /* waitakere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = waitakere.jpg; path = ../waitakere.jpg; sourceTree = "<group>"; };
+		D8F39AA018A305E5000FB29F /* tourdefrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tourdefrance.png; path = ../tourdefrance.png; sourceTree = "<group>"; };
+		D8F39AA118A305E5000FB29F /* riseandshine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = riseandshine.png; path = ../riseandshine.png; sourceTree = "<group>"; };
 		D8F990E41885DC8C0064E872 /* SignInRegister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignInRegister.png; sourceTree = "<group>"; };
 		D8F9910018860C9D0064E872 /* Adidas white 60px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adidas white 60px.png"; sourceTree = "<group>"; };
 		D8F9910118860C9D0064E872 /* Burton white 60px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Burton white 60px.png"; sourceTree = "<group>"; };
@@ -199,11 +224,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE52FE189B07E80059D0C1 /* WindowsAzureMobileServices.framework in Frameworks */,
 				D849FEDA187F706400206CA9 /* QuartzCore.framework in Frameworks */,
 				D849FE86187E28B500206CA9 /* CoreGraphics.framework in Frameworks */,
 				D849FE8A187E28B500206CA9 /* CoreData.framework in Frameworks */,
 				D849FE88187E28B500206CA9 /* UIKit.framework in Frameworks */,
 				D849FE84187E28B500206CA9 /* Foundation.framework in Frameworks */,
+				D8AE53A8189F65170059D0C1 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +271,8 @@
 		D849FE82187E28B500206CA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */,
+				D8AE52FD189B07E80059D0C1 /* WindowsAzureMobileServices.framework */,
 				D849FED9187F706400206CA9 /* QuartzCore.framework */,
 				D849FE83187E28B500206CA9 /* Foundation.framework */,
 				D849FE85187E28B500206CA9 /* CoreGraphics.framework */,
@@ -265,7 +294,7 @@
 				D849FE95187E28B500206CA9 /* FBCDAppDelegate.m */,
 				D8FEC50B18848DF20035EDF1 /* Custom Segue */,
 				D849FE9A187E28B500206CA9 /* Images.xcassets */,
-				D849FE97187E28B500206CA9 /* Momentum.xcdatamodeld */,
+				D8AE5302189B3DF60059D0C1 /* Coredata */,
 				D849FE8C187E28B500206CA9 /* Supporting Files */,
 			);
 			path = Momentum;
@@ -311,6 +340,10 @@
 		D849FEBE187E2A9900206CA9 /* app hannah */ = {
 			isa = PBXGroup;
 			children = (
+				D8F39A9F18A305E5000FB29F /* waitakere.jpg */,
+				D8F39AA018A305E5000FB29F /* tourdefrance.png */,
+				D8F39AA118A305E5000FB29F /* riseandshine.png */,
+				D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */,
 				D8F084F11890B7AA00A1DF2D /* AppLogo.png */,
 				D8F084DE188F65FE00A1DF2D /* MoonWalk.png */,
 				D8F084DA188F5B3100A1DF2D /* ChallengeWord.png */,
@@ -338,13 +371,10 @@
 		D849FEE7187F8C2A00206CA9 /* Challenge Pages */ = {
 			isa = PBXGroup;
 			children = (
-				D849FEE8187F8C6900206CA9 /* ChallengeList.h */,
-				D849FEE9187F8C6900206CA9 /* ChallengeList.m */,
-				D849FEF0187F943600206CA9 /* ChallengeCell.h */,
-				D849FEF1187F943600206CA9 /* ChallengeCell.m */,
-				D849FEED187F93A600206CA9 /* ChallengeCell.xib */,
+				D8F084F31891D31E00A1DF2D /* ChallengeList */,
 				D8F084E0188F68E700A1DF2D /* ChallengePageController.h */,
 				D8F084E1188F68E700A1DF2D /* ChallengePageController.m */,
+				D8F084FA1891D4A300A1DF2D /* Navigation Controller */,
 			);
 			name = "Challenge Pages";
 			sourceTree = "<group>";
@@ -352,6 +382,8 @@
 		D8610804188DF5A8004416E6 /* Splash Screen And Login Logic */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE53A2189F52260059D0C1 /* FacebookSingleton.h */,
+				D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */,
 				D8F084CE188F2B1600A1DF2D /* ExternalLoginAndRegister.h */,
 				D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */,
 				D849FEBB187E2A5A00206CA9 /* SplashScreen.h */,
@@ -361,9 +393,22 @@
 			name = "Splash Screen And Login Logic";
 			sourceTree = "<group>";
 		};
+		D8AE5302189B3DF60059D0C1 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				D849FE97187E28B500206CA9 /* Momentum.xcdatamodeld */,
+			);
+			name = Coredata;
+			sourceTree = "<group>";
+		};
 		D8F084D1188F502500A1DF2D /* Custom View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE539F189F22C60059D0C1 /* KeychainConstants.h */,
+				D8AE539D189F21640059D0C1 /* KeychainWrapper.h */,
+				D8AE539C189F21640059D0C1 /* KeychainWrapper.m */,
+				D8AE5399189F125F0059D0C1 /* AuthService.h */,
+				D8AE539A189F125F0059D0C1 /* AuthService.m */,
 				D8F084EE188F8E2A00A1DF2D /* SignInOrRegister */,
 				D8F084EC188F8DE900A1DF2D /* Login */,
 				D8F084ED188F8E0500A1DF2D /* Register */,
@@ -405,6 +450,27 @@
 				D86CE09818887C2500EDEA6D /* SignInRegisterView.xib */,
 			);
 			name = SignInOrRegister;
+			sourceTree = "<group>";
+		};
+		D8F084F31891D31E00A1DF2D /* ChallengeList */ = {
+			isa = PBXGroup;
+			children = (
+				D849FEE8187F8C6900206CA9 /* ChallengeList.h */,
+				D849FEE9187F8C6900206CA9 /* ChallengeList.m */,
+				D849FEF0187F943600206CA9 /* ChallengeCell.h */,
+				D849FEF1187F943600206CA9 /* ChallengeCell.m */,
+				D849FEED187F93A600206CA9 /* ChallengeCell.xib */,
+			);
+			name = ChallengeList;
+			sourceTree = "<group>";
+		};
+		D8F084FA1891D4A300A1DF2D /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8F084F41891D3A000A1DF2D /* ChallengeNavigationController.h */,
+				D8F084F51891D3A000A1DF2D /* ChallengeNavigationController.m */,
+			);
+			name = "Navigation Controller";
 			sourceTree = "<group>";
 		};
 		D8F990EC1885F9920064E872 /* interest icons */ = {
@@ -544,6 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE53AA189FA94D0059D0C1 /* LaunchImage.png in Resources */,
 				D86CE09918887C2500EDEA6D /* SignInRegisterView.xib in Resources */,
 				D8F9910C18860C9D0064E872 /* Kathmandu white 60px.png in Resources */,
 				D849FEE3187F7E7300206CA9 /* googleline.png in Resources */,
@@ -557,14 +624,17 @@
 				D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */,
 				D8F990E51885DC8C0064E872 /* SignInRegister.png in Resources */,
 				D8F9911518861C360064E872 /* Grid.png in Resources */,
+				D8F39AA218A305E5000FB29F /* waitakere.jpg in Resources */,
 				D86CE08918872B6500EDEA6D /* Books.png in Resources */,
 				D8F084D8188F517400A1DF2D /* TourFrance.png in Resources */,
 				D849FED1187E2A9900206CA9 /* LogoLarge.png in Resources */,
 				D8F084F21890B7AA00A1DF2D /* AppLogo.png in Resources */,
 				D8F084D7188F517400A1DF2D /* Sunrise.png in Resources */,
+				D8F39AA418A305E5000FB29F /* riseandshine.png in Resources */,
 				D8F9910A18860C9D0064E872 /* Burton white 60px.png in Resources */,
 				D86CE08318872B6500EDEA6D /* Snow.png in Resources */,
 				D8F9910F18860C9D0064E872 /* Pump white 60px.png in Resources */,
+				D8F39AA318A305E5000FB29F /* tourdefrance.png in Resources */,
 				D849FE90187E28B500206CA9 /* InfoPlist.strings in Resources */,
 				D8F9911018860C9D0064E872 /* Up&Go white 60px.png in Resources */,
 				D849FEE4187F7E7300206CA9 /* googlewhite.png in Resources */,
@@ -620,6 +690,8 @@
 				D86CE09C18887DF400EDEA6D /* SignInRegisterView.m in Sources */,
 				D8F084E2188F68E700A1DF2D /* ChallengePageController.m in Sources */,
 				D86CE0A41888A0D100EDEA6D /* RegisterViewContainer.m in Sources */,
+				D8AE53A4189F52260059D0C1 /* FacebookSingleton.m in Sources */,
+				D8F084F61891D3A000A1DF2D /* ChallengeNavigationController.m in Sources */,
 				D8F084E5188F748900A1DF2D /* LoginController.m in Sources */,
 				D8F084EB188F826100A1DF2D /* RegisterController.m in Sources */,
 				D849FE92187E28B500206CA9 /* main.m in Sources */,
@@ -627,6 +699,8 @@
 				D849FEF2187F943600206CA9 /* ChallengeCell.m in Sources */,
 				D8FEC50E18848E450035EDF1 /* SplashToFirstViewSegue.m in Sources */,
 				D8F084D0188F2B1600A1DF2D /* ExternalLoginAndRegister.m in Sources */,
+				D8AE539E189F21640059D0C1 /* KeychainWrapper.m in Sources */,
+				D8AE539B189F125F0059D0C1 /* AuthService.m in Sources */,
 				D8FEC5121884974F0035EDF1 /* CoreMotionTest.m in Sources */,
 				D849FE96187E28B500206CA9 /* FBCDAppDelegate.m in Sources */,
 			);
@@ -751,6 +825,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Joe/Desktop/iphoneprojects/Momentum,
+					/Users/Joe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Momentum/Momentum-Prefix.pch";
 				INFOPLIST_FILE = "Momentum/Momentum-Info.plist";
@@ -768,6 +847,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Joe/Desktop/iphoneprojects/Momentum,
+					/Users/Joe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Momentum/Momentum-Prefix.pch";
 				INFOPLIST_FILE = "Momentum/Momentum-Info.plist";

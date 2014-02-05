@@ -57,13 +57,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meL-Yj-ANf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-144"/>
+            <point key="canvasLocation" x="110" y="-124"/>
         </scene>
         <!--Root Navigation-->
         <scene sceneID="Tr8-E8-i4A">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="5hS-2p-w3W" userLabel="Root Navigation" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u6q-DZ-oEj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="u6q-DZ-oEj">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -115,8 +115,8 @@
         <!--Challenge Navigation-->
         <scene sceneID="xOP-hJ-oVm">
             <objects>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="aW1-F8-ZvY" userLabel="Challenge Navigation" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eCp-Ah-gI8">
+                <navigationController definesPresentationContext="YES" id="aW1-F8-ZvY" userLabel="Challenge Navigation" customClass="ChallengeNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eCp-Ah-gI8">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -136,47 +136,24 @@
                         <viewControllerLayoutGuide type="bottom" id="DUf-Ku-XDI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gMn-0r-fMe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1B9-eL-Xx2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MU1-mX-fBC" userLabel="Challenge Image (embed in Scrollview??)">
+                                <rect key="frame" x="0.0" y="67" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NavBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="n13-4m-CFg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChallengeWord.png" translatesAutoresizingMaskIntoConstraints="NO" id="utc-Ug-VIT">
-                                        <rect key="frame" x="16" y="6" width="288" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfM-mg-Jz9">
-                                        <rect key="frame" x="267" y="36" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Back">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="back:" destination="mlQ-8L-XGl" eventType="touchUpInside" id="35b-qk-KMo"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtq-qY-cMI" userLabel="Space between bar view">
-                                <rect key="frame" x="0.0" y="79" width="320" height="3"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MU1-mX-fBC" userLabel="Challenge Image (embed in Scrollview??)">
-                                <rect key="frame" x="0.0" y="82" width="320" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="6oK-yw-d4d"/>
+                                    <constraint firstAttribute="height" constant="120" id="W4L-Zx-cqg"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqP-lV-urx">
-                                <rect key="frame" x="0.0" y="199" width="320" height="369"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqP-lV-urx">
+                                <rect key="frame" x="0.0" y="187" width="320" height="381"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="eWj-sk-zF9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -191,6 +168,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NqP-lV-urx" firstAttribute="top" secondItem="MU1-mX-fBC" secondAttribute="bottom" id="9kA-51-wuz"/>
+                            <constraint firstItem="NqP-lV-urx" firstAttribute="top" secondItem="MU1-mX-fBC" secondAttribute="bottom" id="A7K-7V-ywe"/>
+                            <constraint firstItem="MU1-mX-fBC" firstAttribute="leading" secondItem="gMn-0r-fMe" secondAttribute="leading" id="FSg-VZ-zHg"/>
+                            <constraint firstItem="NqP-lV-urx" firstAttribute="leading" secondItem="gMn-0r-fMe" secondAttribute="leading" id="HYZ-4i-Ecg"/>
+                            <constraint firstItem="DUf-Ku-XDI" firstAttribute="top" secondItem="NqP-lV-urx" secondAttribute="bottom" id="POf-6y-K6z"/>
+                            <constraint firstItem="MU1-mX-fBC" firstAttribute="top" secondItem="eAd-sS-vYF" secondAttribute="bottom" constant="3" id="Qph-Ry-W7Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IF9-iu-akm"/>
                     <connections>
@@ -201,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="1417" y="-344"/>
         </scene>
-        <!--Challenge List-->
+        <!--Challenge List - CHALLENGES-->
         <scene sceneID="Qr7-R5-RXK">
             <objects>
                 <viewController id="YS3-p6-DLZ" customClass="ChallengeList" sceneMemberID="viewController">
@@ -210,58 +195,27 @@
                         <viewControllerLayoutGuide type="bottom" id="gSb-DH-5ci"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ocT-0B-LGG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2j-vq-0x7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="nZb-2T-Pdg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="AqA-Oq-3Gb"/>
-                                            <constraint firstAttribute="height" constant="79" id="dFC-Rg-aFD"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChallengeWord.png" translatesAutoresizingMaskIntoConstraints="NO" id="CJB-jc-zwA">
-                                        <rect key="frame" x="16" y="6" width="288" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="nZb-2T-Pdg" firstAttribute="leading" secondItem="l2j-vq-0x7" secondAttribute="leading" id="DpV-I6-Uqp"/>
-                                    <constraint firstAttribute="bottom" secondItem="nZb-2T-Pdg" secondAttribute="bottom" id="Jo4-Hx-M3Z"/>
-                                    <constraint firstAttribute="height" constant="79" id="m0g-cv-we9"/>
-                                    <constraint firstAttribute="width" constant="320" id="mXF-28-vt8"/>
-                                    <constraint firstItem="nZb-2T-Pdg" firstAttribute="top" secondItem="l2j-vq-0x7" secondAttribute="top" id="xHP-eP-ZwU"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-yI-bD7">
-                                <rect key="frame" x="0.0" y="79" width="320" height="489"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-yI-bD7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="n0P-X4-3YP"/>
+                                    <constraint firstAttribute="width" constant="200" id="Mlv-r2-8Kb"/>
+                                    <constraint firstAttribute="height" constant="320" id="Vl6-n2-8BX"/>
                                 </constraints>
                                 <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yh6-yI-bD7" firstAttribute="top" secondItem="l2j-vq-0x7" secondAttribute="bottom" id="22c-o0-nhB"/>
-                            <constraint firstItem="yh6-yI-bD7" firstAttribute="top" secondItem="l2j-vq-0x7" secondAttribute="bottom" id="8Z5-7o-NEc"/>
-                            <constraint firstItem="gSb-DH-5ci" firstAttribute="top" secondItem="yh6-yI-bD7" secondAttribute="bottom" id="9TD-yw-N5l"/>
-                            <constraint firstItem="l2j-vq-0x7" firstAttribute="leading" secondItem="ocT-0B-LGG" secondAttribute="leading" id="B26-Z4-iQZ"/>
-                            <constraint firstItem="yh6-yI-bD7" firstAttribute="top" secondItem="l2j-vq-0x7" secondAttribute="bottom" id="BCL-wt-1CU"/>
-                            <constraint firstItem="l2j-vq-0x7" firstAttribute="top" secondItem="ocT-0B-LGG" secondAttribute="top" id="GKU-KK-8iC"/>
-                            <constraint firstItem="yh6-yI-bD7" firstAttribute="top" secondItem="l2j-vq-0x7" secondAttribute="bottom" id="MQj-iP-cm5"/>
-                            <constraint firstItem="yh6-yI-bD7" firstAttribute="leading" secondItem="ocT-0B-LGG" secondAttribute="leading" id="dtY-Yh-7yq"/>
+                            <constraint firstItem="yh6-yI-bD7" firstAttribute="leading" secondItem="ocT-0B-LGG" secondAttribute="leading" id="K45-KQ-iKG"/>
+                            <constraint firstItem="yh6-yI-bD7" firstAttribute="top" secondItem="6fD-QW-vPh" secondAttribute="bottom" id="unJ-4w-MgJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R4n-hC-S1m"/>
+                    <navigationItem key="navigationItem" title="CHALLENGES" id="R4n-hC-S1m"/>
                     <connections>
                         <outlet property="challengeList" destination="yh6-yI-bD7" id="0TF-K9-QXw"/>
                         <segue destination="mlQ-8L-XGl" kind="push" identifier="MoonPageTest" id="ipe-n3-JZv"/>
@@ -293,9 +247,7 @@
     </scenes>
     <resources>
         <image name="BackgroundImageLight.png" width="640" height="1139"/>
-        <image name="ChallengeWord.png" width="640" height="144"/>
         <image name="Moon.png" width="640" height="214"/>
-        <image name="NavBar.png" width="640" height="144"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

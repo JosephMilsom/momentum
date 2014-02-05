@@ -8,10 +8,12 @@
 //
 //*****DATA FOR ******//
 
-
+#import "FBCDAppDelegate.h"
 #import "SplashScreen.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
+#import "AuthService.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface SplashScreen ()
 
@@ -28,7 +30,6 @@
 //needs a strong reference, else the controller gets released
 @property (strong, nonatomic) UIViewController *currentController;
 
-- (IBAction)toDummyRegisterScreen:(id)sender;
 
 //custom methods for the ui elements, fancy stuff like
 //fading in views and junk
@@ -42,9 +43,26 @@
 @implementation SplashScreen
 
 -(void) viewDidLoad{
+    //need to declare the logo here as it will not reset the position like it would
+    //if you define in the interface builder
+    
     self.momentumLogo = [[UIImageView alloc] initWithFrame:CGRectMake(80, 134, 161, 171)];
     self.momentumLogo.image = [UIImage imageNamed:@"LogoLarge.png"];
     [self.scrollViewContainer addSubview:self.momentumLogo];
+    
+    AuthService *service = [AuthService getInstance];
+    
+//    [service killAuthInfo];
+//    [FBSession.activeSession closeAndClearTokenInformation];
+//    [FBSession.activeSession close];
+//    [FBSession setActiveSession:nil];
+    
+    
+    //automatically transition to the next screen if
+    //there is an authentication token
+    if(service.client.currentUser.userId){
+        [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
+    }
 }
 
 //this is where all the view data logic will be handled, as the view
@@ -53,10 +71,12 @@
     if(firstTime){
     [self animateLogo];
     //ignore the warning, it still runs
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 4.0 target: self
+        //NOTE SHOULD BE 4
+    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
                                                       selector: @selector(initViewController) userInfo: nil repeats: NO];
         firstTime = NO;
     }
+
  }
 
 
@@ -71,8 +91,8 @@
     //logo to the top of the screen
     //NOTE: ACTUAL DELAY IS 3, DURATION IS 2
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDelay:3];
-    [UIView setAnimationDuration:2];
+    [UIView setAnimationDelay:0];
+    [UIView setAnimationDuration:1];
     logoFrame.origin.x = 110;
     logoFrame.origin.y = 60;
     logoFrame.size.height = 100;
@@ -107,8 +127,8 @@
     self.currentController = controller;
     
     self.currentController.view.frame = self.scrollViewContainer.bounds;
-    
-    //[self addChildViewController:controller];
+    [self addChildViewController:controller];
+    NSLog(@"%@",[controller parentViewController]);
     
     [self.scrollViewContainer addSubview:self.currentController.view];
     
@@ -168,7 +188,7 @@
 }
 
 -(void) userDidChooseExternalRegistration:(RegisterController *)registerController{
-    [self performSegueWithIdentifier:@"ExternalRegister" sender:nil];
+    [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
 }
 
 -(void) userDidCompleteRegistration:(RegisterController *)registerController{
@@ -177,6 +197,32 @@
 
 -(void) userDidCompleteLogin:(LoginController *)loginController{
     [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
+}
+
+
+/***NOTE THAT THIS IS NOT USE OF PROPER DELEGATION, THERE ARE 2 DELEGATE METHODS REFERRING TO THE SAME METHOD***/
+
+-(void) userDidSelectTextBox:(UIViewController *)Controller{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.35];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    
+    self.view.center = CGPointMake(160, 68);
+    
+    [UIView commitAnimations];
+    
+}
+
+-(void) userDidCompleteTextFieldEntry:(UIViewController *)controller{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.275];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    self.view.center = CGPointMake(160, 568/2);
+    
+    [UIView commitAnimations];
+    
 }
 
 @end

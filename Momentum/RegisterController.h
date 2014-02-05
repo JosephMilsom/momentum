@@ -23,5 +23,9 @@
 -(void) userDidCancelRegistration:(RegisterController *) registerController;
 -(void) userDidChooseExternalRegistration:(RegisterController *)registerController;
 -(void) userDidCompleteRegistration:(RegisterController *)registerController;
+-(void) userDidSelectTextBox:(UIViewController *)registerController;
+-(void) userDidCompleteTextFieldEntry:(UIViewController *)registerController;
+
+
 
 @end

@@ -22,5 +22,8 @@
 
 -(void) userDidCancelSignIn:(LoginController *)loginController;
 -(void) userDidCompleteLogin:(LoginController *)loginController;
+-(void) userDidCompleteTextFieldEntry:(UIViewController *)loginController;
+-(void) userDidSelectTextBox:(UIViewController *)loginController;
+
 
 @end

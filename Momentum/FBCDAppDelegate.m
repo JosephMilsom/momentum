@@ -7,6 +7,7 @@
 //
 
 #import "FBCDAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation FBCDAppDelegate
 
@@ -20,6 +21,14 @@
 //    // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:24.0], NSFontAttributeName, nil]];
+    
+    self.client = [MSClient clientWithApplicationURLString:@"https://cogogogo.azure-mobile.net/" applicationKey:@"RyaDSYzSjKSHdEhIswjmLerFqjuVTJ40"];
+    //change the default properties of bar buttons
+   // [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"googleline.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    /***FACEBOOK HANDLER***/
+    
     return YES;
 }
 
@@ -146,6 +155,17 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+// During the Facebook login flow, your app passes control to the Facebook iOS app or Facebook in a mobile browser.
+// After authentication, your app will be called back with the session information.
+// Override application:openURL:sourceApplication:annotation to call the FBsession object that handles the incoming URL
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBSession.activeSession handleOpenURL:url];
 }
 
 @end

@@ -10,7 +10,7 @@
 #import "ChallengeCell.h"
 
 @interface ChallengeList ()
-@property (weak, nonatomic) IBOutlet UITableView *challengeList;
+@property (strong, nonatomic) IBOutlet UITableView *challengeList;
 
 @end
 
@@ -22,8 +22,12 @@
     [super viewDidLoad];
     self.challengeList.delegate = self;
     self.challengeList.dataSource = self;
+    //self.challengeList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    //[self.challengeList setFrame:CGRectMake(0, 0, 50, 50)];
+
     self.challengeList.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.challengeList.showsVerticalScrollIndicator = NO;
+    self.challengeList.transform = CGAffineTransformMakeRotation(-M_PI * 0.5);
 }
 
 
@@ -55,16 +59,34 @@
             }
         }
     }
-    if([indexPath row] == 0 )
-    cell.imageBackground.image = [UIImage imageNamed:@"WalkWaitakere.png"];
-    if([indexPath row] == 1 )
-        cell.imageBackground.image = [UIImage imageNamed:@"TourFrance.png"];
-    if([indexPath row] == 2 )
-        cell.imageBackground.image = [UIImage imageNamed:@"Sunrise.png"];
-    if([indexPath row] == 3 )
-        cell.imageBackground.image = [UIImage imageNamed:@"Moon.png"];
-    if([indexPath row] == 4 )
-        cell.imageBackground.image = [UIImage imageNamed:@"WalkWaitakere.png"];
+    if([indexPath row] == 0)
+    cell.imageBackground.image = [UIImage imageNamed:@"waitakere.jpg"];
+    if([indexPath row] == 1)
+        cell.imageBackground.image = [UIImage imageNamed:@"tourdefrance.png"];
+    if([indexPath row] == 2)
+        cell.imageBackground.image = [UIImage imageNamed:@"riseandshine.png"];
+    if([indexPath row] == 3)
+        cell.imageBackground.image = [UIImage imageNamed:@"riseandshine.png"];
+    if([indexPath row] == 4)
+        cell.imageBackground.image = [UIImage imageNamed:@"waitakere.jpg"];
+    if([indexPath row] == 5)
+        cell.imageBackground.image = [UIImage imageNamed:@"tourdefrance.png"];
+    if([indexPath row] == 6)
+        cell.imageBackground.image = [UIImage imageNamed:@"riseandshine.png"];
+    if([indexPath row] == 7)
+        cell.imageBackground.image = [UIImage imageNamed:@"waitakere.jpg"];
+    if([indexPath row] == 8)
+        cell.imageBackground.image = [UIImage imageNamed:@"tourdefrance.png"];
+    if([indexPath row] == 9)
+        cell.imageBackground.image = [UIImage imageNamed:@"riseandshine.png"];
+    if([indexPath row] == 10)
+        cell.imageBackground.image = [UIImage imageNamed:@"waitakere.jpg"];
+    if([indexPath row] == 11)
+        cell.imageBackground.image = [UIImage imageNamed:@"tourdefrance.png"];
+    if([indexPath row] == 12)
+        cell.imageBackground.image = [UIImage imageNamed:@"riseandshine.png"];
+    if([indexPath row] == 13)
+        cell.imageBackground.image = [UIImage imageNamed:@"waitakere.jpg"];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -72,13 +94,12 @@
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 14;
 }
 
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 120.0;
+    return 200.0;
 }
 
 @end

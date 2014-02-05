@@ -46,7 +46,8 @@
     
     self.emailTextField.backgroundColor = [UIColor whiteColor];
     self.passwordTextField.backgroundColor = [UIColor whiteColor];
-    self.fullNameTextField.backgroundColor = [UIColor whiteColor];
+    self.firstNameTextField.backgroundColor = [UIColor whiteColor];
+    self.lastNameTextField.backgroundColor = [UIColor whiteColor];
 
     
     self.passwordTextField.secureTextEntry = YES;
@@ -54,8 +55,8 @@
     //method to indent the text
     self.emailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
     self.passwordTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
-    self.fullNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
-
+    self.firstNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    self.lastNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
 }
 
 
@@ -64,7 +65,7 @@
     float alphaSignIn = (1-((scrollView.contentOffset.y)/30)) + 0.5;
     
     self.signInRegisterLabel.alpha = alphaSignIn;
-    self.backButton.alpha = alphaSignIn+1.0;
+    self.backButton.alpha = alphaSignIn;
     
     float alphaIcons = (1-((scrollView.contentOffset.y)/30)) + 2.8;
     
@@ -75,7 +76,8 @@
     
     float emailBoxAlpha = (1-((scrollView.contentOffset.y)/30)) + 5.2;
     float passwordBoxAlpha = (1-((scrollView.contentOffset.y)/30)) + 6.4;
-    float fullNameBoxAlpha = (1-((scrollView.contentOffset.y)/30)) + 7.6;
+    float firstNameBoxAlpha = (1-((scrollView.contentOffset.y)/30)) + 7.6;
+    float lastNameBoxAlpha = (1-((scrollView.contentOffset.y)/30)) + 8.8;
 
     
     if(emailBoxAlpha > 0.7){
@@ -84,25 +86,29 @@
     if(passwordBoxAlpha > 0.7){
         passwordBoxAlpha = 0.7;
     }
-    if(fullNameBoxAlpha > 0.7){
-        fullNameBoxAlpha = 0.7;
+    if(firstNameBoxAlpha > 0.7){
+        firstNameBoxAlpha = 0.7;
+    }
+    if(lastNameBoxAlpha > 0.7){
+        lastNameBoxAlpha = 0.7;
     }
     
     self.emailTextField.alpha = emailBoxAlpha;
     self.passwordTextField.alpha = passwordBoxAlpha;
-    self.fullNameTextField.alpha = fullNameBoxAlpha;
+    self.firstNameTextField.alpha = firstNameBoxAlpha;
+    self.lastNameTextField.alpha = lastNameBoxAlpha;
 
     
-    float interestLabelAlpha = (1-((scrollView.contentOffset.y)/30)) + 11.2;
+    float interestLabelAlpha = (1-((scrollView.contentOffset.y)/30)) + 12.4;
     
     self.interestsLabel.alpha = interestLabelAlpha;
     
-    float interestRow1Alpha = (1-((scrollView.contentOffset.y)/30)) + 12.5;
-    float interestRow2Alpha = (1-((scrollView.contentOffset.y)/30)) + 14.5;
-    float interestRow3Alpha = (1-((scrollView.contentOffset.y)/30)) + 16.5;
-    float labelRow1Alpha = (1-((scrollView.contentOffset.y)/30)) + 13.5;
-    float labelRow2Alpha = (1-((scrollView.contentOffset.y)/30)) + 15.5;
-    float labelRow3Alpha = (1-((scrollView.contentOffset.y)/30)) + 17.5;
+    float interestRow1Alpha = (1-((scrollView.contentOffset.y)/30)) + 13.7;
+    float interestRow2Alpha = (1-((scrollView.contentOffset.y)/30)) + 15.7;
+    float interestRow3Alpha = (1-((scrollView.contentOffset.y)/30)) + 17.7;
+    float labelRow1Alpha = (1-((scrollView.contentOffset.y)/30)) + 14.7;
+    float labelRow2Alpha = (1-((scrollView.contentOffset.y)/30)) + 16.7;
+    float labelRow3Alpha = (1-((scrollView.contentOffset.y)/30)) + 18.7;
     
     for(int i  = 0; i < 3; i++){
         UIButton *row1 = self.interestRow1[i];

@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterViewContainer : UIView <UITextFieldDelegate>
+@interface RegisterViewContainer : UIView
 
 //textfields for input by the user
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet UITextField *fullNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+
 
 -(void) initData;
 -(void) fadeViews:(UIScrollView *) scrollView;
