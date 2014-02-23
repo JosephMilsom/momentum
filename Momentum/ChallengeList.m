@@ -134,17 +134,10 @@
                     
                     /*NOTE: cell is used here since we want to fade in images, otherwise use reloadData which is much nicer*/
                     //get the cell to assign
-                    ChallengeCell *cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
                     
                     //NSLog(@"%@", cell.challengeTitle);
                     //update the ui
                     [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
-                        //set this here as we want to fade in the images
-                        cell.imageBackground.alpha = 0;
-                        cell.bottomImage = [UIImage imageWithData:dataBottom];
-                        
-                        cell.imageBackground.image = [UIImage imageWithData:data];
-                        
                         //set the data for the image in core data
                         [self.coreData addChallengeImageData:data andBottomImageData:dataBottom forChallenge:[challenges[i] valueForKey:@"sChallengeName"]];
                         
@@ -156,9 +149,10 @@
                         }
                         
                         [UIView animateWithDuration:0.3 animations:^{
-                            cell.imageBackground.alpha = 1;
                             self.bottomImage.alpha = 1;
                         }];
+                        [self getChallengeData];
+                        [self.challengeList reloadData];
                     }];
                 }];
             }
@@ -169,7 +163,7 @@
             self.numberOfRows = self.challengeArray.count;
             
             //insert the new rows into the table
-            [self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
+            //[self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
             
             //select the first row after download, if there are no rows that are selected
             if([self.challengeList indexPathForSelectedRow] == nil){
