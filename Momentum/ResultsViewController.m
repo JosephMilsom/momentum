@@ -49,20 +49,20 @@
     NSLog(@"%@", user.userChallenge.charity.charityName);
 
 
-    NSDictionary *dict = @{@"User_idUser" : user.idUser, @"soloChallenge_idsoloChallenge": user.userChallenge.challengeID, @"steps": user.totalSteps, @"walkD": user.totalWalkingDist, @"runD": user.totalRunningDist, @"cycleD": user.totalCyclingDist, @"challengeComplete": @0, @"sChallengeAmountRaised" : user.totalAmountRaised};
-   
-    [self.authService.client invokeAPI:@"soloprogressupdate" body:dict HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
-        if(error){
-            NSLog(@"%@", [error localizedDescription]);
-        }
-        else{
-            NSLog(@"%@", result);
-        }
-    }];
+//    NSDictionary *dict = @{@"User_idUser" : user.idUser, @"soloChallenge_idsoloChallenge": user.userChallenge.challengeID, @"steps": user.totalSteps, @"walkD": user.totalWalkingDist, @"runD": user.totalRunningDist, @"cycleD": user.totalCyclingDist, @"challengeComplete": @0, @"sChallengeAmountRaised" : user.totalAmountRaised};
+//   
+//    [self.authService.client invokeAPI:@"soloprogressupdate" body:dict HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
+//        if(error){
+//            NSLog(@"%@", [error localizedDescription]);
+//        }
+//        else{
+//            NSLog(@"%@", result);
+//        }
+//    }];
     
-//    [self addChildViewController:self.pageViewController];
-//    [self.view addSubview:self.pageViewController.view];
-//    [self.pageViewController didMoveToParentViewController:self];
+    [self addChildViewController:self.pageViewController];
+    [self.view addSubview:self.pageViewController.view];
+    [self.pageViewController didMoveToParentViewController:self];
     
 }
 

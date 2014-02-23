@@ -213,6 +213,9 @@
 		D88AE29A18B98CC6008045FB /* LoginControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20918B98CC6008045FB /* LoginControllerDelegate.html */; };
 		D88AE29B18B98CC6008045FB /* RegisterControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20A18B98CC6008045FB /* RegisterControllerDelegate.html */; };
 		D88AE29C18B98CC6008045FB /* SignUpOrRegisterDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */; };
+		D88AE2A418BAB3FC008045FB /* walktheWaiResults.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE2A118BAB3FC008045FB /* walktheWaiResults.png */; };
+		D88AE2A518BAB3FC008045FB /* RiseandShineResults.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE2A218BAB3FC008045FB /* RiseandShineResults.png */; };
+		D88AE2A618BAB3FC008045FB /* 10000stepResults.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE2A318BAB3FC008045FB /* 10000stepResults.png */; };
 		D88C330B18B5C6CE00162113 /* results3.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330818B5C6CE00162113 /* results3.png */; };
 		D88C330C18B5C6CE00162113 /* results2.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330918B5C6CE00162113 /* results2.png */; };
 		D88C330D18B5C6CE00162113 /* results1.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330A18B5C6CE00162113 /* results1.png */; };
@@ -502,6 +505,9 @@
 		D88AE20918B98CC6008045FB /* LoginControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LoginControllerDelegate.html; sourceTree = "<group>"; };
 		D88AE20A18B98CC6008045FB /* RegisterControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterControllerDelegate.html; sourceTree = "<group>"; };
 		D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignUpOrRegisterDelegate.html; sourceTree = "<group>"; };
+		D88AE2A118BAB3FC008045FB /* walktheWaiResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walktheWaiResults.png; sourceTree = "<group>"; };
+		D88AE2A218BAB3FC008045FB /* RiseandShineResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RiseandShineResults.png; sourceTree = "<group>"; };
+		D88AE2A318BAB3FC008045FB /* 10000stepResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10000stepResults.png; sourceTree = "<group>"; };
 		D88C330818B5C6CE00162113 /* results3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results3.png; sourceTree = "<group>"; };
 		D88C330918B5C6CE00162113 /* results2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results2.png; sourceTree = "<group>"; };
 		D88C330A18B5C6CE00162113 /* results1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results1.png; sourceTree = "<group>"; };
@@ -736,6 +742,7 @@
 			isa = PBXGroup;
 			children = (
 				D88C330818B5C6CE00162113 /* results3.png */,
+				D88AE2A018BAB308008045FB /* resultstemp */,
 				D88C330918B5C6CE00162113 /* results2.png */,
 				D88C330A18B5C6CE00162113 /* results1.png */,
 				D8C33E4918AD7DE2003A9876 /* adidaslogo.png */,
@@ -1043,6 +1050,16 @@
 				D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D88AE2A018BAB308008045FB /* resultstemp */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE2A118BAB3FC008045FB /* walktheWaiResults.png */,
+				D88AE2A218BAB3FC008045FB /* RiseandShineResults.png */,
+				D88AE2A318BAB3FC008045FB /* 10000stepResults.png */,
+			);
+			name = resultstemp;
 			sourceTree = "<group>";
 		};
 		D88C331418B69AB300162113 /* Results Page */ = {
@@ -1376,6 +1393,7 @@
 				D88AE24A18B98CC6008045FB /* Tokens14.xml in Resources */,
 				D88AE22C18B98CC6008045FB /* Reward.html in Resources */,
 				D88AE25618B98CC6008045FB /* Tokens25.xml in Resources */,
+				D88AE2A418BAB3FC008045FB /* walktheWaiResults.png in Resources */,
 				D88AE24218B98CC6008045FB /* RegisterControllerDelegate.html in Resources */,
 				D899ECA618AC696E004F45A8 /* Oxfam.png in Resources */,
 				D88AE22E18B98CC6008045FB /* SignInRegisterView.html in Resources */,
@@ -1398,7 +1416,9 @@
 				D88AE24D18B98CC6008045FB /* Tokens17.xml in Resources */,
 				D8F9910918860C9D0064E872 /* Adidas white 60px.png in Resources */,
 				D88AE27218B98CC6008045FB /* Charity.html in Resources */,
+				D88AE2A618BAB3FC008045FB /* 10000stepResults.png in Resources */,
 				D88AE21B18B98CC6008045FB /* CharityListView.html in Resources */,
+				D88AE2A518BAB3FC008045FB /* RiseandShineResults.png in Resources */,
 				D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */,
 				D8F990E51885DC8C0064E872 /* SignInRegister.png in Resources */,
 				D88AE25818B98CC6008045FB /* Tokens27.xml in Resources */,
