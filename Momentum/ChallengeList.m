@@ -151,6 +151,9 @@
                         }];
                         [self getChallengeData];
                         [self.challengeList reloadData];
+                        if([self.challengeList indexPathForSelectedRow] == nil && path.row == 0){
+                            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+                        }
                     }];
                 }];
             }
