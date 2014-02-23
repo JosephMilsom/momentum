@@ -93,14 +93,9 @@
             NSLog(@"%@", [error localizedDescription]);
         }
         else{
-            //NSLog(@"%@", result);
-            
             //result is an array of dictionaries
             NSArray *challenges = result;
             
-            //these are the indices of the rows to add to the table
-            NSMutableArray* rows = [NSMutableArray new];
-        
             //an async task to fetch data from the server
             self.lazyLoad = [[NSOperationQueue alloc] init];
             self.lazyLoad.name = @"loadImagesFromServer";
@@ -109,16 +104,12 @@
                 //add to the list of index paths for the tableview insert row method,
                 //creates a new row at the end and will add it
                 NSIndexPath *path = [NSIndexPath indexPathForRow:self.numberOfRows inSection:0];
-                [rows addObject:path];
                 
                 //add the challenge dict(from the results) to the array of challenges
                 NSDictionary *challengeData = challenges[i];
                 
                 //add new challenges to coredata
                 [self.coreData addSoloChallenge:challengeData];
-                
-                //increment number of rows for the table view
-                self.numberOfRows++;
                 
                 //asynchronous fetch for the images
                 [self.lazyLoad addOperationWithBlock:^{
