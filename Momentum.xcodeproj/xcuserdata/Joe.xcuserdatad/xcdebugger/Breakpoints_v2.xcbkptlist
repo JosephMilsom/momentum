@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Momentum/AuthService.m"
-            timestampString = "414825624.422468"
+            timestampString = "414828728.061089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "-triggerLogout"
             landmarkType = "5">
          </BreakpointContent>

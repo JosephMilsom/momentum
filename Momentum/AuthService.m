@@ -25,7 +25,6 @@
 
 @interface AuthService()
 
-//random change
 //this is the authentication table to connect to
 //@property (nonatomic, strong)   MSTable *authTable;
 //this is the users table to connect to
