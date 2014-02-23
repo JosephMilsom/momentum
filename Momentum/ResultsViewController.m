@@ -48,17 +48,6 @@
     NSLog(@"%@",user.userChallenge.challengeName);
     NSLog(@"%@", user.userChallenge.charity.charityName);
 
-//    var item = {
-//        User_idUser : request.body.User_idUser,
-//        soloChallenge_idsoloChallenge : request.body.idsoloChallenge,
-//        steps : request.body.steps,
-//        walkD : request.body.walkD,
-//        runD : request.body.runD,
-//        cycleD : request.body.cycleD,
-//        challengeComplete : request.body.challengeComplete,
-//        sChallengeType_idsChallengeType : request.body.sChallengeType_idsChallengeType,
-//        sChallengeAmountRaised : request.body.amountRaised
-//    };
 
     NSDictionary *dict = @{@"User_idUser" : user.idUser, @"soloChallenge_idsoloChallenge": user.userChallenge.challengeID, @"steps": user.totalSteps, @"walkD": user.totalWalkingDist, @"runD": user.totalRunningDist, @"cycleD": user.totalCyclingDist, @"challengeComplete": @0, @"sChallengeAmountRaised" : user.totalAmountRaised};
    
