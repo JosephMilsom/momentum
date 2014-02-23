@@ -12,7 +12,6 @@
 
 @interface CoreDataSingleton : NSObject
 
-+(CoreDataSingleton *) getInstance;
 - (void) addSoloChallenge:(NSDictionary * )data;
 
 - (void) setCurrentChallenge:(AbstractChallenge *)challenge;

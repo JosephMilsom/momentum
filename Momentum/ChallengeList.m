@@ -58,7 +58,7 @@
     
     //initialise variables
     self.authService = [AuthService getInstance];
-    self.coreData = [CoreDataSingleton getInstance];
+    self.coreData = [[CoreDataSingleton alloc] init];
     
 //    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
 //    [self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];

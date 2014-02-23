@@ -18,16 +18,10 @@
 
 @implementation CoreDataSingleton
 
+//doesn't need to be a singleton?? 
+
 static CoreDataSingleton *singletonInstance;
 
-+(CoreDataSingleton*) getInstance{
-    
-    if(singletonInstance == nil){
-        CoreDataSingleton* cds = [[super alloc] init];
-        return cds;
-     }
-    return singletonInstance;
-}
 
 - (CoreDataSingleton*) init{
     self = [super init];
@@ -199,7 +193,6 @@ static CoreDataSingleton *singletonInstance;
     }
 }
 
-//need a purge
 /**
  *  Method that gets rid of malformed challenges
  */

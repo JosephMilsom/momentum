@@ -40,11 +40,7 @@
 
 static AuthService *singletonInstance;
 
-/**
- *  does stuff
- *
- *  @return blah
- */
+
 + (AuthService*)getInstance{
     if (singletonInstance == nil) {
         singletonInstance = [[super alloc] init];

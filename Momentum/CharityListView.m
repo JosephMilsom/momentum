@@ -47,7 +47,7 @@
     self.charityList.transform = CGAffineTransformMakeRotation(-M_PI * 0.5);
     
     self.authService = [AuthService getInstance];
-    self.coreData = [CoreDataSingleton getInstance];
+    self.coreData = [[CoreDataSingleton alloc] init];
     
     //[self.coreData deleteAllEntitiesOfType:@"Charity"];
     //[self.coreData deleteSpecificChallenge:@"Charity"];

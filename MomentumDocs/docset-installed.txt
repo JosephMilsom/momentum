@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/Joe/Library/Developer/Shared/Documentation/DocSets/Joe.Momentum.docset
-Time: 2014-02-23 06:39:29 +0000
+Time: 2014-02-23 09:21:04 +0000

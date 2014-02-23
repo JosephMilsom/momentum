@@ -52,7 +52,7 @@
     [self.scrollViewContainer addSubview:self.momentumLogo];
     
     AuthService *service = [AuthService getInstance];
-    CoreDataSingleton *coreData = [CoreDataSingleton getInstance];
+    CoreDataSingleton *coreData = [[CoreDataSingleton alloc] init];
     
     if(coreData.getUserInfo == nil){
     [coreData deleteUserInfo];

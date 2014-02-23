@@ -52,7 +52,7 @@
     [super viewDidLoad];
     [self createRegister];
     self.authService = [AuthService getInstance];
-    self.coreData = [CoreDataSingleton getInstance];
+    self.coreData = [[CoreDataSingleton alloc] init];
 }
 
 - (void) viewDidAppear:(BOOL)animated{
