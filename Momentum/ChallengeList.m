@@ -133,12 +133,13 @@
                     /*NOTE: cell is used here since we want to fade in images, otherwise use reloadData which is much nicer*/
                     //get the cell to assign
                     
-                    //NSLog(@"%@", cell.challengeTitle);
                     //update the ui
                     [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
                         //set the data for the image in core data
                         [self.coreData addChallengeImageData:data andBottomImageData:dataBottom forChallenge:[challenges[i] valueForKey:@"sChallengeName"]];
                         
+                        [self getChallengeData];
+                        [self.challengeList reloadData];
                         //set the background image
                         if([self.challengeList indexPathForSelectedRow].row == path.row){
                             self.bottomImage.image = [UIImage imageWithData:dataBottom];
@@ -149,8 +150,14 @@
                         [UIView animateWithDuration:0.3 animations:^{
                             self.bottomImage.alpha = 1;
                         }];
-                        [self getChallengeData];
-                        [self.challengeList reloadData];
+                        
+                        ChallengeCell * cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
+                        cell.imageBackground.alpha = 0;
+                        
+                        [UIView animateWithDuration:0.3 animations:^{
+                            cell.imageBackground.alpha = 1;
+                        }];
+                        
                         if([self.challengeList indexPathForSelectedRow] == nil && path.row == 0){
                             [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
                         }
