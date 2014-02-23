@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Charity.html">
+	<File path="Classes/ChallengePageController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Charity</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/ChallengePageController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,218 +13,86 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setCharityBottomImage:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/initWithNibName:bundle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *charityBottomImage</Declaration>
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
 			
 			
-			<Anchor>//api/name/charityBottomImage</Anchor>
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/charityBottomImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *charityBottomImage</Declaration>
+			<Declaration>- (void)viewDidLoad</Declaration>
 			
 			
-			<Anchor>//api/name/charityBottomImage</Anchor>
+			<Anchor>//api/name/viewDidLoad</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/charityBottomImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/didReceiveMemoryWarning</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *charityBottomImage</Declaration>
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
 			
 			
-			<Anchor>//api/name/charityBottomImage</Anchor>
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setCharityDescription:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/back:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *charityDescription</Declaration>
+			<Declaration>- (IBAction)back:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/charityDescription</Anchor>
+			<Anchor>//api/name/back:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/charityDescription</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/setTextDescription:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *charityDescription</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
 			
 			
-			<Anchor>//api/name/charityDescription</Anchor>
+			<Anchor>//api/name/textDescription</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/charityDescription</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/textDescription</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *charityDescription</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
 			
 			
-			<Anchor>//api/name/charityDescription</Anchor>
+			<Anchor>//api/name/textDescription</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setCharityID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengePageController/textDescription</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
+			<DeclaredIn>ChallengePageController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *charityID</Declaration>
-			
-			
-			<Anchor>//api/name/charityID</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/charityID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *charityID</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
 			
 			
-			<Anchor>//api/name/charityID</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/charityID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *charityID</Declaration>
-			
-			
-			<Anchor>//api/name/charityID</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setCharityImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSData *charityImage</Declaration>
-			
-			
-			<Anchor>//api/name/charityImage</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/charityImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSData *charityImage</Declaration>
-			
-			
-			<Anchor>//api/name/charityImage</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/charityImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSData *charityImage</Declaration>
-			
-			
-			<Anchor>//api/name/charityImage</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setCharityName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *charityName</Declaration>
-			
-			
-			<Anchor>//api/name/charityName</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/charityName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *charityName</Declaration>
-			
-			
-			<Anchor>//api/name/charityName</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/charityName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *charityName</Declaration>
-			
-			
-			<Anchor>//api/name/charityName</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/setChallenge:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *challenge</Declaration>
-			
-			
-			<Anchor>//api/name/challenge</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Charity/challenge</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *challenge</Declaration>
-			
-			
-			<Anchor>//api/name/challenge</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Charity/challenge</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Charity.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *challenge</Declaration>
-			
-			
-			<Anchor>//api/name/challenge</Anchor>
+			<Anchor>//api/name/textDescription</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

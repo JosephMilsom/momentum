@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GroupRunningChallenge.html">
+	<File path="Classes/GroupChallenge.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GroupRunningChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/GroupChallenge</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GroupRunningChallenge.h</DeclaredIn>
+			<DeclaredIn>GroupChallenge.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>

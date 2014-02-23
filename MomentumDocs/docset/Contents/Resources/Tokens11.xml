@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ExternalLoginAndRegister.html">
+	<File path="Classes/CoreMotionTest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ExternalLoginAndRegister</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/CoreMotionTest</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ExternalLoginAndRegister.h</DeclaredIn>
+			<DeclaredIn>CoreMotionTest.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -13,21 +13,21 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ExternalLoginAndRegister/initWithNibName:bundle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/operationQueue</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ExternalLoginAndRegister.m</DeclaredIn>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
 			
-			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			<Declaration>- (NSOperationQueue *)operationQueue</Declaration>
 			
 			
-			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+			<Anchor>//api/name/operationQueue</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ExternalLoginAndRegister/viewDidLoad</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ExternalLoginAndRegister.m</DeclaredIn>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
 			
 			<Declaration>- (void)viewDidLoad</Declaration>
 			
@@ -37,26 +37,194 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ExternalLoginAndRegister/didReceiveMemoryWarning</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/handleSteps</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ExternalLoginAndRegister.m</DeclaredIn>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
 			
-			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			<Declaration>- (void)handleSteps</Declaration>
 			
 			
-			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+			<Anchor>//api/name/handleSteps</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ExternalLoginAndRegister/back:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/wakeUp</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ExternalLoginAndRegister.m</DeclaredIn>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)back:(id)sender</Declaration>
+			<Declaration>- (void)wakeUp</Declaration>
 			
 			
-			<Anchor>//api/name/back:</Anchor>
+			<Anchor>//api/name/wakeUp</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/updateLabelWithStepCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>- (void)updateLabelWithStepCount</Declaration>
+			
+			
+			<Anchor>//api/name/updateLabelWithStepCount</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/isStepWithNewAvg:oldAvg:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isStepWithNewAvg:(float)avg oldAvg:(float)oldAvg</Declaration>
+			
+			
+			<Anchor>//api/name/isStepWithNewAvg:oldAvg:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setStepsCountingLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			
+			
+			<Anchor>//api/name/stepsCountingLabel</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/stepsCountingLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			
+			
+			<Anchor>//api/name/stepsCountingLabel</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/stepsCountingLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			
+			
+			<Anchor>//api/name/stepsCountingLabel</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setCmStepCounter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			
+			
+			<Anchor>//api/name/cmStepCounter</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/cmStepCounter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			
+			
+			<Anchor>//api/name/cmStepCounter</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/cmStepCounter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			
+			
+			<Anchor>//api/name/cmStepCounter</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setOperationQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/operationQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/operationQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setAccelSamples:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			
+			
+			<Anchor>//api/name/accelSamples</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/accelSamples</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			
+			
+			<Anchor>//api/name/accelSamples</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/accelSamples</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			
+			
+			<Anchor>//api/name/accelSamples</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

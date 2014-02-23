@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SignUpOrRegisterDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SignUpOrRegisterDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SignUpOrRegisterDelegate/userChoseSignIn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userChoseSignIn:(SignInOrRegisterController *)signUpOrRegister</Declaration>
+			
+			
+			<Anchor>//api/name/userChoseSignIn:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SignUpOrRegisterDelegate/userChoseRegister:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userChoseRegister:(SignInOrRegisterController *)signUpOrRegister</Declaration>
+			
+			
+			<Anchor>//api/name/userChoseRegister:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

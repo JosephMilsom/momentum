@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CharityListView.html">
+	<File path="Classes/CharityCell.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CharityListView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/CharityCell</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.h</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,179 +13,83 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/viewDidLoad</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setCellImage:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/cellImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/getCharityData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/cellImage</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (void)getCharityData</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
 			
 			
-			<Anchor>//api/name/getCharityData</Anchor>
+			<Anchor>//api/name/cellImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/downloadCharityData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/cellImage</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (void)downloadCharityData</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
 			
 			
-			<Anchor>//api/name/downloadCharityData</Anchor>
+			<Anchor>//api/name/cellImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/tableView:didSelectRowAtIndexPath:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setBottomImage:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
 			
 			
-			<Anchor>//api/name/tableView:didSelectRowAtIndexPath:</Anchor>
+			<Anchor>//api/name/bottomImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/bottomImage</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
 			
 			
-			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+			<Anchor>//api/name/bottomImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/bottomImage</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
 			
 			
-			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+			<Anchor>//api/name/bottomImage</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setInformation:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
-			
-			
-			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/startChallenge:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)startChallenge:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/startChallenge:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCharityList:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *charityList</Declaration>
-			
-			
-			<Anchor>//api/name/charityList</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/charityList</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *charityList</Declaration>
-			
-			
-			<Anchor>//api/name/charityList</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/charityList</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *charityList</Declaration>
-			
-			
-			<Anchor>//api/name/charityList</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCharityLabel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *charityLabel</Declaration>
-			
-			
-			<Anchor>//api/name/charityLabel</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/charityLabel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *charityLabel</Declaration>
-			
-			
-			<Anchor>//api/name/charityLabel</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/charityLabel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *charityLabel</Declaration>
-			
-			
-			<Anchor>//api/name/charityLabel</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setInformation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *information</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
 			
 			
 			<Anchor>//api/name/information</Anchor>
@@ -193,11 +97,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/information</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/information</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *information</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
 			
 			
 			<Anchor>//api/name/information</Anchor>
@@ -205,11 +109,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/information</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/information</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *information</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
 			
 			
 			<Anchor>//api/name/information</Anchor>
@@ -217,254 +121,86 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCharityImage:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setCharityTitle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *charityImage</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
 			
 			
-			<Anchor>//api/name/charityImage</Anchor>
+			<Anchor>//api/name/charityTitle</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/charityImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/charityTitle</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *charityImage</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
 			
 			
-			<Anchor>//api/name/charityImage</Anchor>
+			<Anchor>//api/name/charityTitle</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/charityImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/charityTitle</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *charityImage</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
 			
 			
-			<Anchor>//api/name/charityImage</Anchor>
+			<Anchor>//api/name/charityTitle</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setBottomImageView:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setBrandImageLocation:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImageView</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
 			
 			
-			<Anchor>//api/name/bottomImageView</Anchor>
+			<Anchor>//api/name/brandImageLocation</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/bottomImageView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/brandImageLocation</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImageView</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
 			
 			
-			<Anchor>//api/name/bottomImageView</Anchor>
+			<Anchor>//api/name/brandImageLocation</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/bottomImageView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/brandImageLocation</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImageView</Declaration>
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
 			
 			
-			<Anchor>//api/name/bottomImageView</Anchor>
+			<Anchor>//api/name/brandImageLocation</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setAuthService:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setSelected:animated:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
+			<DeclaredIn>CharityCell.m</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
-			
-			
-			<Anchor>//api/name/authService</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/authService</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/authService</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/authService</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
-			
-			
-			<Anchor>//api/name/authService</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setLazyLoad:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSOperationQueue *lazyLoad</Declaration>
-			
-			
-			<Anchor>//api/name/lazyLoad</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/lazyLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSOperationQueue *lazyLoad</Declaration>
-			
-			
-			<Anchor>//api/name/lazyLoad</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/lazyLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSOperationQueue *lazyLoad</Declaration>
-			
-			
-			<Anchor>//api/name/lazyLoad</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setNumberOfRows:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSInteger numberOfRows</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfRows</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/numberOfRows</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSInteger numberOfRows</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfRows</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/numberOfRows</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSInteger numberOfRows</Declaration>
-			
-			
-			<Anchor>//api/name/numberOfRows</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCoreData:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
-			
-			
-			<Anchor>//api/name/coreData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/coreData</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
-			
-			
-			<Anchor>//api/name/coreData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/coreData</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
-			
-			
-			<Anchor>//api/name/coreData</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCharityArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSArray *charityArray</Declaration>
-			
-			
-			<Anchor>//api/name/charityArray</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/charityArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSArray *charityArray</Declaration>
-			
-			
-			<Anchor>//api/name/charityArray</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/charityArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CharityListView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) NSArray *charityArray</Declaration>
-			
-			
-			<Anchor>//api/name/charityArray</Anchor>
+			<Anchor>//api/name/setSelected:animated:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

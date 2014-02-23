@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SignInRegisterView.html">
+	<File path="Classes/Reward.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SignInRegisterView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/Reward</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SignInRegisterView.h</DeclaredIn>
+			<DeclaredIn>Reward.h</DeclaredIn>
             
 			
 			<NodeRef refid="27"/>
@@ -13,14 +13,86 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SignInRegisterView/initWithFrame:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/setMilestonesLinkedToReward:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SignInRegisterView.m</DeclaredIn>
+			<DeclaredIn>Reward.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
 			
 			
-			<Anchor>//api/name/initWithFrame:</Anchor>
+			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/milestonesLinkedToReward</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
+			
+			
+			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Reward/milestonesLinkedToReward</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
+			
+			
+			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/addMilestonesLinkedToRewardObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>- (void)addMilestonesLinkedToRewardObject:(Milestones *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addMilestonesLinkedToRewardObject:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/removeMilestonesLinkedToRewardObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>- (void)removeMilestonesLinkedToRewardObject:(Milestones *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeMilestonesLinkedToRewardObject:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/addMilestonesLinkedToReward:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>- (void)addMilestonesLinkedToReward:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addMilestonesLinkedToReward:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Reward/removeMilestonesLinkedToReward:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Reward.h</DeclaredIn>
+			
+			<Declaration>- (void)removeMilestonesLinkedToReward:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeMilestonesLinkedToReward:</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		

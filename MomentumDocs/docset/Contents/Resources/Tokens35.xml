@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Sponsor.html">
+	<File path="Classes/SplashScreen.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Sponsor</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SplashScreen</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.h</DeclaredIn>
             
 			
 			<NodeRef refid="35"/>
@@ -13,86 +13,326 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/setSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (void)viewDidLoad</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/viewDidLoad</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/viewDidAppear:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/viewDidAppear:</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/animateLogo</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (void)animateLogo</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/animateLogo</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallengesObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/initViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>- (void)addSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			<Declaration>- (void)initViewController</Declaration>
 			
 			
-			<Anchor>//api/name/addSponsorsChallengesObject:</Anchor>
+			<Anchor>//api/name/initViewController</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallengesObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/createSignInRegister</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>- (void)removeSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			<Declaration>- (void)createSignInRegister</Declaration>
 			
 			
-			<Anchor>//api/name/removeSponsorsChallengesObject:</Anchor>
+			<Anchor>//api/name/createSignInRegister</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userChoseSignIn:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>- (void)addSponsorsChallenges:(NSSet *)values</Declaration>
+			<Declaration>- (void)userChoseSignIn:(SignInOrRegisterController *)signUpOrRegister</Declaration>
 			
 			
-			<Anchor>//api/name/addSponsorsChallenges:</Anchor>
+			<Anchor>//api/name/userChoseSignIn:</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userChoseRegister:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>- (void)removeSponsorsChallenges:(NSSet *)values</Declaration>
+			<Declaration>- (void)userChoseRegister:(SignInOrRegisterController *)signUpOrRegister</Declaration>
 			
 			
-			<Anchor>//api/name/removeSponsorsChallenges:</Anchor>
+			<Anchor>//api/name/userChoseRegister:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/removeCurrentControllerFromContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)removeCurrentControllerFromContainer</Declaration>
+			
+			
+			<Anchor>//api/name/removeCurrentControllerFromContainer</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidCancelRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidCancelRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCancelRegistration:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidCancelSignIn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidCancelSignIn:(LoginController *)loginController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCancelSignIn:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidChooseExternalRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidChooseExternalRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidChooseExternalRegistration:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidCompleteRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidCompleteRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCompleteRegistration:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidCompleteLogin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidCompleteLogin:(LoginController *)loginController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCompleteLogin:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidSelectTextBox:</TokenIdentifier>
+			<Abstract type="html">NOTE THAT THIS IS NOT USE OF PROPER DELEGATION, THERE ARE 2 DELEGATE METHODS REFERRING TO THE SAME METHOD*</Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)Controller</Declaration>
+			
+			
+			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidCompleteTextFieldEntry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidCompleteTextFieldEntry:(UIViewController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCompleteTextFieldEntry:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/setMomentumLogo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImageView *momentumLogo</Declaration>
+			
+			
+			<Anchor>//api/name/momentumLogo</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/momentumLogo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImageView *momentumLogo</Declaration>
+			
+			
+			<Anchor>//api/name/momentumLogo</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SplashScreen/momentumLogo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImageView *momentumLogo</Declaration>
+			
+			
+			<Anchor>//api/name/momentumLogo</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/setBackgroundImg:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImg</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/backgroundImg</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImg</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SplashScreen/backgroundImg</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *backgroundImg</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundImg</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/setScrollViewContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *scrollViewContainer</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewContainer</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/scrollViewContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *scrollViewContainer</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewContainer</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SplashScreen/scrollViewContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *scrollViewContainer</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewContainer</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/setCurrentController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIViewController *currentController</Declaration>
+			
+			
+			<Anchor>//api/name/currentController</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/currentController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIViewController *currentController</Declaration>
+			
+			
+			<Anchor>//api/name/currentController</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SplashScreen/currentController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIViewController *currentController</Declaration>
+			
+			
+			<Anchor>//api/name/currentController</Anchor>
             <NodeRef refid="35"/>
 		</Token>
 		

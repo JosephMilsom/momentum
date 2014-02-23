@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/LoginControllerDelegate.html">
+	<File path="Classes/Sponsor.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/LoginControllerDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/Sponsor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
             
 			
 			<NodeRef refid="37"/>
@@ -13,50 +13,86 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCancelSignIn:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/setSponsorsChallenges:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidCancelSignIn:(LoginController *)loginController</Declaration>
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
 			
 			
-			<Anchor>//api/name/userDidCancelSignIn:</Anchor>
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCompleteLogin:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/sponsorsChallenges</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidCompleteLogin:(LoginController *)loginController</Declaration>
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
 			
 			
-			<Anchor>//api/name/userDidCompleteLogin:</Anchor>
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCompleteTextFieldEntry:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Sponsor/sponsorsChallenges</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidCompleteTextFieldEntry:(UIViewController *)loginController</Declaration>
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
 			
 			
-			<Anchor>//api/name/userDidCompleteTextFieldEntry:</Anchor>
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidSelectTextBox:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallengesObject:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)loginController</Declaration>
+			<Declaration>- (void)addSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
 			
 			
-			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
+			<Anchor>//api/name/addSponsorsChallengesObject:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallengesObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)removeSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeSponsorsChallengesObject:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallenges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)addSponsorsChallenges:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addSponsorsChallenges:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallenges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)removeSponsorsChallenges:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeSponsorsChallenges:</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		

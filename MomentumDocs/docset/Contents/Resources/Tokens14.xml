@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GroupCyclingChallenge.html">
+	<File path="Classes/FacebookSingleton.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GroupCyclingChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/FacebookSingleton</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GroupCyclingChallenge.h</DeclaredIn>
+			<DeclaredIn>FacebookSingleton.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FacebookSingleton/getInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FacebookSingleton.h</DeclaredIn>
+			
+			<Declaration>+ (FacebookSingleton *)getInstance</Declaration>
+			
+			
+			<Anchor>//api/name/getInstance</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
 		
         
 	</File>

@@ -73,6 +73,8 @@
 }
 
 -(void) downloadChallengeData{
+    /*FOR GETTING A LIST TO SEND TO THE SERVER*/
+    
     //get the list of challenges that are stored in coredata, we send this
     //data to the service to check for updates
     NSArray *challenges = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
@@ -93,9 +95,14 @@
             NSLog(@"%@", [error localizedDescription]);
         }
         else{
+            //NSLog(@"%@", result);
+            
             //result is an array of dictionaries
             NSArray *challenges = result;
             
+            //these are the indices of the rows to add to the table
+            NSMutableArray* rows = [NSMutableArray new];
+        
             //an async task to fetch data from the server
             self.lazyLoad = [[NSOperationQueue alloc] init];
             self.lazyLoad.name = @"loadImagesFromServer";
@@ -104,12 +111,16 @@
                 //add to the list of index paths for the tableview insert row method,
                 //creates a new row at the end and will add it
                 NSIndexPath *path = [NSIndexPath indexPathForRow:self.numberOfRows inSection:0];
+                [rows addObject:path];
                 
                 //add the challenge dict(from the results) to the array of challenges
                 NSDictionary *challengeData = challenges[i];
                 
                 //add new challenges to coredata
                 [self.coreData addSoloChallenge:challengeData];
+                
+                //increment number of rows for the table view
+                self.numberOfRows++;
                 
                 //asynchronous fetch for the images
                 [self.lazyLoad addOperationWithBlock:^{
@@ -121,13 +132,21 @@
                     NSURL *urlBottom = [NSURL URLWithString:[challenges[i] valueForKey:@"sChallengeImageBtm"]];
                     NSData *dataBottom = [NSData dataWithContentsOfURL:urlBottom];
                     
+                    /*NOTE: cell is used here since we want to fade in images, otherwise use reloadData which is much nicer*/
+                    //get the cell to assign
+                    ChallengeCell *cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
+                    
+                    //NSLog(@"%@", cell.challengeTitle);
                     //update the ui
                     [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
+                        //set this here as we want to fade in the images
+                        cell.imageBackground.alpha = 0;
+                        cell.bottomImage = [UIImage imageWithData:dataBottom];
+                        
+                        cell.imageBackground.image = [UIImage imageWithData:data];
+                        
                         //set the data for the image in core data
                         [self.coreData addChallengeImageData:data andBottomImageData:dataBottom forChallenge:[challenges[i] valueForKey:@"sChallengeName"]];
-                        
-                        [self getChallengeData];
-                        [self.challengeList reloadData];
                         
                         //set the background image
                         if([self.challengeList indexPathForSelectedRow].row == path.row){
@@ -136,21 +155,10 @@
                             self.bottomImage.alpha = 0;
                         }
                         
-                        [UIView animateWithDuration:1.3 animations:^{
+                        [UIView animateWithDuration:0.3 animations:^{
+                            cell.imageBackground.alpha = 1;
                             self.bottomImage.alpha = 1;
                         }];
-                        
-                        ChallengeCell * cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
-                        cell.imageBackground.alpha = 0;
-                        
-                        [UIView animateWithDuration:1.3 animations:^{
-                            
-                            cell.imageBackground.alpha = 1;
-                        }];
-                        
-                        if([self.challengeList indexPathForSelectedRow] == nil && path.row == 0){
-                            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-                        }
                     }];
                 }];
             }
@@ -159,6 +167,14 @@
             //update the number of cells, takes the count from the fetch results
             self.challengeArray = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
             self.numberOfRows = self.challengeArray.count;
+            
+            //insert the new rows into the table
+            [self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
+            
+            //select the first row after download, if there are no rows that are selected
+            if([self.challengeList indexPathForSelectedRow] == nil){
+            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            }
         }
     }];    
 }
@@ -171,9 +187,9 @@
     self.numberOfRows = self.challengeArray.count;
     self.bottomImage.alpha = 1;
     
-    //if(self.challengeArray.count != 0){
-    //[self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-   // }
+    if(self.challengeArray.count != 0){
+    [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    }
 }
 
 
@@ -233,9 +249,9 @@
 
 - (IBAction)AcceptChallenge:(id)sender {
     SoloChallenge *s = self.challengeArray[[self.challengeList indexPathForSelectedRow].row];
-
+    //NSLog(@"%@", s.challengeName);
     [self.coreData setCurrentChallenge:s];
-
+    //temporary transition to the charity page
     [self performSegueWithIdentifier:@"ChallengesToCharities" sender:nil];
 }
 @end

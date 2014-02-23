@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RegisterControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RegisterControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCancelRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userDidCancelRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCancelRegistration:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidChooseExternalRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userDidChooseExternalRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidChooseExternalRegistration:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCompleteRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userDidCompleteRegistration:(RegisterController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCompleteRegistration:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidSelectTextBox:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCompleteTextFieldEntry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
+			
+			<Declaration>- (void)userDidCompleteTextFieldEntry:(UIViewController *)registerController</Declaration>
+			
+			
+			<Anchor>//api/name/userDidCompleteTextFieldEntry:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

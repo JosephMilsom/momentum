@@ -83,6 +83,7 @@
     
     for(int i = 0; i < charities.count; i++){
         Charity *c = charities[i];
+        //NSLog(@"%@", c.charityName);
         [charityNames addObject:c.charityName];
     }
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ResultsTest.html">
+	<File path="Classes/RegisterScrollView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ResultsTest</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterScrollView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -13,62 +13,506 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/setIndex:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/initData</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
 			
-			<Declaration>@property NSInteger index</Declaration>
+			<Declaration>- (void)initData</Declaration>
 			
 			
-			<Anchor>//api/name/index</Anchor>
+			<Anchor>//api/name/initData</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/index</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/fadeViews:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
 			
-			<Declaration>@property NSInteger index</Declaration>
+			<Declaration>- (void)fadeViews:(UIScrollView *)scrollView</Declaration>
 			
 			
-			<Anchor>//api/name/index</Anchor>
+			<Anchor>//api/name/fadeViews:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/ResultsTest/index</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/initWithFrame:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
-			<Declaration>@property NSInteger index</Declaration>
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
 			
 			
-			<Anchor>//api/name/index</Anchor>
+			<Anchor>//api/name/initWithFrame:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/initWithIndex:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setFacebook:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
-			<Declaration>- (ResultsTest *)initWithIndex:(NSInteger)index</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
 			
 			
-			<Anchor>//api/name/initWithIndex:</Anchor>
+			<Anchor>//api/name/facebook</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/viewDidLoad</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/facebook</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsTest.m</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/facebook</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/facebook</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
+			
+			
+			<Anchor>//api/name/facebook</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setGoogle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/google</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/google</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLinkedin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/linkedin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/linkedin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setEmailTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setPasswordTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setSignInRegisterLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/signInRegisterLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/signInRegisterLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow1:</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow3:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow1:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow3:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestsLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestsLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestsLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
