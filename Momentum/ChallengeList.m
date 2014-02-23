@@ -60,8 +60,8 @@
     self.authService = [AuthService getInstance];
     self.coreData = [[CoreDataSingleton alloc] init];
     
-    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
-//    [self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
+//    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
+    [self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
     
     //purge any challenges that have no image data,
     //redownload again
@@ -130,9 +130,6 @@
                     NSURL *urlBottom = [NSURL URLWithString:[challenges[i] valueForKey:@"sChallengeImageBtm"]];
                     NSData *dataBottom = [NSData dataWithContentsOfURL:urlBottom];
                     
-                    /*NOTE: cell is used here since we want to fade in images, otherwise use reloadData which is much nicer*/
-                    //get the cell to assign
-                    
                     //update the ui
                     [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
                         //set the data for the image in core data
@@ -140,6 +137,7 @@
                         
                         [self getChallengeData];
                         [self.challengeList reloadData];
+                        
                         //set the background image
                         if([self.challengeList indexPathForSelectedRow].row == path.row){
                             self.bottomImage.image = [UIImage imageWithData:dataBottom];
@@ -169,14 +167,6 @@
             //update the number of cells, takes the count from the fetch results
             self.challengeArray = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
             self.numberOfRows = self.challengeArray.count;
-            
-            //insert the new rows into the table
-            //[self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
-            
-            //select the first row after download, if there are no rows that are selected
-//            if([self.challengeList indexPathForSelectedRow] == nil && self.numberOfRows != 0){
-//            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-//            }
         }
     }];    
 }
