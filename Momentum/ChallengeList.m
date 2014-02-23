@@ -73,8 +73,6 @@
 }
 
 -(void) downloadChallengeData{
-    /*FOR GETTING A LIST TO SEND TO THE SERVER*/
-    
     //get the list of challenges that are stored in coredata, we send this
     //data to the service to check for updates
     NSArray *challenges = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
@@ -166,9 +164,9 @@
             //[self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
             
             //select the first row after download, if there are no rows that are selected
-            if([self.challengeList indexPathForSelectedRow] == nil && self.numberOfRows != 0){
-            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-            }
+//            if([self.challengeList indexPathForSelectedRow] == nil && self.numberOfRows != 0){
+//            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+//            }
         }
     }];    
 }
