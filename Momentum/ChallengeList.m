@@ -166,7 +166,7 @@
             //[self.challengeList insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
             
             //select the first row after download, if there are no rows that are selected
-            if([self.challengeList indexPathForSelectedRow] == nil){
+            if([self.challengeList indexPathForSelectedRow] == nil && self.numberOfRows != 0){
             [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             }
         }
