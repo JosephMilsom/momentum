@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Milestones.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Milestones</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setRewardLinkedToMilestones:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/rewardLinkedToMilestones</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Milestones/rewardLinkedToMilestones</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setUserChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/userChallenge</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/userChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/userChallenge</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Milestones/userChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/userChallenge</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

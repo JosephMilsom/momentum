@@ -40,6 +40,7 @@
     [self fadeInSignIn];
 }
 
+#pragma mark display logic
 -(void) createSignIn{
     //load up the register view container from the xib file
     NSArray *registerNib = [[NSBundle mainBundle] loadNibNamed:@"SignInView" owner:self options:nil];
@@ -85,10 +86,12 @@
     }];
 }
 
+#pragma mark login logic
 - (IBAction)completeLogin:(id)sender {
     NSString *email = self.signInContainer.emailTextField.text;
     NSString *password = self.signInContainer.passwordTextField.text;
 
+    //data to send through to the custom api
     NSDictionary *item = @{@"emailAddress" : email, @"password" : password};
     
     //dim the background to emphasise the loading
@@ -105,34 +108,47 @@
     loading.center = CGPointMake(160, 520);
     [loading startAnimating];
     
-    
     [self.view addSubview:loading];
     
     //attempt to login to the account, if successful go to the next screen
-    [self.authService loginAccount:item completion:^(NSString *string){
-        if([string isEqualToString:@"SUCCESS"]){
-            NSLog(@"SUCCESS");
-            [loading removeFromSuperview];
+    [self.authService loginAccount:item completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
+        if(error){
+            NSLog(@"%@", [error localizedDescription]);
+        }
+        else{
+            //get the result from the request and assign to dictionary
+            NSDictionary *login = result;
+            //NSLog(@"%@", [login valueForKey:@"userId"]);
+            
+            //create a new user and assign the token to the user and then
+            //save the info to the keychain
+            
+            MSUser *user = [[MSUser alloc] initWithUserId:[login valueForKey:@"userId"]];
+            user.mobileServiceAuthenticationToken = [login valueForKey:@"token"];
+            self.authService.client.currentUser = user;
+            
+            [self.authService saveAuthInfo];
+            
             [self.delegate userDidCompleteLogin:self];
         }
-    }];
-    
-    //uses an nsnotification here to see that it is a bad request
-    //and therefore the login process returned an error
-    [[NSNotificationCenter defaultCenter] addObserverForName:@"401" object:nil queue:[NSOperationQueue currentQueue] usingBlock:^(NSNotification *note){
+        
+        //fade out the loading view and get rid of dim
         [UIView animateWithDuration:0.2 animations:^{
             loading.alpha = 0;
             dim.alpha = 0;
         }completion:^(BOOL finished){
             [loading removeFromSuperview];
             [dim removeFromSuperview];
-            //MAY NEED TO REMOVE OBSERVER HERE
-            //[[NSNotificationCenter defaultCenter] rem];
         }];
-    }] ;
+    }];
+}
+
+- (IBAction)facebookLogin:(id)sender {
+
     
 }
 
+#pragma mark delegate methods
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField{
     [self.delegate userDidSelectTextBox:self];
     return YES;
@@ -152,11 +168,10 @@
     return YES;
 }
 
-- (IBAction)facebookLogin:(id)sender {
-        //not sure if this needs to be here at the moment??
-        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState state, NSError *error){
-            [self.delegate userDidCompleteLogin:self];
-        }];
-    
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [[self view] endEditing:YES];
+    [self.delegate userDidCompleteTextFieldEntry:self];
 }
+
+
 @end

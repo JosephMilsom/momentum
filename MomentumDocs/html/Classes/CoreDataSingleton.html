@@ -1,0 +1,736 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CoreDataSingleton Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Momentum </a></h1>
+				<a id="developerHome" href="../index.html">Joe</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CoreDataSingleton Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/context">&nbsp;&nbsp;&nbsp;&nbsp;context</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ getInstance</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addChallengeImageData:andBottomImageData:forChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- addChallengeImageData:andBottomImageData:forChallenge:</option>
+	
+	<option value="//api/name/addCharity:">&nbsp;&nbsp;&nbsp;&nbsp;- addCharity:</option>
+	
+	<option value="//api/name/addCharityImageData:andBottomImageData:forCharity:">&nbsp;&nbsp;&nbsp;&nbsp;- addCharityImageData:andBottomImageData:forCharity:</option>
+	
+	<option value="//api/name/addSoloChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- addSoloChallenge:</option>
+	
+	<option value="//api/name/deleteAllEntitiesOfType:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAllEntitiesOfType:</option>
+	
+	<option value="//api/name/deleteSpecificChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteSpecificChallenge:</option>
+	
+	<option value="//api/name/deleteUserInfo">&nbsp;&nbsp;&nbsp;&nbsp;- deleteUserInfo</option>
+	
+	<option value="//api/name/fetchEntitiesOfType:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchEntitiesOfType:</option>
+	
+	<option value="//api/name/getCurrentChallenge">&nbsp;&nbsp;&nbsp;&nbsp;- getCurrentChallenge</option>
+	
+	<option value="//api/name/getUserInfo">&nbsp;&nbsp;&nbsp;&nbsp;- getUserInfo</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/purgeBrokenChallenges">&nbsp;&nbsp;&nbsp;&nbsp;- purgeBrokenChallenges</option>
+	
+	<option value="//api/name/purgeBrokenCharities">&nbsp;&nbsp;&nbsp;&nbsp;- purgeBrokenCharities</option>
+	
+	<option value="//api/name/removeCurrentChallenge">&nbsp;&nbsp;&nbsp;&nbsp;- removeCurrentChallenge</option>
+	
+	<option value="//api/name/removeCurrentCharity">&nbsp;&nbsp;&nbsp;&nbsp;- removeCurrentCharity</option>
+	
+	<option value="//api/name/saveUserInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- saveUserInfo:</option>
+	
+	<option value="//api/name/setCurrentChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- setCurrentChallenge:</option>
+	
+	<option value="//api/name/setCurrentCharity:">&nbsp;&nbsp;&nbsp;&nbsp;- setCurrentCharity:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/context">context</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getInstance">getInstance</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addChallengeImageData:andBottomImageData:forChallenge:">addChallengeImageData:andBottomImageData:forChallenge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCharity:">addCharity:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCharityImageData:andBottomImageData:forCharity:">addCharityImageData:andBottomImageData:forCharity:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSoloChallenge:">addSoloChallenge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAllEntitiesOfType:">deleteAllEntitiesOfType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteSpecificChallenge:">deleteSpecificChallenge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteUserInfo">deleteUserInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchEntitiesOfType:">fetchEntitiesOfType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCurrentChallenge">getCurrentChallenge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUserInfo">getUserInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/purgeBrokenChallenges">purgeBrokenChallenges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/purgeBrokenCharities">purgeBrokenCharities</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCurrentChallenge">removeCurrentChallenge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCurrentCharity">removeCurrentCharity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveUserInfo:">saveUserInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCurrentChallenge:">setCurrentChallenge:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCurrentCharity:">setCurrentCharity:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CoreDataSingleton Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CoreDataSingleton Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CoreDataSingleton.h<br />CoreDataSingleton.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addSoloChallenge:">&ndash;&nbsp;addSoloChallenge:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCurrentChallenge:">&ndash;&nbsp;setCurrentChallenge:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCurrentChallenge">&ndash;&nbsp;removeCurrentChallenge</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCurrentChallenge">&ndash;&nbsp;getCurrentChallenge</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCharity:">&ndash;&nbsp;addCharity:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCurrentCharity:">&ndash;&nbsp;setCurrentCharity:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCurrentCharity">&ndash;&nbsp;removeCurrentCharity</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveUserInfo:">&ndash;&nbsp;saveUserInfo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteUserInfo">&ndash;&nbsp;deleteUserInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUserInfo">&ndash;&nbsp;getUserInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchEntitiesOfType:">&ndash;&nbsp;fetchEntitiesOfType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addChallengeImageData:andBottomImageData:forChallenge:">&ndash;&nbsp;addChallengeImageData:andBottomImageData:forChallenge:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCharityImageData:andBottomImageData:forCharity:">&ndash;&nbsp;addCharityImageData:andBottomImageData:forCharity:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAllEntitiesOfType:">&ndash;&nbsp;deleteAllEntitiesOfType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/purgeBrokenChallenges">&ndash;&nbsp;purgeBrokenChallenges</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/purgeBrokenCharities">&ndash;&nbsp;purgeBrokenCharities</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteSpecificChallenge:">&ndash;&nbsp;deleteSpecificChallenge:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/context">&nbsp;&nbsp;context</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/context" title="context"></a>
+	<h3 class="subsubtitle method-title">context</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSManagedObjectContext *context</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="subsubtitle method-title">getInstance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (CoreDataSingleton *)getInstance</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addChallengeImageData:andBottomImageData:forChallenge:" title="addChallengeImageData:andBottomImageData:forChallenge:"></a>
+	<h3 class="subsubtitle method-title">addChallengeImageData:andBottomImageData:forChallenge:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addChallengeImageData:(NSData *)<em>chalImg</em> andBottomImageData:(NSData *)<em>btmImg</em> forChallenge:(NSString *)<em>challenge</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCharity:" title="addCharity:"></a>
+	<h3 class="subsubtitle method-title">addCharity:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addCharity:(NSDictionary *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCharityImageData:andBottomImageData:forCharity:" title="addCharityImageData:andBottomImageData:forCharity:"></a>
+	<h3 class="subsubtitle method-title">addCharityImageData:andBottomImageData:forCharity:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addCharityImageData:(NSData *)<em>charImg</em> andBottomImageData:(NSData *)<em>btmImg</em> forCharity:(NSString *)<em>charity</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addSoloChallenge:" title="addSoloChallenge:"></a>
+	<h3 class="subsubtitle method-title">addSoloChallenge:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addSoloChallenge:(NSDictionary *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAllEntitiesOfType:" title="deleteAllEntitiesOfType:"></a>
+	<h3 class="subsubtitle method-title">deleteAllEntitiesOfType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteAllEntitiesOfType:(NSString *)<em>entityName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteSpecificChallenge:" title="deleteSpecificChallenge:"></a>
+	<h3 class="subsubtitle method-title">deleteSpecificChallenge:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteSpecificChallenge:(NSString *)<em>entityName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteUserInfo" title="deleteUserInfo"></a>
+	<h3 class="subsubtitle method-title">deleteUserInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteUserInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchEntitiesOfType:" title="fetchEntitiesOfType:"></a>
+	<h3 class="subsubtitle method-title">fetchEntitiesOfType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)fetchEntitiesOfType:(NSString *)<em>entityName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCurrentChallenge" title="getCurrentChallenge"></a>
+	<h3 class="subsubtitle method-title">getCurrentChallenge</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (AbstractChallenge *)getCurrentChallenge</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUserInfo" title="getUserInfo"></a>
+	<h3 class="subsubtitle method-title">getUserInfo</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (User *)getUserInfo</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (CoreDataSingleton *)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/purgeBrokenChallenges" title="purgeBrokenChallenges"></a>
+	<h3 class="subsubtitle method-title">purgeBrokenChallenges</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method that gets rid of malformed challenges</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)purgeBrokenChallenges</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CoreDataSingleton.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/purgeBrokenCharities" title="purgeBrokenCharities"></a>
+	<h3 class="subsubtitle method-title">purgeBrokenCharities</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)purgeBrokenCharities</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCurrentChallenge" title="removeCurrentChallenge"></a>
+	<h3 class="subsubtitle method-title">removeCurrentChallenge</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeCurrentChallenge</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCurrentCharity" title="removeCurrentCharity"></a>
+	<h3 class="subsubtitle method-title">removeCurrentCharity</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeCurrentCharity</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveUserInfo:" title="saveUserInfo:"></a>
+	<h3 class="subsubtitle method-title">saveUserInfo:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)saveUserInfo:(NSDictionary *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCurrentChallenge:" title="setCurrentChallenge:"></a>
+	<h3 class="subsubtitle method-title">setCurrentChallenge:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setCurrentChallenge:(AbstractChallenge *)<em>challenge</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCurrentCharity:" title="setCurrentCharity:"></a>
+	<h3 class="subsubtitle method-title">setCurrentCharity:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setCurrentCharity:(Charity *)<em>charity</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Joe. All rights reserved. (Last updated: 2014-02-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AbstractChallenge.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AbstractChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeBottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeBottomImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeBottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeBottomImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeBottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeBottomImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeDescription:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			
+			
+			<Anchor>//api/name/challengeDescription</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			
+			
+			<Anchor>//api/name/challengeDescription</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			
+			
+			<Anchor>//api/name/challengeDescription</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			
+			
+			<Anchor>//api/name/challengeID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			
+			
+			<Anchor>//api/name/challengeID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			
+			
+			<Anchor>//api/name/challengeID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
+			
+			
+			<Anchor>//api/name/challengeImage</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
+			
+			
+			<Anchor>//api/name/challengeName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
+			
+			
+			<Anchor>//api/name/challengeName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
+			
+			
+			<Anchor>//api/name/challengeName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
+			
+			
+			<Anchor>//api/name/challengeType</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
+			
+			
+			<Anchor>//api/name/challengeType</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
+			
+			
+			<Anchor>//api/name/challengeType</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeMilestones:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/challengeMilestones</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeMilestones</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/challengeMilestones</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeMilestones</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
+			
+			
+			<Anchor>//api/name/challengeMilestones</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeSponsor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
+			
+			
+			<Anchor>//api/name/challengeSponsor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeSponsor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
+			
+			
+			<Anchor>//api/name/challengeSponsor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeSponsor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
+			
+			
+			<Anchor>//api/name/challengeSponsor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/user</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/user</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setCharity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
+			
+			
+			<Anchor>//api/name/charity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/charity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
+			
+			
+			<Anchor>//api/name/charity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/charity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
+			
+			
+			<Anchor>//api/name/charity</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/addChallengeMilestonesObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>- (void)addChallengeMilestonesObject:(Milestones *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addChallengeMilestonesObject:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/removeChallengeMilestonesObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChallengeMilestonesObject:(Milestones *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeChallengeMilestonesObject:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/addChallengeMilestones:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>- (void)addChallengeMilestones:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addChallengeMilestones:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/removeChallengeMilestones:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChallengeMilestones:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeChallengeMilestones:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

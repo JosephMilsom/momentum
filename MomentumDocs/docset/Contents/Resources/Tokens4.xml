@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ChallengeList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ChallengeList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/downloadChallengeData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadChallengeData</Declaration>
+			
+			
+			<Anchor>//api/name/downloadChallengeData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/getChallengeData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)getChallengeData</Declaration>
+			
+			
+			<Anchor>//api/name/getChallengeData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/tableView:didSelectRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:didSelectRowAtIndexPath:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/AcceptChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)AcceptChallenge:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/AcceptChallenge:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengeList:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/challengeList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/challengeList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setBottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setAcceptChallengeButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *acceptChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/acceptChallengeButton</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/acceptChallengeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *acceptChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/acceptChallengeButton</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/acceptChallengeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *acceptChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/acceptChallengeButton</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setInfoTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *infoTextView</Declaration>
+			
+			
+			<Anchor>//api/name/infoTextView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/infoTextView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *infoTextView</Declaration>
+			
+			
+			<Anchor>//api/name/infoTextView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/infoTextView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *infoTextView</Declaration>
+			
+			
+			<Anchor>//api/name/infoTextView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengeNameLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *challengeNameLabel</Declaration>
+			
+			
+			<Anchor>//api/name/challengeNameLabel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/challengeNameLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *challengeNameLabel</Declaration>
+			
+			
+			<Anchor>//api/name/challengeNameLabel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/challengeNameLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *challengeNameLabel</Declaration>
+			
+			
+			<Anchor>//api/name/challengeNameLabel</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setSponsorLogo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *sponsorLogo</Declaration>
+			
+			
+			<Anchor>//api/name/sponsorLogo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/sponsorLogo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *sponsorLogo</Declaration>
+			
+			
+			<Anchor>//api/name/sponsorLogo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/sponsorLogo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *sponsorLogo</Declaration>
+			
+			
+			<Anchor>//api/name/sponsorLogo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengeArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/challengeArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/challengeArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setNumberOfRows:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger numberOfRows</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfRows</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/numberOfRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger numberOfRows</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfRows</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/numberOfRows</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger numberOfRows</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfRows</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setLazyLoad:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSOperationQueue *lazyLoad</Declaration>
+			
+			
+			<Anchor>//api/name/lazyLoad</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/lazyLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSOperationQueue *lazyLoad</Declaration>
+			
+			
+			<Anchor>//api/name/lazyLoad</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/lazyLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property NSOperationQueue *lazyLoad</Declaration>
+			
+			
+			<Anchor>//api/name/lazyLoad</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setAuthService:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setCoreData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -26,7 +26,7 @@
 @interface AuthService()
 
 //this is the authentication table to connect to
-@property (nonatomic, strong)   MSTable *authTable;
+//@property (nonatomic, strong)   MSTable *authTable;
 //this is the users table to connect to
 @property (nonatomic, strong)   MSTable *usersTable;
 @property (nonatomic)           BOOL shouldRetryAuth;
@@ -40,6 +40,11 @@
 
 static AuthService *singletonInstance;
 
+/**
+ *  does stuff
+ *
+ *  @return blah
+ */
 + (AuthService*)getInstance{
     if (singletonInstance == nil) {
         singletonInstance = [[super alloc] init];
@@ -59,60 +64,43 @@ static AuthService *singletonInstance;
         self.keychainName = @"keychain";
         [self loadAuthInfo];
         
-        self.authTable = [_client tableWithName:@"AuthData"];
-        self.usersTable = [_client tableWithName:@"Users"];
+        self.usersTable = [_client tableWithName:@"appuser"];
     }
     
     return self;
 }
 
-- (void) getAuthDataOnSuccess:(CompletionWithStringBlock) completion {
-    [self.authTable readWithCompletion:^(NSArray *items, NSInteger totalCount, NSError *error) {
-        [self logErrorIfNotNil:error];
-        NSString *user = [NSString stringWithFormat:@"username: %@", [[items objectAtIndex:0] objectForKey:@"UserName"]];
-        completion(user);
-    }];
-}
-
-
+#pragma mark register logic
 //register an account using azure and get authentication
-//token back using the custom register
+//token back using the custom register. Uses a custom REST
+//api
 - (void) registerAccount:(NSDictionary *) item
-              completion:(CompletionWithStringBlock) completion {
-    [self.usersTable insert:item completion:^(NSDictionary *item, NSError *error) {
-        [self logErrorIfNotNil:error];
-        if (error) {
-            completion([error localizedDescription]);
-            return;
-        } else {
-            MSUser *user = [[MSUser alloc] initWithUserId:[item valueForKey:@"userId"]];
-            user.mobileServiceAuthenticationToken = [item valueForKey:@"token"];
-            self.client.currentUser = user;
-            [self saveAuthInfo];
-            completion(@"SUCCESS");
-        }
-    }];
+              completion:(MSAPIBlock) completion {
+    
+        [self.client
+     invokeAPI:@"register"
+         body:item
+     HTTPMethod:@"POST"
+     parameters:nil
+     headers:nil
+     completion:completion ];
+    
 }
 
 #pragma mark login logic
-//this is for the custom login
+//this is for the custom login. Invokes the
+//custom REST api that will handle the login
+//process
 - (void) loginAccount:(NSDictionary *) item
-           completion:(CompletionWithStringBlock) completion {
-    NSDictionary *params = @{ @"login" : @"true"};
-    [self.usersTable insert:item parameters:params completion:^(NSDictionary *item, NSError *error) {
-        
-        [self logErrorIfNotNil:error];
-        if (error) {
-            completion([error localizedDescription]);
-            return;
-        } else {
-            MSUser *user = [[MSUser alloc] initWithUserId:[item valueForKey:@"userId"]];
-            user.mobileServiceAuthenticationToken = [item valueForKey:@"token"];
-            self.client.currentUser = user;
-            [self saveAuthInfo];
-            completion(@"SUCCESS");
-        }
-    }];
+           completion:(MSAPIBlock) completion {
+
+    [self.client
+     invokeAPI:@"login"
+     body:item
+     HTTPMethod:@"POST"
+     parameters:nil
+     headers:nil
+     completion:completion ];
 }
 
 - (void) testForced401:(BOOL)shouldRetry withCompletion:(CompletionWithStringBlock) completion {
@@ -132,7 +120,9 @@ static AuthService *singletonInstance;
     }
 }
 
-
+//need to implement this delegate method, it is part
+//of the MSFilter delegate protocol and is called
+//whenever a request is made to the service
 - (void) handleRequest:(NSURLRequest *)request
                   next:(MSFilterNextBlock)onNext
               response:(MSFilterResponseBlock)onResponse {
@@ -144,6 +134,8 @@ static AuthService *singletonInstance;
                       onNext:onNext
                   onResponse:onResponse];
     });
+    
+    NSLog(@"%@", request.description);
 }
 
 - (void) filterResponse: (NSHTTPURLResponse *) response
@@ -153,12 +145,14 @@ static AuthService *singletonInstance;
                  onNext:(MSFilterNextBlock) onNext
              onResponse: (MSFilterResponseBlock) onResponse
 {
+    //NSLog(@"%ld",(long)response.statusCode);
+    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    
+    //this deals with expired tokens
+    //401 refers to unauthorized status code
     if (response.statusCode == 401) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"401" object:nil];
         
         [self killAuthInfo];
-        NSLog(@"%ld",(long)response.statusCode);
-        NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         
         //we're forcing custom auth to relogin from the root for now
         if (self.shouldRetryAuth && ![self.authProvider isEqualToString:@"Custom"]) {
@@ -202,6 +196,7 @@ static AuthService *singletonInstance;
     UIViewController *topVC = navVC.topViewController;
 }
 
+
 -(NSMutableURLRequest *)addQueryStringParamToRequest:(NSMutableURLRequest *)request {
     NSMutableString *absoluteURLString = [[[request URL] absoluteString] mutableCopy];
     NSString *newQuery = @"?bypass=true";
@@ -210,15 +205,17 @@ static AuthService *singletonInstance;
     return request;
 }
 
+
+
 #pragma mark saving auth
-//save the authentication token to the phone and also chuck it into the
-//keychain for security
 - (void)saveAuthInfo {
+    NSLog(@"%@", self.client.currentUser.userId);
+    NSLog(@"%@", self.client.currentUser.mobileServiceAuthenticationToken);
+    
     [KeychainWrapper createKeychainValue:self.client.currentUser.userId forIdentifier:@"userid"];
     [KeychainWrapper createKeychainValue:self.client.currentUser.mobileServiceAuthenticationToken forIdentifier:@"token"];
 }
 
-//load the auth information from the keychain
 - (void)loadAuthInfo {
     NSString *userid = [KeychainWrapper keychainStringFromMatchingIdentifier:@"userid"];
     if (userid) {
@@ -228,23 +225,14 @@ static AuthService *singletonInstance;
     }
 }
 
-//this is when you want to remove the authentication token from
-//the system, and login with another account
 - (void)killAuthInfo {
     [KeychainWrapper deleteItemFromKeychainWithIdentifier:@"userid"];
     [KeychainWrapper deleteItemFromKeychainWithIdentifier:@"token"];
-    
-    [FBSession.activeSession closeAndClearTokenInformation];
     
     for (NSHTTPCookie *value in [NSHTTPCookieStorage sharedHTTPCookieStorage].cookies) {
         [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:value];
     }
     [self.client logout];
-}
-
--(void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    
-    NSLog(@"Log");
 }
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SoloRunningChallenge.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SoloRunningChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoloRunningChallenge.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RegisterViewContainer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterViewContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setEmailTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setPasswordTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setFirstNameTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/firstNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/firstNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLastNameTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/lastNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/lastNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/initData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)initData</Declaration>
+			
+			
+			<Anchor>//api/name/initData</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/fadeViews:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)fadeViews:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/fadeViews:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/selectButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)selectButton:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/selectButton:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setFacebook:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
+			
+			
+			<Anchor>//api/name/facebook</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/facebook</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
+			
+			
+			<Anchor>//api/name/facebook</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/facebook</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
+			
+			
+			<Anchor>//api/name/facebook</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setGoogle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/google</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/google</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
+			
+			
+			<Anchor>//api/name/google</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLinkedin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/linkedin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/linkedin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
+			
+			
+			<Anchor>//api/name/linkedin</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setSignInRegisterLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/signInRegisterLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/signInRegisterLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegisterLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setBackButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/backButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/backButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow1:</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow3:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow1:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow1</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow2:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow2</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow2</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow3:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow3</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
+			
+			
+			<Anchor>//api/name/labelRow3</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestsLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestsLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestsLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/interestsLabel</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

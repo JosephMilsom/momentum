@@ -10,5 +10,9 @@
 
 @interface ChallengeCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageBackground;
+@property (strong, nonatomic) NSString *information;
+@property (strong, nonatomic) NSString *challengeTitle;
+@property (strong, nonatomic) NSString *brandImageLocation;
+@property (strong, nonatomic) UIImage *bottomImage;
 
 @end

@@ -17,17 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:24.0], NSFontAttributeName, nil]];
     
-    self.client = [MSClient clientWithApplicationURLString:@"https://cogogogo.azure-mobile.net/" applicationKey:@"RyaDSYzSjKSHdEhIswjmLerFqjuVTJ40"];
+    self.client = [MSClient clientWithApplicationURLString:@"https://momencogotake2.azure-mobile.net/" applicationKey:@"FBKsklKXtAqRvPEoKzNLpwPuzwBpjn12"];
     //change the default properties of bar buttons
    // [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"googleline.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    /***FACEBOOK HANDLER***/
     
     return YES;
 }

@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D88C332118B6CBDF00162113 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D88C332218B6CBE000162113 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D88C332518B6D03E00162113 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D849FE84187E28B500206CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE83187E28B500206CA9 /* Foundation.framework */; };
 		D849FE86187E28B500206CA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE85187E28B500206CA9 /* CoreGraphics.framework */; };
@@ -54,12 +68,192 @@
 		D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A51888A51700EDEA6D /* RegisterViewContainer.xib */; };
 		D86CE0A81888CB4200EDEA6D /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A71888CB4200EDEA6D /* SignInView.xib */; };
 		D86CE0AB1888CBAE00EDEA6D /* SignInView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86CE0AA1888CBAE00EDEA6D /* SignInView.m */; };
+		D88AE20C18B98CC6008045FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17018B98CC6008045FB /* Info.plist */; };
+		D88AE20D18B98CC6008045FB /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17218B98CC6008045FB /* docSet.dsidx */; };
+		D88AE20E18B98CC6008045FB /* docSet.dsidx-shm in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17318B98CC6008045FB /* docSet.dsidx-shm */; };
+		D88AE20F18B98CC6008045FB /* docSet.dsidx-wal in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17418B98CC6008045FB /* docSet.dsidx-wal */; };
+		D88AE21018B98CC6008045FB /* docSet.mom in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17518B98CC6008045FB /* docSet.mom */; };
+		D88AE21118B98CC6008045FB /* docSet.skidx in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17618B98CC6008045FB /* docSet.skidx */; };
+		D88AE21218B98CC6008045FB /* docSet.toc in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17718B98CC6008045FB /* docSet.toc */; };
+		D88AE21318B98CC6008045FB /* docSet.tokencache in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17818B98CC6008045FB /* docSet.tokencache */; };
+		D88AE21418B98CC6008045FB /* AbstractChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17B18B98CC6008045FB /* AbstractChallenge.html */; };
+		D88AE21518B98CC6008045FB /* AuthService.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17C18B98CC6008045FB /* AuthService.html */; };
+		D88AE21618B98CC6008045FB /* ChallengeCell.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17D18B98CC6008045FB /* ChallengeCell.html */; };
+		D88AE21718B98CC6008045FB /* ChallengeList.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17E18B98CC6008045FB /* ChallengeList.html */; };
+		D88AE21818B98CC6008045FB /* ChallengeNavigationController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17F18B98CC6008045FB /* ChallengeNavigationController.html */; };
+		D88AE21918B98CC6008045FB /* Charity.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18018B98CC6008045FB /* Charity.html */; };
+		D88AE21A18B98CC6008045FB /* CharityCell.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18118B98CC6008045FB /* CharityCell.html */; };
+		D88AE21B18B98CC6008045FB /* CharityListView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18218B98CC6008045FB /* CharityListView.html */; };
+		D88AE21C18B98CC6008045FB /* CoreDataSingleton.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18318B98CC6008045FB /* CoreDataSingleton.html */; };
+		D88AE21D18B98CC6008045FB /* CoreMotionTest.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18418B98CC6008045FB /* CoreMotionTest.html */; };
+		D88AE21E18B98CC6008045FB /* ExternalLoginAndRegister.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18518B98CC6008045FB /* ExternalLoginAndRegister.html */; };
+		D88AE21F18B98CC6008045FB /* FBCDAppDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18618B98CC6008045FB /* FBCDAppDelegate.html */; };
+		D88AE22018B98CC6008045FB /* GroupChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18718B98CC6008045FB /* GroupChallenge.html */; };
+		D88AE22118B98CC6008045FB /* GroupCyclingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18818B98CC6008045FB /* GroupCyclingChallenge.html */; };
+		D88AE22218B98CC6008045FB /* GroupRunningChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18918B98CC6008045FB /* GroupRunningChallenge.html */; };
+		D88AE22318B98CC6008045FB /* GroupWalkingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18A18B98CC6008045FB /* GroupWalkingChallenge.html */; };
+		D88AE22418B98CC6008045FB /* KeychainWrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18B18B98CC6008045FB /* KeychainWrapper.html */; };
+		D88AE22518B98CC6008045FB /* LoginController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18C18B98CC6008045FB /* LoginController.html */; };
+		D88AE22618B98CC6008045FB /* Milestones.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18D18B98CC6008045FB /* Milestones.html */; };
+		D88AE22718B98CC6008045FB /* RegisterController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18E18B98CC6008045FB /* RegisterController.html */; };
+		D88AE22818B98CC6008045FB /* RegisterScrollView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE18F18B98CC6008045FB /* RegisterScrollView.html */; };
+		D88AE22918B98CC6008045FB /* RegisterViewContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19018B98CC6008045FB /* RegisterViewContainer.html */; };
+		D88AE22A18B98CC6008045FB /* ResultsTest.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19118B98CC6008045FB /* ResultsTest.html */; };
+		D88AE22B18B98CC6008045FB /* ResultsViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19218B98CC6008045FB /* ResultsViewController.html */; };
+		D88AE22C18B98CC6008045FB /* Reward.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19318B98CC6008045FB /* Reward.html */; };
+		D88AE22D18B98CC6008045FB /* SignInOrRegisterController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19418B98CC6008045FB /* SignInOrRegisterController.html */; };
+		D88AE22E18B98CC6008045FB /* SignInRegisterView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19518B98CC6008045FB /* SignInRegisterView.html */; };
+		D88AE22F18B98CC6008045FB /* SignInView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19618B98CC6008045FB /* SignInView.html */; };
+		D88AE23018B98CC6008045FB /* SoloChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19718B98CC6008045FB /* SoloChallenge.html */; };
+		D88AE23118B98CC6008045FB /* SoloCyclingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19818B98CC6008045FB /* SoloCyclingChallenge.html */; };
+		D88AE23218B98CC6008045FB /* SoloRunningChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19918B98CC6008045FB /* SoloRunningChallenge.html */; };
+		D88AE23318B98CC6008045FB /* SoloWalkingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19A18B98CC6008045FB /* SoloWalkingChallenge.html */; };
+		D88AE23418B98CC6008045FB /* SplashScreen.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19B18B98CC6008045FB /* SplashScreen.html */; };
+		D88AE23518B98CC6008045FB /* SplashToFirstViewSegue.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19C18B98CC6008045FB /* SplashToFirstViewSegue.html */; };
+		D88AE23618B98CC6008045FB /* Sponsor.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19D18B98CC6008045FB /* Sponsor.html */; };
+		D88AE23718B98CC6008045FB /* User.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE19E18B98CC6008045FB /* User.html */; };
+		D88AE23818B98CC6008045FB /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A018B98CC6008045FB /* styles.css */; };
+		D88AE23918B98CC6008045FB /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A118B98CC6008045FB /* stylesPrint.css */; };
+		D88AE23A18B98CC6008045FB /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A218B98CC6008045FB /* hierarchy.html */; };
+		D88AE23B18B98CC6008045FB /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A418B98CC6008045FB /* button_bar_background.png */; };
+		D88AE23C18B98CC6008045FB /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A518B98CC6008045FB /* disclosure.png */; };
+		D88AE23D18B98CC6008045FB /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A618B98CC6008045FB /* disclosure_open.png */; };
+		D88AE23E18B98CC6008045FB /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A718B98CC6008045FB /* library_background.png */; };
+		D88AE23F18B98CC6008045FB /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A818B98CC6008045FB /* title_background.png */; };
+		D88AE24018B98CC6008045FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1A918B98CC6008045FB /* index.html */; };
+		D88AE24118B98CC6008045FB /* LoginControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1AB18B98CC6008045FB /* LoginControllerDelegate.html */; };
+		D88AE24218B98CC6008045FB /* RegisterControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1AC18B98CC6008045FB /* RegisterControllerDelegate.html */; };
+		D88AE24318B98CC6008045FB /* SignUpOrRegisterDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1AD18B98CC6008045FB /* SignUpOrRegisterDelegate.html */; };
+		D88AE24418B98CC6008045FB /* Nodes.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1AE18B98CC6008045FB /* Nodes.xml */; };
+		D88AE24518B98CC6008045FB /* Tokens1.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1AF18B98CC6008045FB /* Tokens1.xml */; };
+		D88AE24618B98CC6008045FB /* Tokens10.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B018B98CC6008045FB /* Tokens10.xml */; };
+		D88AE24718B98CC6008045FB /* Tokens11.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B118B98CC6008045FB /* Tokens11.xml */; };
+		D88AE24818B98CC6008045FB /* Tokens12.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B218B98CC6008045FB /* Tokens12.xml */; };
+		D88AE24918B98CC6008045FB /* Tokens13.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B318B98CC6008045FB /* Tokens13.xml */; };
+		D88AE24A18B98CC6008045FB /* Tokens14.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B418B98CC6008045FB /* Tokens14.xml */; };
+		D88AE24B18B98CC6008045FB /* Tokens15.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B518B98CC6008045FB /* Tokens15.xml */; };
+		D88AE24C18B98CC6008045FB /* Tokens16.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B618B98CC6008045FB /* Tokens16.xml */; };
+		D88AE24D18B98CC6008045FB /* Tokens17.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B718B98CC6008045FB /* Tokens17.xml */; };
+		D88AE24E18B98CC6008045FB /* Tokens18.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B818B98CC6008045FB /* Tokens18.xml */; };
+		D88AE24F18B98CC6008045FB /* Tokens19.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1B918B98CC6008045FB /* Tokens19.xml */; };
+		D88AE25018B98CC6008045FB /* Tokens2.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BA18B98CC6008045FB /* Tokens2.xml */; };
+		D88AE25118B98CC6008045FB /* Tokens20.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BB18B98CC6008045FB /* Tokens20.xml */; };
+		D88AE25218B98CC6008045FB /* Tokens21.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BC18B98CC6008045FB /* Tokens21.xml */; };
+		D88AE25318B98CC6008045FB /* Tokens22.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BD18B98CC6008045FB /* Tokens22.xml */; };
+		D88AE25418B98CC6008045FB /* Tokens23.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BE18B98CC6008045FB /* Tokens23.xml */; };
+		D88AE25518B98CC6008045FB /* Tokens24.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1BF18B98CC6008045FB /* Tokens24.xml */; };
+		D88AE25618B98CC6008045FB /* Tokens25.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C018B98CC6008045FB /* Tokens25.xml */; };
+		D88AE25718B98CC6008045FB /* Tokens26.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C118B98CC6008045FB /* Tokens26.xml */; };
+		D88AE25818B98CC6008045FB /* Tokens27.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C218B98CC6008045FB /* Tokens27.xml */; };
+		D88AE25918B98CC6008045FB /* Tokens28.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C318B98CC6008045FB /* Tokens28.xml */; };
+		D88AE25A18B98CC6008045FB /* Tokens29.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C418B98CC6008045FB /* Tokens29.xml */; };
+		D88AE25B18B98CC6008045FB /* Tokens3.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C518B98CC6008045FB /* Tokens3.xml */; };
+		D88AE25C18B98CC6008045FB /* Tokens30.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C618B98CC6008045FB /* Tokens30.xml */; };
+		D88AE25D18B98CC6008045FB /* Tokens31.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C718B98CC6008045FB /* Tokens31.xml */; };
+		D88AE25E18B98CC6008045FB /* Tokens32.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C818B98CC6008045FB /* Tokens32.xml */; };
+		D88AE25F18B98CC6008045FB /* Tokens33.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1C918B98CC6008045FB /* Tokens33.xml */; };
+		D88AE26018B98CC6008045FB /* Tokens34.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CA18B98CC6008045FB /* Tokens34.xml */; };
+		D88AE26118B98CC6008045FB /* Tokens35.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CB18B98CC6008045FB /* Tokens35.xml */; };
+		D88AE26218B98CC6008045FB /* Tokens36.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CC18B98CC6008045FB /* Tokens36.xml */; };
+		D88AE26318B98CC6008045FB /* Tokens37.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CD18B98CC6008045FB /* Tokens37.xml */; };
+		D88AE26418B98CC6008045FB /* Tokens38.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CE18B98CC6008045FB /* Tokens38.xml */; };
+		D88AE26518B98CC6008045FB /* Tokens39.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1CF18B98CC6008045FB /* Tokens39.xml */; };
+		D88AE26618B98CC6008045FB /* Tokens4.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D018B98CC6008045FB /* Tokens4.xml */; };
+		D88AE26718B98CC6008045FB /* Tokens5.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D118B98CC6008045FB /* Tokens5.xml */; };
+		D88AE26818B98CC6008045FB /* Tokens6.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D218B98CC6008045FB /* Tokens6.xml */; };
+		D88AE26918B98CC6008045FB /* Tokens7.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D318B98CC6008045FB /* Tokens7.xml */; };
+		D88AE26A18B98CC6008045FB /* Tokens8.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D418B98CC6008045FB /* Tokens8.xml */; };
+		D88AE26B18B98CC6008045FB /* Tokens9.xml in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D518B98CC6008045FB /* Tokens9.xml */; };
+		D88AE26C18B98CC6008045FB /* docset-installed.txt in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D618B98CC6008045FB /* docset-installed.txt */; };
+		D88AE26D18B98CC6008045FB /* AbstractChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1D918B98CC6008045FB /* AbstractChallenge.html */; };
+		D88AE26E18B98CC6008045FB /* AuthService.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DA18B98CC6008045FB /* AuthService.html */; };
+		D88AE26F18B98CC6008045FB /* ChallengeCell.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DB18B98CC6008045FB /* ChallengeCell.html */; };
+		D88AE27018B98CC6008045FB /* ChallengeList.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DC18B98CC6008045FB /* ChallengeList.html */; };
+		D88AE27118B98CC6008045FB /* ChallengeNavigationController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DD18B98CC6008045FB /* ChallengeNavigationController.html */; };
+		D88AE27218B98CC6008045FB /* Charity.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DE18B98CC6008045FB /* Charity.html */; };
+		D88AE27318B98CC6008045FB /* CharityCell.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1DF18B98CC6008045FB /* CharityCell.html */; };
+		D88AE27418B98CC6008045FB /* CharityListView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E018B98CC6008045FB /* CharityListView.html */; };
+		D88AE27518B98CC6008045FB /* CoreDataSingleton.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E118B98CC6008045FB /* CoreDataSingleton.html */; };
+		D88AE27618B98CC6008045FB /* CoreMotionTest.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E218B98CC6008045FB /* CoreMotionTest.html */; };
+		D88AE27718B98CC6008045FB /* ExternalLoginAndRegister.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E318B98CC6008045FB /* ExternalLoginAndRegister.html */; };
+		D88AE27818B98CC6008045FB /* FBCDAppDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E418B98CC6008045FB /* FBCDAppDelegate.html */; };
+		D88AE27918B98CC6008045FB /* GroupChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E518B98CC6008045FB /* GroupChallenge.html */; };
+		D88AE27A18B98CC6008045FB /* GroupCyclingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E618B98CC6008045FB /* GroupCyclingChallenge.html */; };
+		D88AE27B18B98CC6008045FB /* GroupRunningChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E718B98CC6008045FB /* GroupRunningChallenge.html */; };
+		D88AE27C18B98CC6008045FB /* GroupWalkingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E818B98CC6008045FB /* GroupWalkingChallenge.html */; };
+		D88AE27D18B98CC6008045FB /* KeychainWrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1E918B98CC6008045FB /* KeychainWrapper.html */; };
+		D88AE27E18B98CC6008045FB /* LoginController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1EA18B98CC6008045FB /* LoginController.html */; };
+		D88AE27F18B98CC6008045FB /* Milestones.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1EB18B98CC6008045FB /* Milestones.html */; };
+		D88AE28018B98CC6008045FB /* RegisterController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1EC18B98CC6008045FB /* RegisterController.html */; };
+		D88AE28118B98CC6008045FB /* RegisterScrollView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1ED18B98CC6008045FB /* RegisterScrollView.html */; };
+		D88AE28218B98CC6008045FB /* RegisterViewContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1EE18B98CC6008045FB /* RegisterViewContainer.html */; };
+		D88AE28318B98CC6008045FB /* ResultsTest.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1EF18B98CC6008045FB /* ResultsTest.html */; };
+		D88AE28418B98CC6008045FB /* ResultsViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F018B98CC6008045FB /* ResultsViewController.html */; };
+		D88AE28518B98CC6008045FB /* Reward.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F118B98CC6008045FB /* Reward.html */; };
+		D88AE28618B98CC6008045FB /* SignInOrRegisterController.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F218B98CC6008045FB /* SignInOrRegisterController.html */; };
+		D88AE28718B98CC6008045FB /* SignInRegisterView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F318B98CC6008045FB /* SignInRegisterView.html */; };
+		D88AE28818B98CC6008045FB /* SignInView.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F418B98CC6008045FB /* SignInView.html */; };
+		D88AE28918B98CC6008045FB /* SoloChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F518B98CC6008045FB /* SoloChallenge.html */; };
+		D88AE28A18B98CC6008045FB /* SoloCyclingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F618B98CC6008045FB /* SoloCyclingChallenge.html */; };
+		D88AE28B18B98CC6008045FB /* SoloRunningChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F718B98CC6008045FB /* SoloRunningChallenge.html */; };
+		D88AE28C18B98CC6008045FB /* SoloWalkingChallenge.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F818B98CC6008045FB /* SoloWalkingChallenge.html */; };
+		D88AE28D18B98CC6008045FB /* SplashScreen.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1F918B98CC6008045FB /* SplashScreen.html */; };
+		D88AE28E18B98CC6008045FB /* SplashToFirstViewSegue.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1FA18B98CC6008045FB /* SplashToFirstViewSegue.html */; };
+		D88AE28F18B98CC6008045FB /* Sponsor.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1FB18B98CC6008045FB /* Sponsor.html */; };
+		D88AE29018B98CC6008045FB /* User.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1FC18B98CC6008045FB /* User.html */; };
+		D88AE29118B98CC6008045FB /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1FE18B98CC6008045FB /* styles.css */; };
+		D88AE29218B98CC6008045FB /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = D88AE1FF18B98CC6008045FB /* stylesPrint.css */; };
+		D88AE29318B98CC6008045FB /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20018B98CC6008045FB /* hierarchy.html */; };
+		D88AE29418B98CC6008045FB /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20218B98CC6008045FB /* button_bar_background.png */; };
+		D88AE29518B98CC6008045FB /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20318B98CC6008045FB /* disclosure.png */; };
+		D88AE29618B98CC6008045FB /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20418B98CC6008045FB /* disclosure_open.png */; };
+		D88AE29718B98CC6008045FB /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20518B98CC6008045FB /* library_background.png */; };
+		D88AE29818B98CC6008045FB /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20618B98CC6008045FB /* title_background.png */; };
+		D88AE29918B98CC6008045FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20718B98CC6008045FB /* index.html */; };
+		D88AE29A18B98CC6008045FB /* LoginControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20918B98CC6008045FB /* LoginControllerDelegate.html */; };
+		D88AE29B18B98CC6008045FB /* RegisterControllerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20A18B98CC6008045FB /* RegisterControllerDelegate.html */; };
+		D88AE29C18B98CC6008045FB /* SignUpOrRegisterDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */; };
+		D88C330B18B5C6CE00162113 /* results3.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330818B5C6CE00162113 /* results3.png */; };
+		D88C330C18B5C6CE00162113 /* results2.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330918B5C6CE00162113 /* results2.png */; };
+		D88C330D18B5C6CE00162113 /* results1.png in Resources */ = {isa = PBXBuildFile; fileRef = D88C330A18B5C6CE00162113 /* results1.png */; };
+		D88C331718B69B2D00162113 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C331618B69B2D00162113 /* ResultsViewController.m */; };
+		D88C331A18B6A05D00162113 /* ResultsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C331918B6A05D00162113 /* ResultsTest.m */; };
+		D88C333118B6F36E00162113 /* SoloChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333018B6F36E00162113 /* SoloChallenge.m */; };
+		D88C333418B6F36F00162113 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333318B6F36F00162113 /* User.m */; };
+		D88C333718B6F36F00162113 /* SoloRunningChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333618B6F36F00162113 /* SoloRunningChallenge.m */; };
+		D88C333A18B6F36F00162113 /* SoloCyclingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333918B6F36F00162113 /* SoloCyclingChallenge.m */; };
+		D88C334018B6F36F00162113 /* SoloWalkingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */; };
+		D88C334618B6FBED00162113 /* Charity.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C334518B6FBED00162113 /* Charity.m */; };
+		D88C334918B705DF00162113 /* AbstractChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C334818B705DF00162113 /* AbstractChallenge.m */; };
+		D899EC9C18AC61F8004F45A8 /* CharityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D899EC9B18AC61F8004F45A8 /* CharityCell.m */; };
+		D899EC9F18AC622B004F45A8 /* CharityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D899EC9E18AC622B004F45A8 /* CharityListView.m */; };
+		D899ECA118AC62D8004F45A8 /* CharityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA018AC62D8004F45A8 /* CharityCell.xib */; };
+		D899ECA618AC696E004F45A8 /* Oxfam.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA218AC696E004F45A8 /* Oxfam.png */; };
+		D899ECA718AC696E004F45A8 /* PawJustice.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA318AC696E004F45A8 /* PawJustice.png */; };
+		D899ECA818AC696E004F45A8 /* surflifesaving.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA418AC696E004F45A8 /* surflifesaving.png */; };
+		D899ECA918AC696E004F45A8 /* worldvision.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA518AC696E004F45A8 /* worldvision.png */; };
+		D899ECAF18AC7367004F45A8 /* bottomsunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECAC18AC7367004F45A8 /* bottomsunrise.png */; };
+		D899ECB018AC7367004F45A8 /* bottomTour.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECAD18AC7367004F45A8 /* bottomTour.png */; };
+		D899ECB118AC7367004F45A8 /* BottomWalk.png in Resources */ = {isa = PBXBuildFile; fileRef = D899ECAE18AC7367004F45A8 /* BottomWalk.png */; };
 		D8AE52FE189B07E80059D0C1 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE52FD189B07E80059D0C1 /* WindowsAzureMobileServices.framework */; };
 		D8AE539B189F125F0059D0C1 /* AuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE539A189F125F0059D0C1 /* AuthService.m */; };
 		D8AE539E189F21640059D0C1 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE539C189F21640059D0C1 /* KeychainWrapper.m */; };
-		D8AE53A4189F52260059D0C1 /* FacebookSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */; };
 		D8AE53A8189F65170059D0C1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */; };
 		D8AE53AA189FA94D0059D0C1 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */; };
+		D8C33E4818ACD491003A9876 /* NavBar2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4718ACD491003A9876 /* NavBar2.png */; };
+		D8C33E4A18AD7DE2003A9876 /* adidaslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4918AD7DE2003A9876 /* adidaslogo.png */; };
+		D8C33E4F18AD864D003A9876 /* bottomoxfam.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4B18AD864D003A9876 /* bottomoxfam.png */; };
+		D8C33E5018AD864D003A9876 /* bottomPaw.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4C18AD864D003A9876 /* bottomPaw.png */; };
+		D8C33E5118AD864D003A9876 /* bottomsurflifesaving.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4D18AD864D003A9876 /* bottomsurflifesaving.png */; };
+		D8C33E5218AD864D003A9876 /* bottomWorldVision.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4E18AD864D003A9876 /* bottomWorldVision.png */; };
+		D8C33E5518AD871C003A9876 /* CoreDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E5418AD871C003A9876 /* CoreDataSingleton.m */; };
+		D8C33E9118B19ECB003A9876 /* GroupChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9018B19ECB003A9876 /* GroupChallenge.m */; };
+		D8C33E9418B19ECB003A9876 /* Milestones.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9318B19ECB003A9876 /* Milestones.m */; };
+		D8C33E9718B19ECB003A9876 /* Reward.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9618B19ECB003A9876 /* Reward.m */; };
+		D8C33EA018B19ECC003A9876 /* GroupWalkingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9F18B19ECC003A9876 /* GroupWalkingChallenge.m */; };
+		D8C33EA318B19ECC003A9876 /* GroupRunningChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33EA218B19ECC003A9876 /* GroupRunningChallenge.m */; };
+		D8C33EA918B19ECC003A9876 /* GroupCyclingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33EA818B19ECC003A9876 /* GroupCyclingChallenge.m */; };
+		D8C33EB518B19EEB003A9876 /* Sponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33EB418B19EEB003A9876 /* Sponsor.m */; };
 		D8F084D0188F2B1600A1DF2D /* ExternalLoginAndRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */; };
 		D8F084D6188F517400A1DF2D /* Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084D2188F517400A1DF2D /* Moon.png */; };
 		D8F084D7188F517400A1DF2D /* Sunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084D3188F517400A1DF2D /* Sunrise.png */; };
@@ -68,7 +262,6 @@
 		D8F084DC188F5B3100A1DF2D /* ChallengeWord.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084DA188F5B3100A1DF2D /* ChallengeWord.png */; };
 		D8F084DD188F5B3100A1DF2D /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084DB188F5B3100A1DF2D /* NavBar.png */; };
 		D8F084DF188F65FE00A1DF2D /* MoonWalk.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F084DE188F65FE00A1DF2D /* MoonWalk.png */; };
-		D8F084E2188F68E700A1DF2D /* ChallengePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084E1188F68E700A1DF2D /* ChallengePageController.m */; };
 		D8F084E5188F748900A1DF2D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084E4188F748900A1DF2D /* LoginController.m */; };
 		D8F084E8188F798900A1DF2D /* SignInOrRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084E7188F798900A1DF2D /* SignInOrRegisterController.m */; };
 		D8F084EB188F826100A1DF2D /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F084EA188F826100A1DF2D /* RegisterController.m */; };
@@ -164,16 +357,214 @@
 		D86CE0A71888CB4200EDEA6D /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
 		D86CE0A91888CBAE00EDEA6D /* SignInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInView.h; sourceTree = "<group>"; };
 		D86CE0AA1888CBAE00EDEA6D /* SignInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInView.m; sourceTree = "<group>"; };
+		D88AE17018B98CC6008045FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88AE17218B98CC6008045FB /* docSet.dsidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.dsidx; sourceTree = "<group>"; };
+		D88AE17318B98CC6008045FB /* docSet.dsidx-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "docSet.dsidx-shm"; sourceTree = "<group>"; };
+		D88AE17418B98CC6008045FB /* docSet.dsidx-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "docSet.dsidx-wal"; sourceTree = "<group>"; };
+		D88AE17518B98CC6008045FB /* docSet.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = docSet.mom; sourceTree = "<group>"; };
+		D88AE17618B98CC6008045FB /* docSet.skidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.skidx; sourceTree = "<group>"; };
+		D88AE17718B98CC6008045FB /* docSet.toc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = docSet.toc; sourceTree = "<group>"; };
+		D88AE17818B98CC6008045FB /* docSet.tokencache */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = docSet.tokencache; sourceTree = "<group>"; };
+		D88AE17B18B98CC6008045FB /* AbstractChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AbstractChallenge.html; sourceTree = "<group>"; };
+		D88AE17C18B98CC6008045FB /* AuthService.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AuthService.html; sourceTree = "<group>"; };
+		D88AE17D18B98CC6008045FB /* ChallengeCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeCell.html; sourceTree = "<group>"; };
+		D88AE17E18B98CC6008045FB /* ChallengeList.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeList.html; sourceTree = "<group>"; };
+		D88AE17F18B98CC6008045FB /* ChallengeNavigationController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeNavigationController.html; sourceTree = "<group>"; };
+		D88AE18018B98CC6008045FB /* Charity.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Charity.html; sourceTree = "<group>"; };
+		D88AE18118B98CC6008045FB /* CharityCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CharityCell.html; sourceTree = "<group>"; };
+		D88AE18218B98CC6008045FB /* CharityListView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CharityListView.html; sourceTree = "<group>"; };
+		D88AE18318B98CC6008045FB /* CoreDataSingleton.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CoreDataSingleton.html; sourceTree = "<group>"; };
+		D88AE18418B98CC6008045FB /* CoreMotionTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CoreMotionTest.html; sourceTree = "<group>"; };
+		D88AE18518B98CC6008045FB /* ExternalLoginAndRegister.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExternalLoginAndRegister.html; sourceTree = "<group>"; };
+		D88AE18618B98CC6008045FB /* FBCDAppDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FBCDAppDelegate.html; sourceTree = "<group>"; };
+		D88AE18718B98CC6008045FB /* GroupChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupChallenge.html; sourceTree = "<group>"; };
+		D88AE18818B98CC6008045FB /* GroupCyclingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupCyclingChallenge.html; sourceTree = "<group>"; };
+		D88AE18918B98CC6008045FB /* GroupRunningChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupRunningChallenge.html; sourceTree = "<group>"; };
+		D88AE18A18B98CC6008045FB /* GroupWalkingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupWalkingChallenge.html; sourceTree = "<group>"; };
+		D88AE18B18B98CC6008045FB /* KeychainWrapper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KeychainWrapper.html; sourceTree = "<group>"; };
+		D88AE18C18B98CC6008045FB /* LoginController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LoginController.html; sourceTree = "<group>"; };
+		D88AE18D18B98CC6008045FB /* Milestones.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Milestones.html; sourceTree = "<group>"; };
+		D88AE18E18B98CC6008045FB /* RegisterController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterController.html; sourceTree = "<group>"; };
+		D88AE18F18B98CC6008045FB /* RegisterScrollView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterScrollView.html; sourceTree = "<group>"; };
+		D88AE19018B98CC6008045FB /* RegisterViewContainer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterViewContainer.html; sourceTree = "<group>"; };
+		D88AE19118B98CC6008045FB /* ResultsTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ResultsTest.html; sourceTree = "<group>"; };
+		D88AE19218B98CC6008045FB /* ResultsViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ResultsViewController.html; sourceTree = "<group>"; };
+		D88AE19318B98CC6008045FB /* Reward.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Reward.html; sourceTree = "<group>"; };
+		D88AE19418B98CC6008045FB /* SignInOrRegisterController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInOrRegisterController.html; sourceTree = "<group>"; };
+		D88AE19518B98CC6008045FB /* SignInRegisterView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInRegisterView.html; sourceTree = "<group>"; };
+		D88AE19618B98CC6008045FB /* SignInView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInView.html; sourceTree = "<group>"; };
+		D88AE19718B98CC6008045FB /* SoloChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloChallenge.html; sourceTree = "<group>"; };
+		D88AE19818B98CC6008045FB /* SoloCyclingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloCyclingChallenge.html; sourceTree = "<group>"; };
+		D88AE19918B98CC6008045FB /* SoloRunningChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloRunningChallenge.html; sourceTree = "<group>"; };
+		D88AE19A18B98CC6008045FB /* SoloWalkingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloWalkingChallenge.html; sourceTree = "<group>"; };
+		D88AE19B18B98CC6008045FB /* SplashScreen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SplashScreen.html; sourceTree = "<group>"; };
+		D88AE19C18B98CC6008045FB /* SplashToFirstViewSegue.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SplashToFirstViewSegue.html; sourceTree = "<group>"; };
+		D88AE19D18B98CC6008045FB /* Sponsor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Sponsor.html; sourceTree = "<group>"; };
+		D88AE19E18B98CC6008045FB /* User.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = User.html; sourceTree = "<group>"; };
+		D88AE1A018B98CC6008045FB /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		D88AE1A118B98CC6008045FB /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		D88AE1A218B98CC6008045FB /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		D88AE1A418B98CC6008045FB /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		D88AE1A518B98CC6008045FB /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		D88AE1A618B98CC6008045FB /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		D88AE1A718B98CC6008045FB /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		D88AE1A818B98CC6008045FB /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		D88AE1A918B98CC6008045FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D88AE1AB18B98CC6008045FB /* LoginControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LoginControllerDelegate.html; sourceTree = "<group>"; };
+		D88AE1AC18B98CC6008045FB /* RegisterControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterControllerDelegate.html; sourceTree = "<group>"; };
+		D88AE1AD18B98CC6008045FB /* SignUpOrRegisterDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignUpOrRegisterDelegate.html; sourceTree = "<group>"; };
+		D88AE1AE18B98CC6008045FB /* Nodes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Nodes.xml; sourceTree = "<group>"; };
+		D88AE1AF18B98CC6008045FB /* Tokens1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens1.xml; sourceTree = "<group>"; };
+		D88AE1B018B98CC6008045FB /* Tokens10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens10.xml; sourceTree = "<group>"; };
+		D88AE1B118B98CC6008045FB /* Tokens11.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens11.xml; sourceTree = "<group>"; };
+		D88AE1B218B98CC6008045FB /* Tokens12.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens12.xml; sourceTree = "<group>"; };
+		D88AE1B318B98CC6008045FB /* Tokens13.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens13.xml; sourceTree = "<group>"; };
+		D88AE1B418B98CC6008045FB /* Tokens14.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens14.xml; sourceTree = "<group>"; };
+		D88AE1B518B98CC6008045FB /* Tokens15.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens15.xml; sourceTree = "<group>"; };
+		D88AE1B618B98CC6008045FB /* Tokens16.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens16.xml; sourceTree = "<group>"; };
+		D88AE1B718B98CC6008045FB /* Tokens17.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens17.xml; sourceTree = "<group>"; };
+		D88AE1B818B98CC6008045FB /* Tokens18.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens18.xml; sourceTree = "<group>"; };
+		D88AE1B918B98CC6008045FB /* Tokens19.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens19.xml; sourceTree = "<group>"; };
+		D88AE1BA18B98CC6008045FB /* Tokens2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens2.xml; sourceTree = "<group>"; };
+		D88AE1BB18B98CC6008045FB /* Tokens20.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens20.xml; sourceTree = "<group>"; };
+		D88AE1BC18B98CC6008045FB /* Tokens21.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens21.xml; sourceTree = "<group>"; };
+		D88AE1BD18B98CC6008045FB /* Tokens22.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens22.xml; sourceTree = "<group>"; };
+		D88AE1BE18B98CC6008045FB /* Tokens23.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens23.xml; sourceTree = "<group>"; };
+		D88AE1BF18B98CC6008045FB /* Tokens24.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens24.xml; sourceTree = "<group>"; };
+		D88AE1C018B98CC6008045FB /* Tokens25.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens25.xml; sourceTree = "<group>"; };
+		D88AE1C118B98CC6008045FB /* Tokens26.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens26.xml; sourceTree = "<group>"; };
+		D88AE1C218B98CC6008045FB /* Tokens27.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens27.xml; sourceTree = "<group>"; };
+		D88AE1C318B98CC6008045FB /* Tokens28.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens28.xml; sourceTree = "<group>"; };
+		D88AE1C418B98CC6008045FB /* Tokens29.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens29.xml; sourceTree = "<group>"; };
+		D88AE1C518B98CC6008045FB /* Tokens3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens3.xml; sourceTree = "<group>"; };
+		D88AE1C618B98CC6008045FB /* Tokens30.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens30.xml; sourceTree = "<group>"; };
+		D88AE1C718B98CC6008045FB /* Tokens31.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens31.xml; sourceTree = "<group>"; };
+		D88AE1C818B98CC6008045FB /* Tokens32.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens32.xml; sourceTree = "<group>"; };
+		D88AE1C918B98CC6008045FB /* Tokens33.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens33.xml; sourceTree = "<group>"; };
+		D88AE1CA18B98CC6008045FB /* Tokens34.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens34.xml; sourceTree = "<group>"; };
+		D88AE1CB18B98CC6008045FB /* Tokens35.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens35.xml; sourceTree = "<group>"; };
+		D88AE1CC18B98CC6008045FB /* Tokens36.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens36.xml; sourceTree = "<group>"; };
+		D88AE1CD18B98CC6008045FB /* Tokens37.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens37.xml; sourceTree = "<group>"; };
+		D88AE1CE18B98CC6008045FB /* Tokens38.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens38.xml; sourceTree = "<group>"; };
+		D88AE1CF18B98CC6008045FB /* Tokens39.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens39.xml; sourceTree = "<group>"; };
+		D88AE1D018B98CC6008045FB /* Tokens4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens4.xml; sourceTree = "<group>"; };
+		D88AE1D118B98CC6008045FB /* Tokens5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens5.xml; sourceTree = "<group>"; };
+		D88AE1D218B98CC6008045FB /* Tokens6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens6.xml; sourceTree = "<group>"; };
+		D88AE1D318B98CC6008045FB /* Tokens7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens7.xml; sourceTree = "<group>"; };
+		D88AE1D418B98CC6008045FB /* Tokens8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens8.xml; sourceTree = "<group>"; };
+		D88AE1D518B98CC6008045FB /* Tokens9.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens9.xml; sourceTree = "<group>"; };
+		D88AE1D618B98CC6008045FB /* docset-installed.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "docset-installed.txt"; sourceTree = "<group>"; };
+		D88AE1D918B98CC6008045FB /* AbstractChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AbstractChallenge.html; sourceTree = "<group>"; };
+		D88AE1DA18B98CC6008045FB /* AuthService.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AuthService.html; sourceTree = "<group>"; };
+		D88AE1DB18B98CC6008045FB /* ChallengeCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeCell.html; sourceTree = "<group>"; };
+		D88AE1DC18B98CC6008045FB /* ChallengeList.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeList.html; sourceTree = "<group>"; };
+		D88AE1DD18B98CC6008045FB /* ChallengeNavigationController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ChallengeNavigationController.html; sourceTree = "<group>"; };
+		D88AE1DE18B98CC6008045FB /* Charity.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Charity.html; sourceTree = "<group>"; };
+		D88AE1DF18B98CC6008045FB /* CharityCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CharityCell.html; sourceTree = "<group>"; };
+		D88AE1E018B98CC6008045FB /* CharityListView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CharityListView.html; sourceTree = "<group>"; };
+		D88AE1E118B98CC6008045FB /* CoreDataSingleton.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CoreDataSingleton.html; sourceTree = "<group>"; };
+		D88AE1E218B98CC6008045FB /* CoreMotionTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CoreMotionTest.html; sourceTree = "<group>"; };
+		D88AE1E318B98CC6008045FB /* ExternalLoginAndRegister.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExternalLoginAndRegister.html; sourceTree = "<group>"; };
+		D88AE1E418B98CC6008045FB /* FBCDAppDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FBCDAppDelegate.html; sourceTree = "<group>"; };
+		D88AE1E518B98CC6008045FB /* GroupChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupChallenge.html; sourceTree = "<group>"; };
+		D88AE1E618B98CC6008045FB /* GroupCyclingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupCyclingChallenge.html; sourceTree = "<group>"; };
+		D88AE1E718B98CC6008045FB /* GroupRunningChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupRunningChallenge.html; sourceTree = "<group>"; };
+		D88AE1E818B98CC6008045FB /* GroupWalkingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GroupWalkingChallenge.html; sourceTree = "<group>"; };
+		D88AE1E918B98CC6008045FB /* KeychainWrapper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KeychainWrapper.html; sourceTree = "<group>"; };
+		D88AE1EA18B98CC6008045FB /* LoginController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LoginController.html; sourceTree = "<group>"; };
+		D88AE1EB18B98CC6008045FB /* Milestones.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Milestones.html; sourceTree = "<group>"; };
+		D88AE1EC18B98CC6008045FB /* RegisterController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterController.html; sourceTree = "<group>"; };
+		D88AE1ED18B98CC6008045FB /* RegisterScrollView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterScrollView.html; sourceTree = "<group>"; };
+		D88AE1EE18B98CC6008045FB /* RegisterViewContainer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterViewContainer.html; sourceTree = "<group>"; };
+		D88AE1EF18B98CC6008045FB /* ResultsTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ResultsTest.html; sourceTree = "<group>"; };
+		D88AE1F018B98CC6008045FB /* ResultsViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ResultsViewController.html; sourceTree = "<group>"; };
+		D88AE1F118B98CC6008045FB /* Reward.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Reward.html; sourceTree = "<group>"; };
+		D88AE1F218B98CC6008045FB /* SignInOrRegisterController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInOrRegisterController.html; sourceTree = "<group>"; };
+		D88AE1F318B98CC6008045FB /* SignInRegisterView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInRegisterView.html; sourceTree = "<group>"; };
+		D88AE1F418B98CC6008045FB /* SignInView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignInView.html; sourceTree = "<group>"; };
+		D88AE1F518B98CC6008045FB /* SoloChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloChallenge.html; sourceTree = "<group>"; };
+		D88AE1F618B98CC6008045FB /* SoloCyclingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloCyclingChallenge.html; sourceTree = "<group>"; };
+		D88AE1F718B98CC6008045FB /* SoloRunningChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloRunningChallenge.html; sourceTree = "<group>"; };
+		D88AE1F818B98CC6008045FB /* SoloWalkingChallenge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SoloWalkingChallenge.html; sourceTree = "<group>"; };
+		D88AE1F918B98CC6008045FB /* SplashScreen.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SplashScreen.html; sourceTree = "<group>"; };
+		D88AE1FA18B98CC6008045FB /* SplashToFirstViewSegue.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SplashToFirstViewSegue.html; sourceTree = "<group>"; };
+		D88AE1FB18B98CC6008045FB /* Sponsor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Sponsor.html; sourceTree = "<group>"; };
+		D88AE1FC18B98CC6008045FB /* User.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = User.html; sourceTree = "<group>"; };
+		D88AE1FE18B98CC6008045FB /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		D88AE1FF18B98CC6008045FB /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		D88AE20018B98CC6008045FB /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		D88AE20218B98CC6008045FB /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		D88AE20318B98CC6008045FB /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		D88AE20418B98CC6008045FB /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		D88AE20518B98CC6008045FB /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		D88AE20618B98CC6008045FB /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		D88AE20718B98CC6008045FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D88AE20918B98CC6008045FB /* LoginControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LoginControllerDelegate.html; sourceTree = "<group>"; };
+		D88AE20A18B98CC6008045FB /* RegisterControllerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegisterControllerDelegate.html; sourceTree = "<group>"; };
+		D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SignUpOrRegisterDelegate.html; sourceTree = "<group>"; };
+		D88C330818B5C6CE00162113 /* results3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results3.png; sourceTree = "<group>"; };
+		D88C330918B5C6CE00162113 /* results2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results2.png; sourceTree = "<group>"; };
+		D88C330A18B5C6CE00162113 /* results1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results1.png; sourceTree = "<group>"; };
+		D88C331518B69B2D00162113 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		D88C331618B69B2D00162113 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		D88C331818B6A05D00162113 /* ResultsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTest.h; sourceTree = "<group>"; };
+		D88C331918B6A05D00162113 /* ResultsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTest.m; sourceTree = "<group>"; };
+		D88C332F18B6F36E00162113 /* SoloChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloChallenge.h; sourceTree = "<group>"; };
+		D88C333018B6F36E00162113 /* SoloChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloChallenge.m; sourceTree = "<group>"; };
+		D88C333218B6F36F00162113 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D88C333318B6F36F00162113 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D88C333518B6F36F00162113 /* SoloRunningChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloRunningChallenge.h; sourceTree = "<group>"; };
+		D88C333618B6F36F00162113 /* SoloRunningChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloRunningChallenge.m; sourceTree = "<group>"; };
+		D88C333818B6F36F00162113 /* SoloCyclingChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloCyclingChallenge.h; sourceTree = "<group>"; };
+		D88C333918B6F36F00162113 /* SoloCyclingChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloCyclingChallenge.m; sourceTree = "<group>"; };
+		D88C333E18B6F36F00162113 /* SoloWalkingChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloWalkingChallenge.h; sourceTree = "<group>"; };
+		D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloWalkingChallenge.m; sourceTree = "<group>"; };
+		D88C334418B6FBED00162113 /* Charity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Charity.h; sourceTree = "<group>"; };
+		D88C334518B6FBED00162113 /* Charity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Charity.m; sourceTree = "<group>"; };
+		D88C334718B705DF00162113 /* AbstractChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractChallenge.h; sourceTree = "<group>"; };
+		D88C334818B705DF00162113 /* AbstractChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractChallenge.m; sourceTree = "<group>"; };
+		D899EC9A18AC61F8004F45A8 /* CharityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityCell.h; sourceTree = "<group>"; };
+		D899EC9B18AC61F8004F45A8 /* CharityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityCell.m; sourceTree = "<group>"; };
+		D899EC9D18AC622B004F45A8 /* CharityListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityListView.h; sourceTree = "<group>"; };
+		D899EC9E18AC622B004F45A8 /* CharityListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityListView.m; sourceTree = "<group>"; };
+		D899ECA018AC62D8004F45A8 /* CharityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharityCell.xib; sourceTree = "<group>"; };
+		D899ECA218AC696E004F45A8 /* Oxfam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oxfam.png; sourceTree = "<group>"; };
+		D899ECA318AC696E004F45A8 /* PawJustice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PawJustice.png; sourceTree = "<group>"; };
+		D899ECA418AC696E004F45A8 /* surflifesaving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surflifesaving.png; sourceTree = "<group>"; };
+		D899ECA518AC696E004F45A8 /* worldvision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldvision.png; sourceTree = "<group>"; };
+		D899ECAC18AC7367004F45A8 /* bottomsunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottomsunrise.png; path = ../Momentum/bottomsunrise.png; sourceTree = "<group>"; };
+		D899ECAD18AC7367004F45A8 /* bottomTour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottomTour.png; path = ../Momentum/bottomTour.png; sourceTree = "<group>"; };
+		D899ECAE18AC7367004F45A8 /* BottomWalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BottomWalk.png; path = ../Momentum/BottomWalk.png; sourceTree = "<group>"; };
 		D8AE52FD189B07E80059D0C1 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
 		D8AE5399189F125F0059D0C1 /* AuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
 		D8AE539A189F125F0059D0C1 /* AuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthService.m; sourceTree = "<group>"; };
 		D8AE539C189F21640059D0C1 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		D8AE539D189F21640059D0C1 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		D8AE539F189F22C60059D0C1 /* KeychainConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainConstants.h; sourceTree = "<group>"; };
-		D8AE53A2189F52260059D0C1 /* FacebookSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookSingleton.h; sourceTree = "<group>"; };
-		D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSingleton.m; sourceTree = "<group>"; };
 		D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		D8C33E4718ACD491003A9876 /* NavBar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar2.png; sourceTree = "<group>"; };
+		D8C33E4918AD7DE2003A9876 /* adidaslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adidaslogo.png; sourceTree = "<group>"; };
+		D8C33E4B18AD864D003A9876 /* bottomoxfam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomoxfam.png; sourceTree = "<group>"; };
+		D8C33E4C18AD864D003A9876 /* bottomPaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomPaw.png; sourceTree = "<group>"; };
+		D8C33E4D18AD864D003A9876 /* bottomsurflifesaving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomsurflifesaving.png; sourceTree = "<group>"; };
+		D8C33E4E18AD864D003A9876 /* bottomWorldVision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomWorldVision.png; sourceTree = "<group>"; };
+		D8C33E5318AD871C003A9876 /* CoreDataSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataSingleton.h; sourceTree = "<group>"; };
+		D8C33E5418AD871C003A9876 /* CoreDataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataSingleton.m; sourceTree = "<group>"; };
+		D8C33E8F18B19ECB003A9876 /* GroupChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChallenge.h; sourceTree = "<group>"; };
+		D8C33E9018B19ECB003A9876 /* GroupChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChallenge.m; sourceTree = "<group>"; };
+		D8C33E9218B19ECB003A9876 /* Milestones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestones.h; sourceTree = "<group>"; };
+		D8C33E9318B19ECB003A9876 /* Milestones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestones.m; sourceTree = "<group>"; };
+		D8C33E9518B19ECB003A9876 /* Reward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reward.h; sourceTree = "<group>"; };
+		D8C33E9618B19ECB003A9876 /* Reward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reward.m; sourceTree = "<group>"; };
+		D8C33E9E18B19ECC003A9876 /* GroupWalkingChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWalkingChallenge.h; sourceTree = "<group>"; };
+		D8C33E9F18B19ECC003A9876 /* GroupWalkingChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWalkingChallenge.m; sourceTree = "<group>"; };
+		D8C33EA118B19ECC003A9876 /* GroupRunningChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupRunningChallenge.h; sourceTree = "<group>"; };
+		D8C33EA218B19ECC003A9876 /* GroupRunningChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupRunningChallenge.m; sourceTree = "<group>"; };
+		D8C33EA718B19ECC003A9876 /* GroupCyclingChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupCyclingChallenge.h; sourceTree = "<group>"; };
+		D8C33EA818B19ECC003A9876 /* GroupCyclingChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupCyclingChallenge.m; sourceTree = "<group>"; };
+		D8C33EB318B19EEB003A9876 /* Sponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sponsor.h; sourceTree = "<group>"; };
+		D8C33EB418B19EEB003A9876 /* Sponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sponsor.m; sourceTree = "<group>"; };
 		D8F084CE188F2B1600A1DF2D /* ExternalLoginAndRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalLoginAndRegister.h; sourceTree = "<group>"; };
 		D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalLoginAndRegister.m; sourceTree = "<group>"; };
 		D8F084D2188F517400A1DF2D /* Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Moon.png; path = ../Moon.png; sourceTree = "<group>"; };
@@ -183,8 +574,6 @@
 		D8F084DA188F5B3100A1DF2D /* ChallengeWord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengeWord.png; sourceTree = "<group>"; };
 		D8F084DB188F5B3100A1DF2D /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar.png; sourceTree = "<group>"; };
 		D8F084DE188F65FE00A1DF2D /* MoonWalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoonWalk.png; sourceTree = "<group>"; };
-		D8F084E0188F68E700A1DF2D /* ChallengePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengePageController.h; sourceTree = "<group>"; };
-		D8F084E1188F68E700A1DF2D /* ChallengePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengePageController.m; sourceTree = "<group>"; };
 		D8F084E3188F748900A1DF2D /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		D8F084E4188F748900A1DF2D /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		D8F084E6188F798900A1DF2D /* SignInOrRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInOrRegisterController.h; sourceTree = "<group>"; };
@@ -286,6 +675,12 @@
 		D849FE8B187E28B500206CA9 /* Momentum */ = {
 			isa = PBXGroup;
 			children = (
+				D88AE16D18B98CC6008045FB /* MomentumDocs */,
+				D8AE5399189F125F0059D0C1 /* AuthService.h */,
+				D8AE539A189F125F0059D0C1 /* AuthService.m */,
+				D8C33E5318AD871C003A9876 /* CoreDataSingleton.h */,
+				D8C33E5418AD871C003A9876 /* CoreDataSingleton.m */,
+				D88C331418B69AB300162113 /* Results Page */,
 				D849FEE7187F8C2A00206CA9 /* Challenge Pages */,
 				D8FEC50F188497060035EDF1 /* CoreMotionTest */,
 				D8610804188DF5A8004416E6 /* Splash Screen And Login Logic */,
@@ -340,9 +735,13 @@
 		D849FEBE187E2A9900206CA9 /* app hannah */ = {
 			isa = PBXGroup;
 			children = (
-				D8F39A9F18A305E5000FB29F /* waitakere.jpg */,
-				D8F39AA018A305E5000FB29F /* tourdefrance.png */,
-				D8F39AA118A305E5000FB29F /* riseandshine.png */,
+				D88C330818B5C6CE00162113 /* results3.png */,
+				D88C330918B5C6CE00162113 /* results2.png */,
+				D88C330A18B5C6CE00162113 /* results1.png */,
+				D8C33E4918AD7DE2003A9876 /* adidaslogo.png */,
+				D8C33E4718ACD491003A9876 /* NavBar2.png */,
+				D899ECAB18AC69A2004F45A8 /* Challenges */,
+				D899ECAA18AC6973004F45A8 /* Charities */,
 				D8AE53A9189FA94C0059D0C1 /* LaunchImage.png */,
 				D8F084F11890B7AA00A1DF2D /* AppLogo.png */,
 				D8F084DE188F65FE00A1DF2D /* MoonWalk.png */,
@@ -371,9 +770,8 @@
 		D849FEE7187F8C2A00206CA9 /* Challenge Pages */ = {
 			isa = PBXGroup;
 			children = (
+				D899EC9918AC604F004F45A8 /* CharityList */,
 				D8F084F31891D31E00A1DF2D /* ChallengeList */,
-				D8F084E0188F68E700A1DF2D /* ChallengePageController.h */,
-				D8F084E1188F68E700A1DF2D /* ChallengePageController.m */,
 				D8F084FA1891D4A300A1DF2D /* Navigation Controller */,
 			);
 			name = "Challenge Pages";
@@ -382,8 +780,6 @@
 		D8610804188DF5A8004416E6 /* Splash Screen And Login Logic */ = {
 			isa = PBXGroup;
 			children = (
-				D8AE53A2189F52260059D0C1 /* FacebookSingleton.h */,
-				D8AE53A3189F52260059D0C1 /* FacebookSingleton.m */,
 				D8F084CE188F2B1600A1DF2D /* ExternalLoginAndRegister.h */,
 				D8F084CF188F2B1600A1DF2D /* ExternalLoginAndRegister.m */,
 				D849FEBB187E2A5A00206CA9 /* SplashScreen.h */,
@@ -393,10 +789,345 @@
 			name = "Splash Screen And Login Logic";
 			sourceTree = "<group>";
 		};
+		D88AE16D18B98CC6008045FB /* MomentumDocs */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE16E18B98CC6008045FB /* docset */,
+				D88AE1D618B98CC6008045FB /* docset-installed.txt */,
+				D88AE1D718B98CC6008045FB /* html */,
+			);
+			path = MomentumDocs;
+			sourceTree = SOURCE_ROOT;
+		};
+		D88AE16E18B98CC6008045FB /* docset */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE16F18B98CC6008045FB /* Contents */,
+			);
+			path = docset;
+			sourceTree = "<group>";
+		};
+		D88AE16F18B98CC6008045FB /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE17018B98CC6008045FB /* Info.plist */,
+				D88AE17118B98CC6008045FB /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		D88AE17118B98CC6008045FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE17218B98CC6008045FB /* docSet.dsidx */,
+				D88AE17318B98CC6008045FB /* docSet.dsidx-shm */,
+				D88AE17418B98CC6008045FB /* docSet.dsidx-wal */,
+				D88AE17518B98CC6008045FB /* docSet.mom */,
+				D88AE17618B98CC6008045FB /* docSet.skidx */,
+				D88AE17718B98CC6008045FB /* docSet.toc */,
+				D88AE17818B98CC6008045FB /* docSet.tokencache */,
+				D88AE17918B98CC6008045FB /* Documents */,
+				D88AE1AE18B98CC6008045FB /* Nodes.xml */,
+				D88AE1AF18B98CC6008045FB /* Tokens1.xml */,
+				D88AE1B018B98CC6008045FB /* Tokens10.xml */,
+				D88AE1B118B98CC6008045FB /* Tokens11.xml */,
+				D88AE1B218B98CC6008045FB /* Tokens12.xml */,
+				D88AE1B318B98CC6008045FB /* Tokens13.xml */,
+				D88AE1B418B98CC6008045FB /* Tokens14.xml */,
+				D88AE1B518B98CC6008045FB /* Tokens15.xml */,
+				D88AE1B618B98CC6008045FB /* Tokens16.xml */,
+				D88AE1B718B98CC6008045FB /* Tokens17.xml */,
+				D88AE1B818B98CC6008045FB /* Tokens18.xml */,
+				D88AE1B918B98CC6008045FB /* Tokens19.xml */,
+				D88AE1BA18B98CC6008045FB /* Tokens2.xml */,
+				D88AE1BB18B98CC6008045FB /* Tokens20.xml */,
+				D88AE1BC18B98CC6008045FB /* Tokens21.xml */,
+				D88AE1BD18B98CC6008045FB /* Tokens22.xml */,
+				D88AE1BE18B98CC6008045FB /* Tokens23.xml */,
+				D88AE1BF18B98CC6008045FB /* Tokens24.xml */,
+				D88AE1C018B98CC6008045FB /* Tokens25.xml */,
+				D88AE1C118B98CC6008045FB /* Tokens26.xml */,
+				D88AE1C218B98CC6008045FB /* Tokens27.xml */,
+				D88AE1C318B98CC6008045FB /* Tokens28.xml */,
+				D88AE1C418B98CC6008045FB /* Tokens29.xml */,
+				D88AE1C518B98CC6008045FB /* Tokens3.xml */,
+				D88AE1C618B98CC6008045FB /* Tokens30.xml */,
+				D88AE1C718B98CC6008045FB /* Tokens31.xml */,
+				D88AE1C818B98CC6008045FB /* Tokens32.xml */,
+				D88AE1C918B98CC6008045FB /* Tokens33.xml */,
+				D88AE1CA18B98CC6008045FB /* Tokens34.xml */,
+				D88AE1CB18B98CC6008045FB /* Tokens35.xml */,
+				D88AE1CC18B98CC6008045FB /* Tokens36.xml */,
+				D88AE1CD18B98CC6008045FB /* Tokens37.xml */,
+				D88AE1CE18B98CC6008045FB /* Tokens38.xml */,
+				D88AE1CF18B98CC6008045FB /* Tokens39.xml */,
+				D88AE1D018B98CC6008045FB /* Tokens4.xml */,
+				D88AE1D118B98CC6008045FB /* Tokens5.xml */,
+				D88AE1D218B98CC6008045FB /* Tokens6.xml */,
+				D88AE1D318B98CC6008045FB /* Tokens7.xml */,
+				D88AE1D418B98CC6008045FB /* Tokens8.xml */,
+				D88AE1D518B98CC6008045FB /* Tokens9.xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D88AE17918B98CC6008045FB /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE17A18B98CC6008045FB /* Classes */,
+				D88AE19F18B98CC6008045FB /* css */,
+				D88AE1A218B98CC6008045FB /* hierarchy.html */,
+				D88AE1A318B98CC6008045FB /* img */,
+				D88AE1A918B98CC6008045FB /* index.html */,
+				D88AE1AA18B98CC6008045FB /* Protocols */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		D88AE17A18B98CC6008045FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE17B18B98CC6008045FB /* AbstractChallenge.html */,
+				D88AE17C18B98CC6008045FB /* AuthService.html */,
+				D88AE17D18B98CC6008045FB /* ChallengeCell.html */,
+				D88AE17E18B98CC6008045FB /* ChallengeList.html */,
+				D88AE17F18B98CC6008045FB /* ChallengeNavigationController.html */,
+				D88AE18018B98CC6008045FB /* Charity.html */,
+				D88AE18118B98CC6008045FB /* CharityCell.html */,
+				D88AE18218B98CC6008045FB /* CharityListView.html */,
+				D88AE18318B98CC6008045FB /* CoreDataSingleton.html */,
+				D88AE18418B98CC6008045FB /* CoreMotionTest.html */,
+				D88AE18518B98CC6008045FB /* ExternalLoginAndRegister.html */,
+				D88AE18618B98CC6008045FB /* FBCDAppDelegate.html */,
+				D88AE18718B98CC6008045FB /* GroupChallenge.html */,
+				D88AE18818B98CC6008045FB /* GroupCyclingChallenge.html */,
+				D88AE18918B98CC6008045FB /* GroupRunningChallenge.html */,
+				D88AE18A18B98CC6008045FB /* GroupWalkingChallenge.html */,
+				D88AE18B18B98CC6008045FB /* KeychainWrapper.html */,
+				D88AE18C18B98CC6008045FB /* LoginController.html */,
+				D88AE18D18B98CC6008045FB /* Milestones.html */,
+				D88AE18E18B98CC6008045FB /* RegisterController.html */,
+				D88AE18F18B98CC6008045FB /* RegisterScrollView.html */,
+				D88AE19018B98CC6008045FB /* RegisterViewContainer.html */,
+				D88AE19118B98CC6008045FB /* ResultsTest.html */,
+				D88AE19218B98CC6008045FB /* ResultsViewController.html */,
+				D88AE19318B98CC6008045FB /* Reward.html */,
+				D88AE19418B98CC6008045FB /* SignInOrRegisterController.html */,
+				D88AE19518B98CC6008045FB /* SignInRegisterView.html */,
+				D88AE19618B98CC6008045FB /* SignInView.html */,
+				D88AE19718B98CC6008045FB /* SoloChallenge.html */,
+				D88AE19818B98CC6008045FB /* SoloCyclingChallenge.html */,
+				D88AE19918B98CC6008045FB /* SoloRunningChallenge.html */,
+				D88AE19A18B98CC6008045FB /* SoloWalkingChallenge.html */,
+				D88AE19B18B98CC6008045FB /* SplashScreen.html */,
+				D88AE19C18B98CC6008045FB /* SplashToFirstViewSegue.html */,
+				D88AE19D18B98CC6008045FB /* Sponsor.html */,
+				D88AE19E18B98CC6008045FB /* User.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D88AE19F18B98CC6008045FB /* css */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1A018B98CC6008045FB /* styles.css */,
+				D88AE1A118B98CC6008045FB /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		D88AE1A318B98CC6008045FB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1A418B98CC6008045FB /* button_bar_background.png */,
+				D88AE1A518B98CC6008045FB /* disclosure.png */,
+				D88AE1A618B98CC6008045FB /* disclosure_open.png */,
+				D88AE1A718B98CC6008045FB /* library_background.png */,
+				D88AE1A818B98CC6008045FB /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		D88AE1AA18B98CC6008045FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1AB18B98CC6008045FB /* LoginControllerDelegate.html */,
+				D88AE1AC18B98CC6008045FB /* RegisterControllerDelegate.html */,
+				D88AE1AD18B98CC6008045FB /* SignUpOrRegisterDelegate.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D88AE1D718B98CC6008045FB /* html */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1D818B98CC6008045FB /* Classes */,
+				D88AE1FD18B98CC6008045FB /* css */,
+				D88AE20018B98CC6008045FB /* hierarchy.html */,
+				D88AE20118B98CC6008045FB /* img */,
+				D88AE20718B98CC6008045FB /* index.html */,
+				D88AE20818B98CC6008045FB /* Protocols */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		D88AE1D818B98CC6008045FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1D918B98CC6008045FB /* AbstractChallenge.html */,
+				D88AE1DA18B98CC6008045FB /* AuthService.html */,
+				D88AE1DB18B98CC6008045FB /* ChallengeCell.html */,
+				D88AE1DC18B98CC6008045FB /* ChallengeList.html */,
+				D88AE1DD18B98CC6008045FB /* ChallengeNavigationController.html */,
+				D88AE1DE18B98CC6008045FB /* Charity.html */,
+				D88AE1DF18B98CC6008045FB /* CharityCell.html */,
+				D88AE1E018B98CC6008045FB /* CharityListView.html */,
+				D88AE1E118B98CC6008045FB /* CoreDataSingleton.html */,
+				D88AE1E218B98CC6008045FB /* CoreMotionTest.html */,
+				D88AE1E318B98CC6008045FB /* ExternalLoginAndRegister.html */,
+				D88AE1E418B98CC6008045FB /* FBCDAppDelegate.html */,
+				D88AE1E518B98CC6008045FB /* GroupChallenge.html */,
+				D88AE1E618B98CC6008045FB /* GroupCyclingChallenge.html */,
+				D88AE1E718B98CC6008045FB /* GroupRunningChallenge.html */,
+				D88AE1E818B98CC6008045FB /* GroupWalkingChallenge.html */,
+				D88AE1E918B98CC6008045FB /* KeychainWrapper.html */,
+				D88AE1EA18B98CC6008045FB /* LoginController.html */,
+				D88AE1EB18B98CC6008045FB /* Milestones.html */,
+				D88AE1EC18B98CC6008045FB /* RegisterController.html */,
+				D88AE1ED18B98CC6008045FB /* RegisterScrollView.html */,
+				D88AE1EE18B98CC6008045FB /* RegisterViewContainer.html */,
+				D88AE1EF18B98CC6008045FB /* ResultsTest.html */,
+				D88AE1F018B98CC6008045FB /* ResultsViewController.html */,
+				D88AE1F118B98CC6008045FB /* Reward.html */,
+				D88AE1F218B98CC6008045FB /* SignInOrRegisterController.html */,
+				D88AE1F318B98CC6008045FB /* SignInRegisterView.html */,
+				D88AE1F418B98CC6008045FB /* SignInView.html */,
+				D88AE1F518B98CC6008045FB /* SoloChallenge.html */,
+				D88AE1F618B98CC6008045FB /* SoloCyclingChallenge.html */,
+				D88AE1F718B98CC6008045FB /* SoloRunningChallenge.html */,
+				D88AE1F818B98CC6008045FB /* SoloWalkingChallenge.html */,
+				D88AE1F918B98CC6008045FB /* SplashScreen.html */,
+				D88AE1FA18B98CC6008045FB /* SplashToFirstViewSegue.html */,
+				D88AE1FB18B98CC6008045FB /* Sponsor.html */,
+				D88AE1FC18B98CC6008045FB /* User.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D88AE1FD18B98CC6008045FB /* css */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE1FE18B98CC6008045FB /* styles.css */,
+				D88AE1FF18B98CC6008045FB /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		D88AE20118B98CC6008045FB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE20218B98CC6008045FB /* button_bar_background.png */,
+				D88AE20318B98CC6008045FB /* disclosure.png */,
+				D88AE20418B98CC6008045FB /* disclosure_open.png */,
+				D88AE20518B98CC6008045FB /* library_background.png */,
+				D88AE20618B98CC6008045FB /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		D88AE20818B98CC6008045FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D88AE20918B98CC6008045FB /* LoginControllerDelegate.html */,
+				D88AE20A18B98CC6008045FB /* RegisterControllerDelegate.html */,
+				D88AE20B18B98CC6008045FB /* SignUpOrRegisterDelegate.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D88C331418B69AB300162113 /* Results Page */ = {
+			isa = PBXGroup;
+			children = (
+				D88C331518B69B2D00162113 /* ResultsViewController.h */,
+				D88C331618B69B2D00162113 /* ResultsViewController.m */,
+				D88C331818B6A05D00162113 /* ResultsTest.h */,
+				D88C331918B6A05D00162113 /* ResultsTest.m */,
+			);
+			name = "Results Page";
+			sourceTree = "<group>";
+		};
+		D899EC9918AC604F004F45A8 /* CharityList */ = {
+			isa = PBXGroup;
+			children = (
+				D899EC9D18AC622B004F45A8 /* CharityListView.h */,
+				D899EC9E18AC622B004F45A8 /* CharityListView.m */,
+				D899EC9A18AC61F8004F45A8 /* CharityCell.h */,
+				D899EC9B18AC61F8004F45A8 /* CharityCell.m */,
+				D899ECA018AC62D8004F45A8 /* CharityCell.xib */,
+			);
+			name = CharityList;
+			sourceTree = "<group>";
+		};
+		D899ECAA18AC6973004F45A8 /* Charities */ = {
+			isa = PBXGroup;
+			children = (
+				D8C33E4B18AD864D003A9876 /* bottomoxfam.png */,
+				D8C33E4C18AD864D003A9876 /* bottomPaw.png */,
+				D8C33E4D18AD864D003A9876 /* bottomsurflifesaving.png */,
+				D8C33E4E18AD864D003A9876 /* bottomWorldVision.png */,
+				D899ECA218AC696E004F45A8 /* Oxfam.png */,
+				D899ECA318AC696E004F45A8 /* PawJustice.png */,
+				D899ECA418AC696E004F45A8 /* surflifesaving.png */,
+				D899ECA518AC696E004F45A8 /* worldvision.png */,
+			);
+			name = Charities;
+			sourceTree = "<group>";
+		};
+		D899ECAB18AC69A2004F45A8 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				D899ECAC18AC7367004F45A8 /* bottomsunrise.png */,
+				D899ECAD18AC7367004F45A8 /* bottomTour.png */,
+				D899ECAE18AC7367004F45A8 /* BottomWalk.png */,
+				D8F39A9F18A305E5000FB29F /* waitakere.jpg */,
+				D8F39AA018A305E5000FB29F /* tourdefrance.png */,
+				D8F39AA118A305E5000FB29F /* riseandshine.png */,
+			);
+			name = Challenges;
+			sourceTree = "<group>";
+		};
 		D8AE5302189B3DF60059D0C1 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
 				D849FE97187E28B500206CA9 /* Momentum.xcdatamodeld */,
+				D88C334718B705DF00162113 /* AbstractChallenge.h */,
+				D88C334818B705DF00162113 /* AbstractChallenge.m */,
+				D88C334418B6FBED00162113 /* Charity.h */,
+				D88C334518B6FBED00162113 /* Charity.m */,
+				D8C33E8F18B19ECB003A9876 /* GroupChallenge.h */,
+				D8C33E9018B19ECB003A9876 /* GroupChallenge.m */,
+				D8C33E9218B19ECB003A9876 /* Milestones.h */,
+				D8C33E9318B19ECB003A9876 /* Milestones.m */,
+				D8C33E9518B19ECB003A9876 /* Reward.h */,
+				D8C33E9618B19ECB003A9876 /* Reward.m */,
+				D8C33E9E18B19ECC003A9876 /* GroupWalkingChallenge.h */,
+				D8C33E9F18B19ECC003A9876 /* GroupWalkingChallenge.m */,
+				D8C33EA118B19ECC003A9876 /* GroupRunningChallenge.h */,
+				D8C33EA218B19ECC003A9876 /* GroupRunningChallenge.m */,
+				D8C33EA718B19ECC003A9876 /* GroupCyclingChallenge.h */,
+				D8C33EA818B19ECC003A9876 /* GroupCyclingChallenge.m */,
+				D88C332F18B6F36E00162113 /* SoloChallenge.h */,
+				D88C333018B6F36E00162113 /* SoloChallenge.m */,
+				D88C333218B6F36F00162113 /* User.h */,
+				D88C333318B6F36F00162113 /* User.m */,
+				D88C333518B6F36F00162113 /* SoloRunningChallenge.h */,
+				D88C333618B6F36F00162113 /* SoloRunningChallenge.m */,
+				D88C333818B6F36F00162113 /* SoloCyclingChallenge.h */,
+				D88C333918B6F36F00162113 /* SoloCyclingChallenge.m */,
+				D88C333E18B6F36F00162113 /* SoloWalkingChallenge.h */,
+				D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */,
+				D8C33EB318B19EEB003A9876 /* Sponsor.h */,
+				D8C33EB418B19EEB003A9876 /* Sponsor.m */,
 			);
 			name = Coredata;
 			sourceTree = "<group>";
@@ -407,8 +1138,6 @@
 				D8AE539F189F22C60059D0C1 /* KeychainConstants.h */,
 				D8AE539D189F21640059D0C1 /* KeychainWrapper.h */,
 				D8AE539C189F21640059D0C1 /* KeychainWrapper.m */,
-				D8AE5399189F125F0059D0C1 /* AuthService.h */,
-				D8AE539A189F125F0059D0C1 /* AuthService.m */,
 				D8F084EE188F8E2A00A1DF2D /* SignInOrRegister */,
 				D8F084EC188F8DE900A1DF2D /* Login */,
 				D8F084ED188F8E0500A1DF2D /* Register */,
@@ -541,6 +1270,7 @@
 				D849FE7C187E28B500206CA9 /* Sources */,
 				D849FE7D187E28B500206CA9 /* Frameworks */,
 				D849FE7E187E28B500206CA9 /* Resources */,
+				D88AE16C18B984AD008045FB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -601,6 +1331,7 @@
 			targets = (
 				D849FE7F187E28B500206CA9 /* Momentum */,
 				D849FE9F187E28B500206CA9 /* MomentumTests */,
+				D88C332118B6CBDF00162113 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -610,60 +1341,222 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C33E5118AD864D003A9876 /* bottomsurflifesaving.png in Resources */,
+				D88AE27F18B98CC6008045FB /* Milestones.html in Resources */,
+				D88AE22F18B98CC6008045FB /* SignInView.html in Resources */,
 				D8AE53AA189FA94D0059D0C1 /* LaunchImage.png in Resources */,
+				D88AE25718B98CC6008045FB /* Tokens26.xml in Resources */,
+				D88AE23B18B98CC6008045FB /* button_bar_background.png in Resources */,
+				D88AE23018B98CC6008045FB /* SoloChallenge.html in Resources */,
 				D86CE09918887C2500EDEA6D /* SignInRegisterView.xib in Resources */,
+				D88AE23218B98CC6008045FB /* SoloRunningChallenge.html in Resources */,
+				D88AE22418B98CC6008045FB /* KeychainWrapper.html in Resources */,
+				D88AE23F18B98CC6008045FB /* title_background.png in Resources */,
+				D88AE25118B98CC6008045FB /* Tokens20.xml in Resources */,
+				D88C330C18B5C6CE00162113 /* results2.png in Resources */,
+				D88AE24018B98CC6008045FB /* index.html in Resources */,
 				D8F9910C18860C9D0064E872 /* Kathmandu white 60px.png in Resources */,
+				D88AE23318B98CC6008045FB /* SoloWalkingChallenge.html in Resources */,
 				D849FEE3187F7E7300206CA9 /* googleline.png in Resources */,
+				D88AE28E18B98CC6008045FB /* SplashToFirstViewSegue.html in Resources */,
+				D88AE21F18B98CC6008045FB /* FBCDAppDelegate.html in Resources */,
+				D88AE21318B98CC6008045FB /* docSet.tokencache in Resources */,
+				D88AE23918B98CC6008045FB /* stylesPrint.css in Resources */,
+				D8C33E4F18AD864D003A9876 /* bottomoxfam.png in Resources */,
+				D88AE27118B98CC6008045FB /* ChallengeNavigationController.html in Resources */,
+				D88AE29418B98CC6008045FB /* button_bar_background.png in Resources */,
+				D88AE25A18B98CC6008045FB /* Tokens29.xml in Resources */,
+				D88AE22D18B98CC6008045FB /* SignInOrRegisterController.html in Resources */,
+				D88AE22918B98CC6008045FB /* RegisterViewContainer.html in Resources */,
+				D88AE27718B98CC6008045FB /* ExternalLoginAndRegister.html in Resources */,
 				D8F084DF188F65FE00A1DF2D /* MoonWalk.png in Resources */,
+				D88AE21918B98CC6008045FB /* Charity.html in Resources */,
+				D88AE28A18B98CC6008045FB /* SoloCyclingChallenge.html in Resources */,
+				D88AE27618B98CC6008045FB /* CoreMotionTest.html in Resources */,
+				D88AE24A18B98CC6008045FB /* Tokens14.xml in Resources */,
+				D88AE22C18B98CC6008045FB /* Reward.html in Resources */,
+				D88AE25618B98CC6008045FB /* Tokens25.xml in Resources */,
+				D88AE24218B98CC6008045FB /* RegisterControllerDelegate.html in Resources */,
+				D899ECA618AC696E004F45A8 /* Oxfam.png in Resources */,
+				D88AE22E18B98CC6008045FB /* SignInRegisterView.html in Resources */,
 				D8F9910B18860C9D0064E872 /* Comvita white 60px.png in Resources */,
+				D88AE23D18B98CC6008045FB /* disclosure_open.png in Resources */,
+				D88AE24B18B98CC6008045FB /* Tokens15.xml in Resources */,
 				D8F99129188633350064E872 /* CyclingWhite.png in Resources */,
+				D88AE29118B98CC6008045FB /* styles.css in Resources */,
+				D88AE23118B98CC6008045FB /* SoloCyclingChallenge.html in Resources */,
 				D8F99122188633350064E872 /* TravelWhite.png in Resources */,
+				D88AE21818B98CC6008045FB /* ChallengeNavigationController.html in Resources */,
 				D86CE08A18872B6500EDEA6D /* BooksWhite.png in Resources */,
+				D88AE22618B98CC6008045FB /* Milestones.html in Resources */,
+				D88AE25018B98CC6008045FB /* Tokens2.xml in Resources */,
+				D88AE28418B98CC6008045FB /* ResultsViewController.html in Resources */,
+				D88AE26118B98CC6008045FB /* Tokens35.xml in Resources */,
+				D88AE28518B98CC6008045FB /* Reward.html in Resources */,
+				D88AE28D18B98CC6008045FB /* SplashScreen.html in Resources */,
 				D849FEEE187F93A600206CA9 /* ChallengeCell.xib in Resources */,
+				D88AE24D18B98CC6008045FB /* Tokens17.xml in Resources */,
 				D8F9910918860C9D0064E872 /* Adidas white 60px.png in Resources */,
+				D88AE27218B98CC6008045FB /* Charity.html in Resources */,
+				D88AE21B18B98CC6008045FB /* CharityListView.html in Resources */,
 				D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */,
 				D8F990E51885DC8C0064E872 /* SignInRegister.png in Resources */,
+				D88AE25818B98CC6008045FB /* Tokens27.xml in Resources */,
 				D8F9911518861C360064E872 /* Grid.png in Resources */,
 				D8F39AA218A305E5000FB29F /* waitakere.jpg in Resources */,
+				D88AE28718B98CC6008045FB /* SignInRegisterView.html in Resources */,
+				D8C33E5018AD864D003A9876 /* bottomPaw.png in Resources */,
 				D86CE08918872B6500EDEA6D /* Books.png in Resources */,
+				D88AE27318B98CC6008045FB /* CharityCell.html in Resources */,
+				D88AE27418B98CC6008045FB /* CharityListView.html in Resources */,
+				D88AE22318B98CC6008045FB /* GroupWalkingChallenge.html in Resources */,
+				D88AE20C18B98CC6008045FB /* Info.plist in Resources */,
 				D8F084D8188F517400A1DF2D /* TourFrance.png in Resources */,
+				D88AE24418B98CC6008045FB /* Nodes.xml in Resources */,
+				D88AE23618B98CC6008045FB /* Sponsor.html in Resources */,
+				D88AE23C18B98CC6008045FB /* disclosure.png in Resources */,
+				D88AE21118B98CC6008045FB /* docSet.skidx in Resources */,
+				D88AE26A18B98CC6008045FB /* Tokens8.xml in Resources */,
+				D88AE21418B98CC6008045FB /* AbstractChallenge.html in Resources */,
+				D88AE28318B98CC6008045FB /* ResultsTest.html in Resources */,
+				D88AE29A18B98CC6008045FB /* LoginControllerDelegate.html in Resources */,
+				D88AE27D18B98CC6008045FB /* KeychainWrapper.html in Resources */,
+				D88AE28018B98CC6008045FB /* RegisterController.html in Resources */,
+				D88AE27918B98CC6008045FB /* GroupChallenge.html in Resources */,
+				D8C33E4A18AD7DE2003A9876 /* adidaslogo.png in Resources */,
 				D849FED1187E2A9900206CA9 /* LogoLarge.png in Resources */,
+				D88AE22718B98CC6008045FB /* RegisterController.html in Resources */,
+				D88AE24F18B98CC6008045FB /* Tokens19.xml in Resources */,
+				D899ECAF18AC7367004F45A8 /* bottomsunrise.png in Resources */,
+				D88AE25B18B98CC6008045FB /* Tokens3.xml in Resources */,
 				D8F084F21890B7AA00A1DF2D /* AppLogo.png in Resources */,
+				D88AE22A18B98CC6008045FB /* ResultsTest.html in Resources */,
+				D88AE28C18B98CC6008045FB /* SoloWalkingChallenge.html in Resources */,
 				D8F084D7188F517400A1DF2D /* Sunrise.png in Resources */,
+				D88AE26418B98CC6008045FB /* Tokens38.xml in Resources */,
+				D88AE21018B98CC6008045FB /* docSet.mom in Resources */,
+				D88C330B18B5C6CE00162113 /* results3.png in Resources */,
+				D88AE27E18B98CC6008045FB /* LoginController.html in Resources */,
+				D88AE23A18B98CC6008045FB /* hierarchy.html in Resources */,
+				D88AE25318B98CC6008045FB /* Tokens22.xml in Resources */,
+				D88AE26D18B98CC6008045FB /* AbstractChallenge.html in Resources */,
+				D88AE24118B98CC6008045FB /* LoginControllerDelegate.html in Resources */,
 				D8F39AA418A305E5000FB29F /* riseandshine.png in Resources */,
+				D88AE27B18B98CC6008045FB /* GroupRunningChallenge.html in Resources */,
 				D8F9910A18860C9D0064E872 /* Burton white 60px.png in Resources */,
 				D86CE08318872B6500EDEA6D /* Snow.png in Resources */,
+				D88AE27C18B98CC6008045FB /* GroupWalkingChallenge.html in Resources */,
 				D8F9910F18860C9D0064E872 /* Pump white 60px.png in Resources */,
 				D8F39AA318A305E5000FB29F /* tourdefrance.png in Resources */,
+				D88AE22118B98CC6008045FB /* GroupCyclingChallenge.html in Resources */,
 				D849FE90187E28B500206CA9 /* InfoPlist.strings in Resources */,
+				D88AE23E18B98CC6008045FB /* library_background.png in Resources */,
+				D88AE21A18B98CC6008045FB /* CharityCell.html in Resources */,
+				D899ECB118AC7367004F45A8 /* BottomWalk.png in Resources */,
+				D88AE26B18B98CC6008045FB /* Tokens9.xml in Resources */,
+				D88AE23418B98CC6008045FB /* SplashScreen.html in Resources */,
 				D8F9911018860C9D0064E872 /* Up&Go white 60px.png in Resources */,
+				D88AE23718B98CC6008045FB /* User.html in Resources */,
 				D849FEE4187F7E7300206CA9 /* googlewhite.png in Resources */,
+				D88AE22B18B98CC6008045FB /* ResultsViewController.html in Resources */,
 				D849FEE1187F7E7300206CA9 /* facebookline.png in Resources */,
 				D849FEE5187F7E7300206CA9 /* linkinline.png in Resources */,
+				D88AE21518B98CC6008045FB /* AuthService.html in Resources */,
+				D88AE29518B98CC6008045FB /* disclosure.png in Resources */,
+				D88AE23818B98CC6008045FB /* styles.css in Resources */,
+				D88AE22818B98CC6008045FB /* RegisterScrollView.html in Resources */,
+				D88AE22218B98CC6008045FB /* GroupRunningChallenge.html in Resources */,
 				D849FEE6187F7E7300206CA9 /* linkinwhite.png in Resources */,
 				D8F084D9188F517400A1DF2D /* WalkWaitakere.png in Resources */,
+				D88AE28F18B98CC6008045FB /* Sponsor.html in Resources */,
+				D88AE28118B98CC6008045FB /* RegisterScrollView.html in Resources */,
+				D88AE21218B98CC6008045FB /* docSet.toc in Resources */,
 				D86CE09018873DCF00EDEA6D /* Arts.png in Resources */,
+				D88AE25918B98CC6008045FB /* Tokens28.xml in Resources */,
+				D88AE28618B98CC6008045FB /* SignInOrRegisterController.html in Resources */,
+				D88AE26818B98CC6008045FB /* Tokens6.xml in Resources */,
+				D88AE26E18B98CC6008045FB /* AuthService.html in Resources */,
+				D88AE22018B98CC6008045FB /* GroupChallenge.html in Resources */,
 				D86CE0A81888CB4200EDEA6D /* SignInView.xib in Resources */,
+				D8C33E5218AD864D003A9876 /* bottomWorldVision.png in Resources */,
+				D88AE25418B98CC6008045FB /* Tokens23.xml in Resources */,
+				D88AE27818B98CC6008045FB /* FBCDAppDelegate.html in Resources */,
 				D8F084DD188F5B3100A1DF2D /* NavBar.png in Resources */,
+				D88AE20D18B98CC6008045FB /* docSet.dsidx in Resources */,
 				D86CE08818872B6500EDEA6D /* FoodWhite.png in Resources */,
+				D88AE20E18B98CC6008045FB /* docSet.dsidx-shm in Resources */,
+				D88AE26018B98CC6008045FB /* Tokens34.xml in Resources */,
+				D899ECB018AC7367004F45A8 /* bottomTour.png in Resources */,
+				D88AE25F18B98CC6008045FB /* Tokens33.xml in Resources */,
+				D899ECA118AC62D8004F45A8 /* CharityCell.xib in Resources */,
+				D88AE21D18B98CC6008045FB /* CoreMotionTest.html in Resources */,
+				D899ECA718AC696E004F45A8 /* PawJustice.png in Resources */,
+				D88AE27A18B98CC6008045FB /* GroupCyclingChallenge.html in Resources */,
+				D88AE21E18B98CC6008045FB /* ExternalLoginAndRegister.html in Resources */,
+				D88AE28918B98CC6008045FB /* SoloChallenge.html in Resources */,
+				D88AE25518B98CC6008045FB /* Tokens24.xml in Resources */,
+				D8C33E4818ACD491003A9876 /* NavBar2.png in Resources */,
+				D88AE26618B98CC6008045FB /* Tokens4.xml in Resources */,
+				D88AE29818B98CC6008045FB /* title_background.png in Resources */,
+				D88AE24618B98CC6008045FB /* Tokens10.xml in Resources */,
+				D88C330D18B5C6CE00162113 /* results1.png in Resources */,
 				D8F9910D18860C9D0064E872 /* Macpac white 60px.png in Resources */,
 				D849FEBA187E290B00206CA9 /* iOSStoryboard.storyboard in Resources */,
 				D86CE08618872B6500EDEA6D /* RunningWhite.png in Resources */,
+				D88AE23518B98CC6008045FB /* SplashToFirstViewSegue.html in Resources */,
 				D849FE9B187E28B500206CA9 /* Images.xcassets in Resources */,
 				D849FECB187E2A9900206CA9 /* BackgroundImageLight.png in Resources */,
+				D88AE29218B98CC6008045FB /* stylesPrint.css in Resources */,
 				D849FEE2187F7E7300206CA9 /* facebookwhite.png in Resources */,
+				D88AE28B18B98CC6008045FB /* SoloRunningChallenge.html in Resources */,
+				D899ECA818AC696E004F45A8 /* surflifesaving.png in Resources */,
+				D88AE21618B98CC6008045FB /* ChallengeCell.html in Resources */,
+				D88AE29C18B98CC6008045FB /* SignUpOrRegisterDelegate.html in Resources */,
+				D88AE20F18B98CC6008045FB /* docSet.dsidx-wal in Resources */,
 				D8F084DC188F5B3100A1DF2D /* ChallengeWord.png in Resources */,
+				D88AE27018B98CC6008045FB /* ChallengeList.html in Resources */,
+				D88AE29018B98CC6008045FB /* User.html in Resources */,
 				D86CE08718872B6500EDEA6D /* Food.png in Resources */,
 				D8F084D6188F517400A1DF2D /* Moon.png in Resources */,
+				D88AE28818B98CC6008045FB /* SignInView.html in Resources */,
 				D8F9910E18860C9D0064E872 /* Nike white 60px.png in Resources */,
+				D899ECA918AC696E004F45A8 /* worldvision.png in Resources */,
+				D88AE25218B98CC6008045FB /* Tokens21.xml in Resources */,
+				D88AE29318B98CC6008045FB /* hierarchy.html in Resources */,
+				D88AE26918B98CC6008045FB /* Tokens7.xml in Resources */,
 				D86CE08D18872B6500EDEA6D /* Apparel.png in Resources */,
+				D88AE26718B98CC6008045FB /* Tokens5.xml in Resources */,
+				D88AE26318B98CC6008045FB /* Tokens37.xml in Resources */,
+				D88AE24C18B98CC6008045FB /* Tokens16.xml in Resources */,
+				D88AE29618B98CC6008045FB /* disclosure_open.png in Resources */,
+				D88AE29718B98CC6008045FB /* library_background.png in Resources */,
+				D88AE24518B98CC6008045FB /* Tokens1.xml in Resources */,
+				D88AE24918B98CC6008045FB /* Tokens13.xml in Resources */,
+				D88AE29B18B98CC6008045FB /* RegisterControllerDelegate.html in Resources */,
+				D88AE29918B98CC6008045FB /* index.html in Resources */,
 				D86CE09118873DCF00EDEA6D /* Travel.png in Resources */,
+				D88AE24818B98CC6008045FB /* Tokens12.xml in Resources */,
 				D8F99124188633350064E872 /* Music.png in Resources */,
+				D88AE24718B98CC6008045FB /* Tokens11.xml in Resources */,
 				D8F99128188633350064E872 /* Cycling.png in Resources */,
+				D88AE24318B98CC6008045FB /* SignUpOrRegisterDelegate.html in Resources */,
+				D88AE21C18B98CC6008045FB /* CoreDataSingleton.html in Resources */,
 				D8F9911118860C9D0064E872 /* Wellington white 60px.png in Resources */,
+				D88AE24E18B98CC6008045FB /* Tokens18.xml in Resources */,
+				D88AE28218B98CC6008045FB /* RegisterViewContainer.html in Resources */,
+				D88AE26C18B98CC6008045FB /* docset-installed.txt in Resources */,
 				D86CE08C18872B6500EDEA6D /* ArtsWhite.png in Resources */,
+				D88AE25D18B98CC6008045FB /* Tokens31.xml in Resources */,
+				D88AE21718B98CC6008045FB /* ChallengeList.html in Resources */,
+				D88AE25C18B98CC6008045FB /* Tokens30.xml in Resources */,
+				D88AE22518B98CC6008045FB /* LoginController.html in Resources */,
 				D86CE08418872B6500EDEA6D /* SnowWhite.png in Resources */,
+				D88AE27518B98CC6008045FB /* CoreDataSingleton.html in Resources */,
+				D88AE26518B98CC6008045FB /* Tokens39.xml in Resources */,
+				D88AE25E18B98CC6008045FB /* Tokens32.xml in Resources */,
+				D88AE26F18B98CC6008045FB /* ChallengeCell.html in Resources */,
 				D8F99125188633350064E872 /* musicWhite.png in Resources */,
+				D88AE26218B98CC6008045FB /* Tokens36.xml in Resources */,
 				D86CE08518872B6500EDEA6D /* Running.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,26 +1571,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D88AE16C18B984AD008045FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Joe\" \\\n--company-id \"Joe\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;\n\ngit add . -A\ngit commit -m \"Update\"\ngit push";
+		};
+		D88C332518B6D03E00162113 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /Users/Joe/Desktop/doxygen/bin/doxygen;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D849FE7C187E28B500206CA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88C333418B6F36F00162113 /* User.m in Sources */,
+				D8C33E5518AD871C003A9876 /* CoreDataSingleton.m in Sources */,
+				D899EC9C18AC61F8004F45A8 /* CharityCell.m in Sources */,
+				D88C331A18B6A05D00162113 /* ResultsTest.m in Sources */,
 				D849FEBD187E2A5A00206CA9 /* SplashScreen.m in Sources */,
+				D88C333A18B6F36F00162113 /* SoloCyclingChallenge.m in Sources */,
+				D88C334618B6FBED00162113 /* Charity.m in Sources */,
 				D849FEEA187F8C6900206CA9 /* ChallengeList.m in Sources */,
 				D849FE99187E28B500206CA9 /* Momentum.xcdatamodeld in Sources */,
+				D8C33EB518B19EEB003A9876 /* Sponsor.m in Sources */,
 				D86CE0AB1888CBAE00EDEA6D /* SignInView.m in Sources */,
+				D8C33E9718B19ECB003A9876 /* Reward.m in Sources */,
+				D88C334918B705DF00162113 /* AbstractChallenge.m in Sources */,
+				D8C33EA918B19ECC003A9876 /* GroupCyclingChallenge.m in Sources */,
+				D88C333718B6F36F00162113 /* SoloRunningChallenge.m in Sources */,
+				D899EC9F18AC622B004F45A8 /* CharityListView.m in Sources */,
 				D86CE09C18887DF400EDEA6D /* SignInRegisterView.m in Sources */,
-				D8F084E2188F68E700A1DF2D /* ChallengePageController.m in Sources */,
+				D88C334018B6F36F00162113 /* SoloWalkingChallenge.m in Sources */,
 				D86CE0A41888A0D100EDEA6D /* RegisterViewContainer.m in Sources */,
-				D8AE53A4189F52260059D0C1 /* FacebookSingleton.m in Sources */,
+				D88C331718B69B2D00162113 /* ResultsViewController.m in Sources */,
 				D8F084F61891D3A000A1DF2D /* ChallengeNavigationController.m in Sources */,
 				D8F084E5188F748900A1DF2D /* LoginController.m in Sources */,
+				D8C33E9118B19ECB003A9876 /* GroupChallenge.m in Sources */,
 				D8F084EB188F826100A1DF2D /* RegisterController.m in Sources */,
 				D849FE92187E28B500206CA9 /* main.m in Sources */,
 				D8F084E8188F798900A1DF2D /* SignInOrRegisterController.m in Sources */,
+				D88C333118B6F36E00162113 /* SoloChallenge.m in Sources */,
 				D849FEF2187F943600206CA9 /* ChallengeCell.m in Sources */,
 				D8FEC50E18848E450035EDF1 /* SplashToFirstViewSegue.m in Sources */,
+				D8C33EA318B19ECC003A9876 /* GroupRunningChallenge.m in Sources */,
+				D8C33EA018B19ECC003A9876 /* GroupWalkingChallenge.m in Sources */,
+				D8C33E9418B19ECB003A9876 /* Milestones.m in Sources */,
 				D8F084D0188F2B1600A1DF2D /* ExternalLoginAndRegister.m in Sources */,
 				D8AE539E189F21640059D0C1 /* KeychainWrapper.m in Sources */,
 				D8AE539B189F125F0059D0C1 /* AuthService.m in Sources */,
@@ -904,6 +1843,20 @@
 			};
 			name = Release;
 		};
+		D88C332318B6CBE000162113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D88C332418B6CBE000162113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -930,6 +1883,15 @@
 			buildConfigurations = (
 				D849FEB6187E28B500206CA9 /* Debug */,
 				D849FEB7187E28B500206CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88C332218B6CBE000162113 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88C332318B6CBE000162113 /* Debug */,
+				D88C332418B6CBE000162113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

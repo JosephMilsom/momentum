@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AuthService.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AuthService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setAuthProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *authProvider</Declaration>
+			
+			
+			<Anchor>//api/name/authProvider</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/authProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *authProvider</Declaration>
+			
+			
+			<Anchor>//api/name/authProvider</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/authProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *authProvider</Declaration>
+			
+			
+			<Anchor>//api/name/authProvider</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AuthService/getInstance</TokenIdentifier>
+			<Abstract type="html">Creates a new static instance(will stay in memory) of authService,
+a singleton implementation. If an instance is already in memory it
+will return that instance. Implemented as a singleton for ease of use
+across multiple classes</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>+ (AuthService *)getInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">reference to current authService</Abstract></ReturnValue>
+			<Anchor>//api/name/getInstance</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/registerAccount:completion:</TokenIdentifier>
+			<Abstract type="html">Handles registering a custom auth account</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)registerAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/registerAccount:completion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/loginAccount:completion:</TokenIdentifier>
+			<Abstract type="html">Logins in a user using their custom auth account</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)loginAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/loginAccount:completion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/testForced401:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Calls a server side method that will by deftault return a 401
+The retry parameter indicates if we should retry it after making the user
+relogin.</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)testForced401:(BOOL)shouldRetry withCompletion:(CompletionWithStringBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/testForced401:withCompletion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/saveAuthInfo</TokenIdentifier>
+			<Abstract type="html">Method that will save authentication info from azure. The method will
+be encrypted into the keychain using an auxillary keychain wrapper
+class. The data encrypted is the data that has been stored inside
+the MSClient; the authentication token and the user id.
+When the information needs to be loaded again, loadAuthdata is
+called which will load the data into the MSClient</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)saveAuthInfo</Declaration>
+			
+			
+			<Anchor>//api/name/saveAuthInfo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/loadAuthInfo</TokenIdentifier>
+			<Abstract type="html">Method that will load the authentication info into the MSClient.
+This is called in the init method of the class</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)loadAuthInfo</Declaration>
+			
+			
+			<Anchor>//api/name/loadAuthInfo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/killAuthInfo</TokenIdentifier>
+			<Abstract type="html">Removes all the authentication info from the keychain. This
+method is used when an error has occurred during authentication
+or if the user wants to log out.</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)killAuthInfo</Declaration>
+			
+			
+			<Anchor>//api/name/killAuthInfo</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/handleRequest:next:response:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)handleRequest:(NSURLRequest *)request next:(MSFilterNextBlock)onNext response:(MSFilterResponseBlock)onResponse</Declaration>
+			
+			
+			<Anchor>//api/name/handleRequest:next:response:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>- (AuthService *)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/logErrorIfNotNil:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>- (void)logErrorIfNotNil:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/logErrorIfNotNil:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/filterResponse:forData:withError:forRequest:onNext:onResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>- (void)filterResponse:(NSHTTPURLResponse *)response forData:(NSData *)data withError:(NSError *)error forRequest:(NSURLRequest *)request onNext:(MSFilterNextBlock)onNext onResponse:(MSFilterResponseBlock)onResponse</Declaration>
+			
+			
+			<Anchor>//api/name/filterResponse:forData:withError:forRequest:onNext:onResponse:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/triggerLogout</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>- (void)triggerLogout</Declaration>
+			
+			
+			<Anchor>//api/name/triggerLogout</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/addQueryStringParamToRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableURLRequest *)addQueryStringParamToRequest:(NSMutableURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/addQueryStringParamToRequest:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setUsersTable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
+			
+			
+			<Anchor>//api/name/usersTable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/usersTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
+			
+			
+			<Anchor>//api/name/usersTable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/usersTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
+			
+			
+			<Anchor>//api/name/usersTable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setShouldRetryAuth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRetryAuth</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRetryAuth</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/shouldRetryAuth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRetryAuth</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRetryAuth</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/shouldRetryAuth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRetryAuth</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRetryAuth</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setKeychainName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *keychainName</Declaration>
+			
+			
+			<Anchor>//api/name/keychainName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/keychainName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *keychainName</Declaration>
+			
+			
+			<Anchor>//api/name/keychainName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/keychainName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *keychainName</Declaration>
+			
+			
+			<Anchor>//api/name/keychainName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setReceivedData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableData *receivedData</Declaration>
+			
+			
+			<Anchor>//api/name/receivedData</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/receivedData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableData *receivedData</Declaration>
+			
+			
+			<Anchor>//api/name/receivedData</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/receivedData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AuthService.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableData *receivedData</Declaration>
+			
+			
+			<Anchor>//api/name/receivedData</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

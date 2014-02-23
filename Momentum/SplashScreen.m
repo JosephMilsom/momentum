@@ -14,6 +14,7 @@
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import "AuthService.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "CoreDataSingleton.h"
 
 @interface SplashScreen ()
 
@@ -30,12 +31,12 @@
 //needs a strong reference, else the controller gets released
 @property (strong, nonatomic) UIViewController *currentController;
 
-
 //custom methods for the ui elements, fancy stuff like
 //fading in views and junk
 -(void) createSignInRegister;
 -(void) animateLogo;
 -(void) removeCurrentControllerFromContainer;
+
 
 
 @end
@@ -51,19 +52,25 @@
     [self.scrollViewContainer addSubview:self.momentumLogo];
     
     AuthService *service = [AuthService getInstance];
+    CoreDataSingleton *coreData = [CoreDataSingleton getInstance];
     
-//    [service killAuthInfo];
-//    [FBSession.activeSession closeAndClearTokenInformation];
-//    [FBSession.activeSession close];
-//    [FBSession setActiveSession:nil];
+    if(coreData.getUserInfo == nil){
+    [coreData deleteUserInfo];
+    [service killAuthInfo];
+    [FBSession.activeSession closeAndClearTokenInformation];
+    [FBSession.activeSession close];
+    [FBSession setActiveSession:nil];
+    }
     
     
     //automatically transition to the next screen if
     //there is an authentication token
-    if(service.client.currentUser.userId){
-        [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
-    }
+    
+     if(service.client.currentUser.userId){
+        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+     }
 }
+
 
 //this is where all the view data logic will be handled, as the view
 //needs to be loaded for this stuff to happened
@@ -192,11 +199,11 @@
 }
 
 -(void) userDidCompleteRegistration:(RegisterController *)registerController{
-    [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
+    [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
 }
 
 -(void) userDidCompleteLogin:(LoginController *)loginController{
-    [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
+    [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
 }
 
 
@@ -206,7 +213,6 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.35];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
     
     self.view.center = CGPointMake(160, 68);
     

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ResultsViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ResultsViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/pageViewController:viewControllerAfterViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController:viewControllerAfterViewController:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/pageViewController:viewControllerBeforeViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController:viewControllerBeforeViewController:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/presentationCountForPageViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController</Declaration>
+			
+			
+			<Anchor>//api/name/presentationCountForPageViewController:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/presentationIndexForPageViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController</Declaration>
+			
+			
+			<Anchor>//api/name/presentationIndexForPageViewController:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/setPageViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIPageViewController *pageViewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/pageViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIPageViewController *pageViewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ResultsViewController/pageViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIPageViewController *pageViewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/setIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/index</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ResultsViewController/index</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/setAuthService:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ResultsViewController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/setCoreData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ResultsViewController/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

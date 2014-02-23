@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CharityCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CharityCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setCellImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
+			
+			
+			<Anchor>//api/name/cellImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/cellImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
+			
+			
+			<Anchor>//api/name/cellImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/cellImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *cellImage</Declaration>
+			
+			
+			<Anchor>//api/name/cellImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setBottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setInformation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/information</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/information</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setCharityTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
+			
+			
+			<Anchor>//api/name/charityTitle</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/charityTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
+			
+			
+			<Anchor>//api/name/charityTitle</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/charityTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *charityTitle</Declaration>
+			
+			
+			<Anchor>//api/name/charityTitle</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setBrandImageLocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/brandImageLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityCell/brandImageLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

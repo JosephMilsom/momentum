@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ChallengeCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ChallengeCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setImageBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *imageBackground</Declaration>
+			
+			
+			<Anchor>//api/name/imageBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/imageBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *imageBackground</Declaration>
+			
+			
+			<Anchor>//api/name/imageBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeCell/imageBackground</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *imageBackground</Declaration>
+			
+			
+			<Anchor>//api/name/imageBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setInformation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/information</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeCell/information</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *information</Declaration>
+			
+			
+			<Anchor>//api/name/information</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setChallengeTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *challengeTitle</Declaration>
+			
+			
+			<Anchor>//api/name/challengeTitle</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/challengeTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *challengeTitle</Declaration>
+			
+			
+			<Anchor>//api/name/challengeTitle</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeCell/challengeTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *challengeTitle</Declaration>
+			
+			
+			<Anchor>//api/name/challengeTitle</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setBrandImageLocation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/brandImageLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeCell/brandImageLocation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *brandImageLocation</Declaration>
+			
+			
+			<Anchor>//api/name/brandImageLocation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setBottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeCell/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

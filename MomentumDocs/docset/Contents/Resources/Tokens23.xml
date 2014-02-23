@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ResultsTest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ResultsTest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/setIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			
+			<Declaration>@property NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/index</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			
+			<Declaration>@property NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ResultsTest/index</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			
+			<Declaration>@property NSInteger index</Declaration>
+			
+			
+			<Anchor>//api/name/index</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/initWithIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.h</DeclaredIn>
+			
+			<Declaration>- (ResultsTest *)initWithIndex:(NSInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/initWithIndex:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ResultsTest/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ResultsTest.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
