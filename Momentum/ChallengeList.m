@@ -60,7 +60,7 @@
     self.authService = [AuthService getInstance];
     self.coreData = [[CoreDataSingleton alloc] init];
     
-//    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
+    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
 //    [self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
     
     //purge any challenges that have no image data,
