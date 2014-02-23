@@ -181,9 +181,9 @@
     self.numberOfRows = self.challengeArray.count;
     self.bottomImage.alpha = 1;
     
-    if(self.challengeArray.count != 0){
-    [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    }
+    //if(self.challengeArray.count != 0){
+    //[self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+   // }
 }
 
 
