@@ -144,6 +144,7 @@
                         cell.imageBackground.alpha = 0;
                         
                         [UIView animateWithDuration:0.3 animations:^{
+                            
                             cell.imageBackground.alpha = 1;
                         }];
                         
@@ -232,9 +233,9 @@
 
 - (IBAction)AcceptChallenge:(id)sender {
     SoloChallenge *s = self.challengeArray[[self.challengeList indexPathForSelectedRow].row];
-    //NSLog(@"%@", s.challengeName);
+
     [self.coreData setCurrentChallenge:s];
-    //temporary transition to the charity page
+
     [self performSegueWithIdentifier:@"ChallengesToCharities" sender:nil];
 }
 @end
