@@ -136,14 +136,14 @@
                             self.bottomImage.alpha = 0;
                         }
                         
-                        [UIView animateWithDuration:0.3 animations:^{
+                        [UIView animateWithDuration:1.3 animations:^{
                             self.bottomImage.alpha = 1;
                         }];
                         
                         ChallengeCell * cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
                         cell.imageBackground.alpha = 0;
                         
-                        [UIView animateWithDuration:0.3 animations:^{
+                        [UIView animateWithDuration:1.3 animations:^{
                             
                             cell.imageBackground.alpha = 1;
                         }];
