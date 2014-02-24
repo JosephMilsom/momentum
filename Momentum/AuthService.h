@@ -43,13 +43,22 @@ typedef void (^CompletionWithIndexBlock) (NSUInteger index);
 +(AuthService*) getInstance;
 
 /**
- * Handles registering a custom auth account
+ *  register an account using azure and get authentication
+ token back using the custom register. Uses a custom REST
+ api
+ *
+ *  @param item       NSDictionary that sends login info to server
+ *  @param completion completion handler for the method
  */
 - (void) registerAccount:(NSDictionary *) item
               completion:(MSAPIBlock) completion;
 
+
 /**
- * Logins in a user using their custom auth account
+ *  Logins in a user using their custom auth account
+ *
+ *  @param item       NSDictionary to hold login credentials to send to the server
+ *  @param completion completion handler
  */
 - (void) loginAccount:(NSDictionary *) item
            completion:(MSAPIBlock) completion;
@@ -73,8 +82,8 @@ typedef void (^CompletionWithIndexBlock) (NSUInteger index);
 - (void)saveAuthInfo;
 
 /**
- * Method that will load the authentication info into the MSClient.
- * This is called in the init method of the class
+ * Method that will load the authentication info into the MSClient from
+ * the data stores in the keychain. This is called in the init method of the class
  */
 - (void)loadAuthInfo;
 

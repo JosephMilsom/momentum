@@ -25,10 +25,6 @@
 
 @interface AuthService()
 
-//this is the authentication table to connect to
-//@property (nonatomic, strong)   MSTable *authTable;
-//this is the users table to connect to
-@property (nonatomic, strong)   MSTable *usersTable;
 @property (nonatomic)           BOOL shouldRetryAuth;
 @property (nonatomic, strong)   NSString *keychainName;
 @property (nonatomic, strong)   NSMutableData *receivedData;
@@ -38,6 +34,10 @@
 
 @implementation AuthService
 
+/**
+ *  Static instance, a singleton implementation for
+ use across multiple classes
+ */
 static AuthService *singletonInstance;
 
 
@@ -47,6 +47,7 @@ static AuthService *singletonInstance;
     }
     return singletonInstance;
 }
+
 
 -(AuthService *) init
 {
@@ -59,17 +60,15 @@ static AuthService *singletonInstance;
         
         self.keychainName = @"keychain";
         [self loadAuthInfo];
-        
-        self.usersTable = [_client tableWithName:@"appuser"];
     }
     
     return self;
 }
 
 #pragma mark register logic
-//register an account using azure and get authentication
-//token back using the custom register. Uses a custom REST
-//api
+
+
+
 - (void) registerAccount:(NSDictionary *) item
               completion:(MSAPIBlock) completion {
     
@@ -84,9 +83,6 @@ static AuthService *singletonInstance;
 }
 
 #pragma mark login logic
-//this is for the custom login. Invokes the
-//custom REST api that will handle the login
-//process
 - (void) loginAccount:(NSDictionary *) item
            completion:(MSAPIBlock) completion {
 
@@ -176,6 +172,7 @@ static AuthService *singletonInstance;
     UINavigationController *navVC = (UINavigationController *)rootVC;
     UIViewController *topVC = navVC.topViewController;
 }
+
 
 
 -(NSMutableURLRequest *)addQueryStringParamToRequest:(NSMutableURLRequest *)request {

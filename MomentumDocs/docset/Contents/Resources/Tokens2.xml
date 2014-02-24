@@ -101,7 +101,12 @@ across multiple classes</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AuthService/registerAccount:completion:</TokenIdentifier>
-			<Abstract type="html">Handles registering a custom auth account</Abstract>
+			<Abstract type="html">*  register an account using azure and get authentication
+token back using the custom register. Uses a custom REST
+api
+*
+*  @param item       NSDictionary that sends login info to server
+*  @param completion completion handler for the method</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>- (void)registerAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
@@ -117,7 +122,15 @@ across multiple classes</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>- (void)loginAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>item</Name>
+					<Abstract type="html">NSDictionary to hold login credentials to send to the server</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/loginAccount:completion:</Anchor>
             <NodeRef refid="2"/>
@@ -156,8 +169,8 @@ called which will load the data into the MSClient</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AuthService/loadAuthInfo</TokenIdentifier>
-			<Abstract type="html">Method that will load the authentication info into the MSClient.
-This is called in the init method of the class</Abstract>
+			<Abstract type="html">Method that will load the authentication info into the MSClient from
+the data stores in the keychain. This is called in the init method of the class</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>- (void)loadAuthInfo</Declaration>
@@ -244,42 +257,6 @@ or if the user wants to log out.</Abstract>
 			
 			
 			<Anchor>//api/name/addQueryStringParamToRequest:</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setUsersTable:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AuthService.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
-			
-			
-			<Anchor>//api/name/usersTable</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AuthService/usersTable</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AuthService.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
-			
-			
-			<Anchor>//api/name/usersTable</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AuthService/usersTable</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AuthService.m</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) MSTable *usersTable</Declaration>
-			
-			
-			<Anchor>//api/name/usersTable</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
