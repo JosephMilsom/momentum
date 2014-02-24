@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/RegisterControllerDelegate.html">
+	<File path="Protocols/SignUpOrRegisterDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/RegisterControllerDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/SignUpOrRegisterDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
             
 			
 			<NodeRef refid="41"/>
@@ -13,62 +13,26 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCancelRegistration:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/SignUpOrRegisterDelegate/userChoseSignIn:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidCancelRegistration:(RegisterController *)registerController</Declaration>
+			<Declaration>- (void)userChoseSignIn:(SignInOrRegisterController *)signUpOrRegister</Declaration>
 			
 			
-			<Anchor>//api/name/userDidCancelRegistration:</Anchor>
+			<Anchor>//api/name/userChoseSignIn:</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidChooseExternalRegistration:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/SignUpOrRegisterDelegate/userChoseRegister:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
 			
-			<Declaration>- (void)userDidChooseExternalRegistration:(RegisterController *)registerController</Declaration>
-			
-			
-			<Anchor>//api/name/userDidChooseExternalRegistration:</Anchor>
-            <NodeRef refid="41"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCompleteRegistration:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
-			
-			<Declaration>- (void)userDidCompleteRegistration:(RegisterController *)registerController</Declaration>
+			<Declaration>- (void)userChoseRegister:(SignInOrRegisterController *)signUpOrRegister</Declaration>
 			
 			
-			<Anchor>//api/name/userDidCompleteRegistration:</Anchor>
-            <NodeRef refid="41"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidSelectTextBox:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
-			
-			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)registerController</Declaration>
-			
-			
-			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
-            <NodeRef refid="41"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/RegisterControllerDelegate/userDidCompleteTextFieldEntry:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterController.h</DeclaredIn>
-			
-			<Declaration>- (void)userDidCompleteTextFieldEntry:(UIViewController *)registerController</Declaration>
-			
-			
-			<Anchor>//api/name/userDidCompleteTextFieldEntry:</Anchor>
+			<Anchor>//api/name/userChoseRegister:</Anchor>
             <NodeRef refid="41"/>
 		</Token>
 		

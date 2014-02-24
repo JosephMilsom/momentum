@@ -1,16 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GroupWalkingChallenge.html">
+	<File path="Classes/LoginController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GroupWalkingChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LoginController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GroupWalkingChallenge.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginController/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/createSignIn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (void)createSignIn</Declaration>
+			
+			
+			<Anchor>//api/name/createSignIn</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/fadeInSignIn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (void)fadeInSignIn</Declaration>
+			
+			
+			<Anchor>//api/name/fadeInSignIn</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/backButtonHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)backButtonHandler:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/backButtonHandler:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/completeLogin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)completeLogin:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/completeLogin:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/facebookLogin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)facebookLogin:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/facebookLogin:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/textFieldShouldBeginEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldBeginEditing:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/touchesBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setSignInContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
+			
+			
+			<Anchor>//api/name/signInContainer</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/signInContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
+			
+			
+			<Anchor>//api/name/signInContainer</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginController/signInContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
+			
+			
+			<Anchor>//api/name/signInContainer</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setAuthService:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LoginController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
 		
         
 	</File>

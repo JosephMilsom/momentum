@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/LoginController.html">
+	<File path="Classes/Pedometer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/LoginController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/Pedometer</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Pedometer.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -13,230 +13,134 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setDelegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/startPedometer</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Pedometer.h</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			<Declaration>- (void)startPedometer</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/startPedometer</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/operationQueue</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			<Declaration>- (NSOperationQueue *)operationQueue</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/operationQueue</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LoginController/delegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/handleSteps</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.h</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>@property (weak, nonatomic) id&lt;LoginControllerDelegate&gt; delegate</Declaration>
+			<Declaration>- (void)handleSteps</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/handleSteps</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/viewDidLoad</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/wakeUp</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>- (void)wakeUp</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/wakeUp</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/viewDidAppear:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/updateSteps</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			<Declaration>- (void)updateSteps</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidAppear:</Anchor>
+			<Anchor>//api/name/updateSteps</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/createSignIn</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/setOperationQueue:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (void)createSignIn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
 			
 			
-			<Anchor>//api/name/createSignIn</Anchor>
+			<Anchor>//api/name/operationQueue</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/fadeInSignIn</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/operationQueue</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (void)fadeInSignIn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
 			
 			
-			<Anchor>//api/name/fadeInSignIn</Anchor>
+			<Anchor>//api/name/operationQueue</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/backButtonHandler:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Pedometer/operationQueue</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)backButtonHandler:(id)sender</Declaration>
+			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
 			
 			
-			<Anchor>//api/name/backButtonHandler:</Anchor>
+			<Anchor>//api/name/operationQueue</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/completeLogin:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/setAccelSamples:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)completeLogin:(id)sender</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
 			
 			
-			<Anchor>//api/name/completeLogin:</Anchor>
+			<Anchor>//api/name/accelSamples</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/facebookLogin:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Pedometer/accelSamples</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (IBAction)facebookLogin:(id)sender</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
 			
 			
-			<Anchor>//api/name/facebookLogin:</Anchor>
+			<Anchor>//api/name/accelSamples</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/textFieldShouldBeginEditing:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Pedometer/accelSamples</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
+			<DeclaredIn>Pedometer.m</DeclaredIn>
 			
-			<Declaration>- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField</Declaration>
-			
-			
-			<Anchor>//api/name/textFieldShouldBeginEditing:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/textFieldShouldReturn:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
 			
 			
-			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/touchesBegan:withEvent:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
-			
-			
-			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setSignInContainer:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
-			
-			
-			<Anchor>//api/name/signInContainer</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/signInContainer</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
-			
-			
-			<Anchor>//api/name/signInContainer</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LoginController/signInContainer</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) SignInView *signInContainer</Declaration>
-			
-			
-			<Anchor>//api/name/signInContainer</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/setAuthService:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
-			
-			
-			<Anchor>//api/name/authService</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LoginController/authService</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
-			
-			
-			<Anchor>//api/name/authService</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LoginController/authService</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LoginController.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
-			
-			
-			<Anchor>//api/name/authService</Anchor>
+			<Anchor>//api/name/accelSamples</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		

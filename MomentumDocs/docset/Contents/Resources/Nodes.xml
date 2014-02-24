@@ -49,7 +49,6 @@
 						<NodeRef refid="36"/>
 						<NodeRef refid="37"/>
 						<NodeRef refid="38"/>
-						<NodeRef refid="39"/>
 						
 					</Subnodes>
 				</Node>
@@ -60,9 +59,9 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="39"/>
 						<NodeRef refid="40"/>
 						<NodeRef refid="41"/>
-						<NodeRef refid="42"/>
 						
 					</Subnodes>
 				</Node>
@@ -398,66 +397,6 @@
             
         </Node>
 		<Node id="11" type="file" documentType="reference">
-            <Name>CoreMotionTest</Name>
-            <Path>Classes/CoreMotionTest.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/CoreMotionTest.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/CoreMotionTest.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/CoreMotionTest.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/CoreMotionTest.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="12" type="file" documentType="reference">
-            <Name>ExternalLoginAndRegister</Name>
-            <Path>Classes/ExternalLoginAndRegister.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/ExternalLoginAndRegister.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/ExternalLoginAndRegister.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/ExternalLoginAndRegister.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="13" type="file" documentType="reference">
             <Name>FBCDAppDelegate</Name>
             <Path>Classes/FBCDAppDelegate.html</Path>
             
@@ -490,7 +429,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>FacebookSingleton</Name>
             <Path>Classes/FacebookSingleton.html</Path>
             
@@ -517,27 +456,27 @@
             </Subnodes>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>GroupChallenge</Name>
             <Path>Classes/GroupChallenge.html</Path>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>GroupCyclingChallenge</Name>
             <Path>Classes/GroupCyclingChallenge.html</Path>
             
         </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>GroupRunningChallenge</Name>
             <Path>Classes/GroupRunningChallenge.html</Path>
             
         </Node>
-		<Node id="18" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>GroupWalkingChallenge</Name>
             <Path>Classes/GroupWalkingChallenge.html</Path>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>KeychainWrapper</Name>
             <Path>Classes/KeychainWrapper.html</Path>
             
@@ -564,7 +503,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>LoginController</Name>
             <Path>Classes/LoginController.html</Path>
             
@@ -597,7 +536,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="19" type="file" documentType="reference">
             <Name>Milestones</Name>
             <Path>Classes/Milestones.html</Path>
             
@@ -624,7 +563,40 @@
             </Subnodes>
             
         </Node>
-		<Node id="22" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
+            <Name>Pedometer</Name>
+            <Path>Classes/Pedometer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Pedometer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Pedometer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Pedometer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/Pedometer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
             <Name>RegisterController</Name>
             <Path>Classes/RegisterController.html</Path>
             
@@ -657,7 +629,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>RegisterScrollView</Name>
             <Path>Classes/RegisterScrollView.html</Path>
             
@@ -690,7 +662,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>RegisterViewContainer</Name>
             <Path>Classes/RegisterViewContainer.html</Path>
             
@@ -723,24 +695,24 @@
             </Subnodes>
             
         </Node>
-		<Node id="25" type="file" documentType="reference">
-            <Name>ResultsTest</Name>
-            <Path>Classes/ResultsTest.html</Path>
+		<Node id="24" type="file" documentType="reference">
+            <Name>ResultsMilestoneProgress</Name>
+            <Path>Classes/ResultsMilestoneProgress.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Classes/ResultsTest.html</Path>
+                    <Path>Classes/ResultsMilestoneProgress.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Classes/ResultsTest.html</Path>
+                    <Path>Classes/ResultsMilestoneProgress.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
                 
                 <Node type="section">
-                    <Path>Classes/ResultsTest.html</Path>
+                    <Path>Classes/ResultsMilestoneProgress.html</Path>
                     <Name>Properties</Name>
                     <Anchor>properties</Anchor>
                 </Node>
@@ -748,7 +720,7 @@
                 
                 
                 <Node type="section">
-                    <Path>Classes/ResultsTest.html</Path>
+                    <Path>Classes/ResultsMilestoneProgress.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>
@@ -756,7 +728,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>ResultsViewController</Name>
             <Path>Classes/ResultsViewController.html</Path>
             
@@ -789,7 +761,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>Reward</Name>
             <Path>Classes/Reward.html</Path>
             
@@ -822,7 +794,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>SignInOrRegisterController</Name>
             <Path>Classes/SignInOrRegisterController.html</Path>
             
@@ -855,7 +827,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="29" type="file" documentType="reference">
+		<Node id="28" type="file" documentType="reference">
             <Name>SignInRegisterView</Name>
             <Path>Classes/SignInRegisterView.html</Path>
             
@@ -882,7 +854,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="30" type="file" documentType="reference">
+		<Node id="29" type="file" documentType="reference">
             <Name>SignInView</Name>
             <Path>Classes/SignInView.html</Path>
             
@@ -915,27 +887,27 @@
             </Subnodes>
             
         </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>SoloChallenge</Name>
             <Path>Classes/SoloChallenge.html</Path>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
             <Name>SoloCyclingChallenge</Name>
             <Path>Classes/SoloCyclingChallenge.html</Path>
             
         </Node>
-		<Node id="33" type="file" documentType="reference">
+		<Node id="32" type="file" documentType="reference">
             <Name>SoloRunningChallenge</Name>
             <Path>Classes/SoloRunningChallenge.html</Path>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>SoloWalkingChallenge</Name>
             <Path>Classes/SoloWalkingChallenge.html</Path>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>SplashScreen</Name>
             <Path>Classes/SplashScreen.html</Path>
             
@@ -968,7 +940,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="35" type="file" documentType="reference">
             <Name>SplashToFirstViewSegue</Name>
             <Path>Classes/SplashToFirstViewSegue.html</Path>
             
@@ -995,7 +967,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="37" type="file" documentType="reference">
+		<Node id="36" type="file" documentType="reference">
             <Name>Sponsor</Name>
             <Path>Classes/Sponsor.html</Path>
             
@@ -1028,7 +1000,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="38" type="file" documentType="reference">
+		<Node id="37" type="file" documentType="reference">
             <Name>UpdateHandler</Name>
             <Path>Classes/UpdateHandler.html</Path>
             
@@ -1061,7 +1033,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="39" type="file" documentType="reference">
+		<Node id="38" type="file" documentType="reference">
             <Name>User</Name>
             <Path>Classes/User.html</Path>
             
@@ -1090,7 +1062,7 @@
         </Node>
 		
 		
-        <Node id="40" type="file" documentType="reference">
+        <Node id="39" type="file" documentType="reference">
             <Name>LoginControllerDelegate</Name>
             <Path>Protocols/LoginControllerDelegate.html</Path>
             
@@ -1117,7 +1089,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="41" type="file" documentType="reference">
+		<Node id="40" type="file" documentType="reference">
             <Name>RegisterControllerDelegate</Name>
             <Path>Protocols/RegisterControllerDelegate.html</Path>
             
@@ -1144,7 +1116,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="42" type="file" documentType="reference">
+		<Node id="41" type="file" documentType="reference">
             <Name>SignUpOrRegisterDelegate</Name>
             <Path>Protocols/SignUpOrRegisterDelegate.html</Path>
             

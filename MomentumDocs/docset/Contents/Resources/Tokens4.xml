@@ -97,6 +97,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/AcceptChallenge:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>ChallengeList.m</DeclaredIn>
@@ -501,6 +513,42 @@
 			
 			
 			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setCurrentChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *currentChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/currentChallenge</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/currentChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *currentChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/currentChallenge</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/currentChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *currentChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/currentChallenge</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SignInRegisterView.html">
+	<File path="Classes/SignInView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SignInRegisterView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SignInView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SignInRegisterView.h</DeclaredIn>
+			<DeclaredIn>SignInView.h</DeclaredIn>
             
 			
 			<NodeRef refid="29"/>
@@ -13,9 +13,93 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SignInRegisterView/initWithFrame:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/setEmailTextField:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SignInRegisterView.m</DeclaredIn>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SignInView/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/setPasswordTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SignInView/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/initData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.h</DeclaredIn>
+			
+			<Declaration>- (void)initData</Declaration>
+			
+			
+			<Anchor>//api/name/initData</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInView.m</DeclaredIn>
 			
 			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
 			

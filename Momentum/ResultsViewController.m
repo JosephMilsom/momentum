@@ -7,12 +7,13 @@
 //
 
 #import "ResultsViewController.h"
-#import "ResultsTest.h"
+#import "ResultsMilestoneProgress.h"
 #import "AuthService.h"
 #import "CoreDataSingleton.h"
 #import "User.h"
 #import "SoloChallenge.h"
 #import "Charity.h"
+#import "UIImage+animatedGIF.h"
 
 
 @interface ResultsViewController()
@@ -21,6 +22,16 @@
 @property (nonatomic) NSInteger index;
 @property (strong, nonatomic) AuthService *authService;
 @property (strong, nonatomic) CoreDataSingleton *coreData;
+@property (strong, nonatomic) UIStoryboard *layoutStoryboard;
+@property (strong, nonatomic) ResultsMilestoneProgress *results;
+@property (weak, nonatomic) IBOutlet UIImageView *resultsBackground;
+
+//these are test buttons
+@property (weak, nonatomic) IBOutlet UIButton *progressButton;
+@property (weak, nonatomic) IBOutlet UIButton *challengeButton;
+
+
+- (IBAction)soloProgUpdate:(id)sender;
 
 @end
 
@@ -28,18 +39,38 @@
 @implementation ResultsViewController
 
 - (void) viewDidLoad{
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    self.pageViewController.dataSource = self;
-    self.pageViewController.delegate = self;
+    UIImage *img = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://media3.giphy.com/media/kIi56vFHsAlb2/giphy.gif"]];
     
-    NSArray* arr = @[[[ResultsTest alloc] initWithIndex:0]];
+    self.resultsBackground.image = img;
     
-    [self.pageViewController setViewControllers:arr direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    self.layoutStoryboard = [UIStoryboard storyboardWithName:@"ResultsStoryboard" bundle:[NSBundle mainBundle]];
+    self.results = [self.layoutStoryboard instantiateViewControllerWithIdentifier:@"ResultsMilestoneProgress"];
     
-    // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [self addChildViewController:self.results];
+    [self.results didMoveToParentViewController:self];
+    
+    //these are for testing
+    [self.results.view addSubview:self
+     .progressButton];
+    [self.results.view addSubview:self
+     .challengeButton];
+    [self.view addSubview:self.results.view];
     
     self.authService = [AuthService getInstance];
+
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    //this is here as the frame is resized after view did load
+    //else we would have the frame 
+    CGRect frame = self.results.view.frame;
+    frame.size.height = self.view.frame.size.height;
+    self.results.view.frame = frame;
+    
+}
+
+
+- (IBAction)soloProgUpdate:(id)sender {
     CoreDataSingleton *coreData = [[CoreDataSingleton alloc] init];
     
     User*user = [coreData getUserInfo];
@@ -47,64 +78,17 @@
     
     NSLog(@"%@",user.userChallenge.challengeName);
     NSLog(@"%@", user.userChallenge.charity.charityName);
-
-
-//    NSDictionary *dict = @{@"User_idUser" : user.idUser, @"soloChallenge_idsoloChallenge": user.userChallenge.challengeID, @"steps": user.totalSteps, @"walkD": user.totalWalkingDist, @"runD": user.totalRunningDist, @"cycleD": user.totalCyclingDist, @"challengeComplete": @0, @"sChallengeAmountRaised" : user.totalAmountRaised};
-//   
-//    [self.authService.client invokeAPI:@"soloprogressupdate" body:dict HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
-//        if(error){
-//            NSLog(@"%@", [error localizedDescription]);
-//        }
-//        else{
-//            NSLog(@"%@", result);
-//        }
-//    }];
+    NSDictionary *dict = @{@"User_idUser" : user.idUser, @"soloChallenge_idsoloChallenge": user.userChallenge.challengeID, @"steps": @"0", @"walkD": user.totalWalkingDist, @"runD": user.totalRunningDist, @"cycleD": @"200", @"challengeComplete": @"1", @"sChallengeAmountRaised" : @"10"};
+    //user.totalAmountRaised
     
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
-    
+    [self.authService.client invokeAPI:@"soloprogressupdate" body:dict HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
+        if(error){
+            NSLog(@"%@", [error localizedDescription]);
+        }
+        else{
+            NSLog(@"Success");
+            NSLog(@"%@", result);
+        }
+    }];
 }
-
-
--(UIViewController *) pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
-    NSInteger index = ((ResultsTest*)viewController).index;
-    
-    NSLog(@"%ld", (long)index);
-
-    //dont think you need this??
-    if (index == NSNotFound) {
-        return nil;
-    }
-    
-    index++;
-    if (index == 2) {
-        return nil;
-    }
-    return [[ResultsTest alloc] initWithIndex:index];
-}
-
-
--(UIViewController * )pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
-    NSInteger index = ((ResultsTest*)viewController).index;
-
-    NSLog(@"%ld", (long)index);
-    
-    if ((index == 0) || (index == NSNotFound)) {
-        return nil;
-    }
-    index--;
-    return [[ResultsTest alloc] initWithIndex:index];
-}
-
--(NSInteger) presentationCountForPageViewController:(UIPageViewController *)pageViewController{
-    return 2;
-}
-
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
-{
-    return 0;
-}
-
-
 @end

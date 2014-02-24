@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Results Milestone Progress-->
+        <scene sceneID="FwH-RS-XlW">
+            <objects>
+                <viewController storyboardIdentifier="ResultsMilestoneProgress" id="NNZ-Fl-6Zu" customClass="ResultsMilestoneProgress" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4vD-3j-z8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="f4p-kK-Mz8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jj5-Rv-P8r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYo-xa-gRl">
+                                <rect key="frame" x="33" y="137" width="255" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="3yF-lg-Hro"/>
+                                    <constraint firstAttribute="width" constant="255" id="mE4-wD-nQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total steps today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="WYP-6i-bfu">
+                                <rect key="frame" x="63" y="86" width="195" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7hO-ip-Pc4"/>
+                                    <constraint firstAttribute="width" constant="195" id="eCP-qL-XdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current milestone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="j11-Mr-c33">
+                                <rect key="frame" x="20" y="262" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3/7" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-EG-CFV">
+                                <rect key="frame" x="20" y="314" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="kaX-uF-N6c">
+                                <rect key="frame" x="114" y="314" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-vn-KUV">
+                                <rect key="frame" x="214" y="314" width="86" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000 steps challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="8tU-47-xGk">
+                                <rect key="frame" x="20" y="485" width="280" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0SO-be-Toa"/>
+                                    <constraint firstAttribute="width" constant="280" id="YKc-F4-vXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="FU7-Sg-EhH">
+                                <rect key="frame" x="208" y="262" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="TkL-iC-dXA">
+                                <rect key="frame" x="114" y="278" width="92" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adidas.png" translatesAutoresizingMaskIntoConstraints="NO" id="Unh-gp-Zkx">
+                                <rect key="frame" x="135" y="525" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="E79-j7-zND"/>
+                                    <constraint firstAttribute="width" constant="50" id="iTJ-vo-Vv5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icondshoe.png" translatesAutoresizingMaskIntoConstraints="NO" id="uSA-gw-a9S">
+                                <rect key="frame" x="129" y="38" width="63" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kes-Cs-7o1"/>
+                                    <constraint firstAttribute="width" constant="63" id="tUC-Ma-etP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8tU-47-xGk" firstAttribute="leading" secondItem="Jj5-Rv-P8r" secondAttribute="leading" constant="20" id="C4r-wb-JMK"/>
+                            <constraint firstItem="f4p-kK-Mz8" firstAttribute="top" secondItem="8tU-47-xGk" secondAttribute="bottom" constant="51" id="Cmk-hM-Qiq"/>
+                            <constraint firstItem="Unh-gp-Zkx" firstAttribute="top" secondItem="8tU-47-xGk" secondAttribute="bottom" constant="8" id="ERr-al-V5l"/>
+                            <constraint firstItem="uSA-gw-a9S" firstAttribute="leading" secondItem="Jj5-Rv-P8r" secondAttribute="leading" constant="129" id="Jpl-rK-Tp8"/>
+                            <constraint firstItem="gYo-xa-gRl" firstAttribute="top" secondItem="WYP-6i-bfu" secondAttribute="bottom" constant="17" id="K7D-ed-eG0"/>
+                            <constraint firstItem="f4p-kK-Mz8" firstAttribute="top" secondItem="Unh-gp-Zkx" secondAttribute="bottom" constant="8" id="X6P-6y-evM"/>
+                            <constraint firstItem="gYo-xa-gRl" firstAttribute="leading" secondItem="Jj5-Rv-P8r" secondAttribute="leading" constant="33" id="emw-9D-VAZ"/>
+                            <constraint firstItem="WYP-6i-bfu" firstAttribute="top" secondItem="uSA-gw-a9S" secondAttribute="bottom" constant="8" id="ktr-Ti-gO1"/>
+                            <constraint firstItem="uSA-gw-a9S" firstAttribute="top" secondItem="4vD-3j-z8b" secondAttribute="bottom" constant="18" id="ohR-9C-uXn"/>
+                            <constraint firstItem="WYP-6i-bfu" firstAttribute="leading" secondItem="Jj5-Rv-P8r" secondAttribute="leading" constant="63" id="p3p-rT-GR9"/>
+                            <constraint firstItem="Unh-gp-Zkx" firstAttribute="leading" secondItem="Jj5-Rv-P8r" secondAttribute="leading" constant="135" id="rBC-28-gcE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountRaised" destination="kaX-uF-N6c" id="ULc-RA-SP1"/>
+                        <outlet property="challengeName" destination="8tU-47-xGk" id="MfH-IT-LHX"/>
+                        <outlet property="currentMilestone" destination="gxF-EG-CFV" id="kgH-19-xne"/>
+                        <outlet property="currentPercentage" destination="TY3-vn-KUV" id="zQh-Cc-Yr1"/>
+                        <outlet property="progress" destination="gYo-xa-gRl" id="opV-sp-dG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bN0-KP-hgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-299" y="-154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adidas.png" width="332" height="210"/>
+        <image name="icondshoe.png" width="332" height="210"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

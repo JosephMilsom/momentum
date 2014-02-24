@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/User.html">
+	<File path="Protocols/LoginControllerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/User</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/LoginControllerDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
             
 			
 			<NodeRef refid="39"/>
@@ -13,434 +13,50 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setBirthday:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCancelSignIn:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *birthday</Declaration>
+			<Declaration>- (void)userDidCancelSignIn:(LoginController *)loginController</Declaration>
 			
 			
-			<Anchor>//api/name/birthday</Anchor>
+			<Anchor>//api/name/userDidCancelSignIn:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/birthday</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCompleteLogin:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *birthday</Declaration>
+			<Declaration>- (void)userDidCompleteLogin:(LoginController *)loginController</Declaration>
 			
 			
-			<Anchor>//api/name/birthday</Anchor>
+			<Anchor>//api/name/userDidCompleteLogin:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/birthday</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidCompleteTextFieldEntry:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *birthday</Declaration>
+			<Declaration>- (void)userDidCompleteTextFieldEntry:(UIViewController *)loginController</Declaration>
 			
 			
-			<Anchor>//api/name/birthday</Anchor>
+			<Anchor>//api/name/userDidCompleteTextFieldEntry:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setEmailAddress:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/LoginControllerDelegate/userDidSelectTextBox:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *emailAddress</Declaration>
+			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)loginController</Declaration>
 			
 			
-			<Anchor>//api/name/emailAddress</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/emailAddress</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *emailAddress</Declaration>
-			
-			
-			<Anchor>//api/name/emailAddress</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/emailAddress</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *emailAddress</Declaration>
-			
-			
-			<Anchor>//api/name/emailAddress</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setFirstName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *firstName</Declaration>
-			
-			
-			<Anchor>//api/name/firstName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/firstName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *firstName</Declaration>
-			
-			
-			<Anchor>//api/name/firstName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/firstName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *firstName</Declaration>
-			
-			
-			<Anchor>//api/name/firstName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setGender:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *gender</Declaration>
-			
-			
-			<Anchor>//api/name/gender</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/gender</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *gender</Declaration>
-			
-			
-			<Anchor>//api/name/gender</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/gender</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *gender</Declaration>
-			
-			
-			<Anchor>//api/name/gender</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setLastName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/lastName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/lastName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setTotalCyclingDist:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalCyclingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalCyclingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/totalCyclingDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalCyclingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalCyclingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/totalCyclingDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalCyclingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalCyclingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setTotalRunningDist:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalRunningDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalRunningDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/totalRunningDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalRunningDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalRunningDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/totalRunningDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalRunningDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalRunningDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setTotalSteps:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalSteps</Declaration>
-			
-			
-			<Anchor>//api/name/totalSteps</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/totalSteps</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalSteps</Declaration>
-			
-			
-			<Anchor>//api/name/totalSteps</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/totalSteps</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalSteps</Declaration>
-			
-			
-			<Anchor>//api/name/totalSteps</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setTotalWalkingDist:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalWalkingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalWalkingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/totalWalkingDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalWalkingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalWalkingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/totalWalkingDist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalWalkingDist</Declaration>
-			
-			
-			<Anchor>//api/name/totalWalkingDist</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setIdUser:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *idUser</Declaration>
-			
-			
-			<Anchor>//api/name/idUser</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/idUser</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *idUser</Declaration>
-			
-			
-			<Anchor>//api/name/idUser</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/idUser</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *idUser</Declaration>
-			
-			
-			<Anchor>//api/name/idUser</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setTotalAmountRaised:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalAmountRaised</Declaration>
-			
-			
-			<Anchor>//api/name/totalAmountRaised</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/totalAmountRaised</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalAmountRaised</Declaration>
-			
-			
-			<Anchor>//api/name/totalAmountRaised</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/totalAmountRaised</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *totalAmountRaised</Declaration>
-			
-			
-			<Anchor>//api/name/totalAmountRaised</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setUserChallenge:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
-			
-			
-			<Anchor>//api/name/userChallenge</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/userChallenge</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
-			
-			
-			<Anchor>//api/name/userChallenge</Anchor>
-            <NodeRef refid="39"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/userChallenge</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
-			
-			
-			<Anchor>//api/name/userChallenge</Anchor>
+			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		

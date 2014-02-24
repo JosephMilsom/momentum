@@ -19,9 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UINavigationBar *bar = self.navigationBar;
-    [bar setBackgroundImage:[UIImage imageNamed:@"NavBar2.png"] forBarMetrics:UIBarMetricsDefault];
-    self.navigationItem.title = @"CHALLENGES";
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    
+    //self.navigationItem.title = @"CHALLENGES";
     //[bar se];
    
 }

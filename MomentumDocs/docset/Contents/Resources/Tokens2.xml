@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setClient:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AuthService/client</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
@@ -74,7 +74,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/AuthService/client</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
@@ -183,7 +183,13 @@ or if the user wants to log out.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AuthService/handleRequest:next:response:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">*  A method that is automatically invoked whenever there is a
+    request made to the azure service, this method is part of 
+    the MSFilter protocol
+*
+*  @param request    request made to the azure service
+*  @param onNext     onNext
+*  @param onResponse response of the service</Abstract>
 			<DeclaredIn>AuthService.h</DeclaredIn>
 			
 			<Declaration>- (void)handleRequest:(NSURLRequest *)request next:(MSFilterNextBlock)onNext response:(MSFilterResponseBlock)onResponse</Declaration>
@@ -202,18 +208,6 @@ or if the user wants to log out.</Abstract>
 			
 			
 			<Anchor>//api/name/init</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AuthService/logErrorIfNotNil:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AuthService.m</DeclaredIn>
-			
-			<Declaration>- (void)logErrorIfNotNil:(NSError *)error</Declaration>
-			
-			
-			<Anchor>//api/name/logErrorIfNotNil:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Reward.html">
+	<File path="Classes/SignInOrRegisterController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Reward</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SignInOrRegisterController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
             
 			
 			<NodeRef refid="27"/>
@@ -13,86 +13,146 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/setMilestonesLinkedToReward:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/setDelegate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;SignUpOrRegisterDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/milestonesLinkedToReward</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/delegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;SignUpOrRegisterDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Reward/milestonesLinkedToReward</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SignInOrRegisterController/delegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *milestonesLinkedToReward</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;SignUpOrRegisterDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/milestonesLinkedToReward</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/addMilestonesLinkedToRewardObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
 			
-			<Declaration>- (void)addMilestonesLinkedToRewardObject:(Milestones *)value</Declaration>
+			<Declaration>- (void)viewDidLoad</Declaration>
 			
 			
-			<Anchor>//api/name/addMilestonesLinkedToRewardObject:</Anchor>
+			<Anchor>//api/name/viewDidLoad</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/removeMilestonesLinkedToRewardObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/viewDidAppear:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
 			
-			<Declaration>- (void)removeMilestonesLinkedToRewardObject:(Milestones *)value</Declaration>
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/removeMilestonesLinkedToRewardObject:</Anchor>
+			<Anchor>//api/name/viewDidAppear:</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/addMilestonesLinkedToReward:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/signInButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
 			
-			<Declaration>- (void)addMilestonesLinkedToReward:(NSSet *)values</Declaration>
+			<Declaration>- (IBAction)signInButton:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/addMilestonesLinkedToReward:</Anchor>
+			<Anchor>//api/name/signInButton:</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Reward/removeMilestonesLinkedToReward:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/registerButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Reward.h</DeclaredIn>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
 			
-			<Declaration>- (void)removeMilestonesLinkedToReward:(NSSet *)values</Declaration>
+			<Declaration>- (IBAction)registerButton:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/removeMilestonesLinkedToReward:</Anchor>
+			<Anchor>//api/name/registerButton:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/createSignInRegister</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)createSignInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/createSignInRegister</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/fadeInSignInRegister</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)fadeInSignInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/fadeInSignInRegister</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/setSignInRegister:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInRegisterView *signInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegister</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SignInOrRegisterController/signInRegister</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInRegisterView *signInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegister</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SignInOrRegisterController/signInRegister</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SignInOrRegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SignInRegisterView *signInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/signInRegister</Anchor>
             <NodeRef refid="27"/>
 		</Token>
 		

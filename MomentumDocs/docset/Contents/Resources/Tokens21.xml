@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Milestones.html">
+	<File path="Classes/RegisterController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Milestones</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
@@ -13,74 +13,602 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setRewardLinkedToMilestones:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setDelegate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			<Declaration>@property (weak, nonatomic) id&lt;RegisterControllerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Milestones/rewardLinkedToMilestones</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/delegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			<Declaration>@property (weak, nonatomic) id&lt;RegisterControllerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Milestones/rewardLinkedToMilestones</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/delegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) Reward *rewardLinkedToMilestones</Declaration>
+			<Declaration>@property (weak, nonatomic) id&lt;RegisterControllerDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/rewardLinkedToMilestones</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setUserChallenge:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			<Declaration>- (void)viewDidLoad</Declaration>
 			
 			
-			<Anchor>//api/name/userChallenge</Anchor>
+			<Anchor>//api/name/viewDidLoad</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Milestones/userChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/viewDidAppear:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
 			
 			
-			<Anchor>//api/name/userChallenge</Anchor>
+			<Anchor>//api/name/viewDidAppear:</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Milestones/userChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/createRegister</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Milestones.h</DeclaredIn>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) AbstractChallenge *userChallenge</Declaration>
+			<Declaration>- (void)createRegister</Declaration>
 			
 			
-			<Anchor>//api/name/userChallenge</Anchor>
+			<Anchor>//api/name/createRegister</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/fadeInRegister</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)fadeInRegister</Declaration>
+			
+			
+			<Anchor>//api/name/fadeInRegister</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/backButtonHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)backButtonHandler:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/backButtonHandler:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/completeRegistration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)completeRegistration:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/completeRegistration:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/facebookLogin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)facebookLogin:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/facebookLogin:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/loginWithFacebook</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)loginWithFacebook</Declaration>
+			
+			
+			<Anchor>//api/name/loginWithFacebook</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/validateFacebookCredentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)validateFacebookCredentials</Declaration>
+			
+			
+			<Anchor>//api/name/validateFacebookCredentials</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/checkData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)checkData</Declaration>
+			
+			
+			<Anchor>//api/name/checkData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/scrollViewDidScroll:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)scrollViewDidScroll:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewDidScroll:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/textFieldShouldBeginEditing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldBeginEditing:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			
+			
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/singleTapGestureCaptured</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>- (void)singleTapGestureCaptured</Declaration>
+			
+			
+			<Anchor>//api/name/singleTapGestureCaptured</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setRegisterContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) RegisterViewContainer *registerContainer</Declaration>
+			
+			
+			<Anchor>//api/name/registerContainer</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/registerContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) RegisterViewContainer *registerContainer</Declaration>
+			
+			
+			<Anchor>//api/name/registerContainer</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/registerContainer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) RegisterViewContainer *registerContainer</Declaration>
+			
+			
+			<Anchor>//api/name/registerContainer</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setScrollView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/scrollView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/scrollView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setRegistrationData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *registrationData</Declaration>
+			
+			
+			<Anchor>//api/name/registrationData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/registrationData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *registrationData</Declaration>
+			
+			
+			<Anchor>//api/name/registrationData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/registrationData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSMutableArray *registrationData</Declaration>
+			
+			
+			<Anchor>//api/name/registrationData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/email</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/email</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setFirstName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/firstName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/firstName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setLastName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/lastName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/lastName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/password</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/password</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setDim:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dim</Declaration>
+			
+			
+			<Anchor>//api/name/dim</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/dim</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dim</Declaration>
+			
+			
+			<Anchor>//api/name/dim</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/dim</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dim</Declaration>
+			
+			
+			<Anchor>//api/name/dim</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setLoading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/loading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/loading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setCoreData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/setAuthService:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterController/authService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
+			
+			
+			<Anchor>//api/name/authService</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		

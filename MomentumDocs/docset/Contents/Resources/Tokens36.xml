@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SplashToFirstViewSegue.html">
+	<File path="Classes/Sponsor.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SplashToFirstViewSegue</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/Sponsor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SplashToFirstViewSegue.h</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
@@ -13,14 +13,86 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SplashToFirstViewSegue/perform</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/setSponsorsChallenges:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SplashToFirstViewSegue.m</DeclaredIn>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
 			
-			<Declaration>- (void)perform</Declaration>
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
 			
 			
-			<Anchor>//api/name/perform</Anchor>
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			
+			
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			
+			
+			<Anchor>//api/name/sponsorsChallenges</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallengesObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)addSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addSponsorsChallengesObject:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallengesObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)removeSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeSponsorsChallengesObject:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallenges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)addSponsorsChallenges:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addSponsorsChallenges:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallenges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sponsor.h</DeclaredIn>
+			
+			<Declaration>- (void)removeSponsorsChallenges:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeSponsorsChallenges:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		

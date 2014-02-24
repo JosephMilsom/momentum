@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/RegisterScrollView.html">
+	<File path="Classes/RegisterViewContainer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/RegisterScrollView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterViewContainer</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -13,9 +13,153 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/initData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setEmailTextField:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/emailTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
+			
+			
+			<Anchor>//api/name/emailTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setPasswordTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/passwordTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setFirstNameTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/firstNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/firstNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/firstNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLastNameTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/lastNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/lastNameTextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField</Declaration>
+			
+			
+			<Anchor>//api/name/lastNameTextField</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/initData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
 			
 			<Declaration>- (void)initData</Declaration>
 			
@@ -25,9 +169,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/fadeViews:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/fadeViews:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
 			
 			<Declaration>- (void)fadeViews:(UIScrollView *)scrollView</Declaration>
 			
@@ -37,21 +181,21 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/initWithFrame:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/selectButton:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
-			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			<Declaration>- (IBAction)selectButton:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/initWithFrame:</Anchor>
+			<Anchor>//api/name/selectButton:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setFacebook:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setFacebook:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
 			
@@ -61,9 +205,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/facebook</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/facebook</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
 			
@@ -73,9 +217,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/facebook</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/facebook</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *facebook</Declaration>
 			
@@ -85,9 +229,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setGoogle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setGoogle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
 			
@@ -97,9 +241,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/google</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/google</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
 			
@@ -109,9 +253,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/google</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/google</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *google</Declaration>
 			
@@ -121,9 +265,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLinkedin:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLinkedin:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
 			
@@ -133,9 +277,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/linkedin</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/linkedin</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
 			
@@ -145,9 +289,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/linkedin</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/linkedin</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *linkedin</Declaration>
 			
@@ -157,81 +301,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setEmailTextField:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setSignInRegisterLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
-			
-			
-			<Anchor>//api/name/emailTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/emailTextField</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
-			
-			
-			<Anchor>//api/name/emailTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/emailTextField</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *emailTextField</Declaration>
-			
-			
-			<Anchor>//api/name/emailTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setPasswordTextField:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
-			
-			
-			<Anchor>//api/name/passwordTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/passwordTextField</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
-			
-			
-			<Anchor>//api/name/passwordTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/passwordTextField</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextField *passwordTextField</Declaration>
-			
-			
-			<Anchor>//api/name/passwordTextField</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setSignInRegisterLabel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
 			
@@ -241,9 +313,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/signInRegisterLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/signInRegisterLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
 			
@@ -253,9 +325,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/signInRegisterLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/signInRegisterLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *signInRegisterLabel</Declaration>
 			
@@ -265,9 +337,45 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow1:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setBackButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/backButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/backButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow1:</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
@@ -277,9 +385,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow1</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
@@ -289,9 +397,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow1</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
@@ -301,9 +409,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow2:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow2:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
 			
@@ -313,9 +421,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow2</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow2</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
 			
@@ -325,9 +433,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow2</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow2</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow2</Declaration>
 			
@@ -337,9 +445,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow3:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow3:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
 			
@@ -349,9 +457,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow3</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow3</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
 			
@@ -361,9 +469,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow3</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow3</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow3</Declaration>
 			
@@ -373,9 +481,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow1:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow1:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
 			
@@ -385,9 +493,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow1</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
 			
@@ -397,9 +505,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow1</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow1</Declaration>
 			
@@ -409,9 +517,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow2:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow2:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
 			
@@ -421,9 +529,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow2</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow2</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
 			
@@ -433,9 +541,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow2</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow2</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow2</Declaration>
 			
@@ -445,9 +553,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setLabelRow3:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setLabelRow3:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
 			
@@ -457,9 +565,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/labelRow3</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/labelRow3</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
 			
@@ -469,9 +577,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/labelRow3</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/labelRow3</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UILabel ) NSArray *labelRow3</Declaration>
 			
@@ -481,9 +589,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestsLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestsLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
 			
@@ -493,9 +601,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestsLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestsLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
 			
@@ -505,9 +613,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestsLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestsLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *interestsLabel</Declaration>
 			

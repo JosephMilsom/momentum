@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CoreMotionTest.html">
+	<File path="Classes/FBCDAppDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CoreMotionTest</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/FBCDAppDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.h</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -13,218 +13,290 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/operationQueue</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/setWindow:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (NSOperationQueue *)operationQueue</Declaration>
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
 			
 			
-			<Anchor>//api/name/operationQueue</Anchor>
+			<Anchor>//api/name/window</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/viewDidLoad</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/window</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/window</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/handleSteps</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FBCDAppDelegate/window</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (void)handleSteps</Declaration>
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
 			
 			
-			<Anchor>//api/name/handleSteps</Anchor>
+			<Anchor>//api/name/window</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/wakeUp</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/setManagedObjectContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (void)wakeUp</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
 			
 			
-			<Anchor>//api/name/wakeUp</Anchor>
+			<Anchor>//api/name/managedObjectContext</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/updateLabelWithStepCount</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/managedObjectContext</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (void)updateLabelWithStepCount</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
 			
 			
-			<Anchor>//api/name/updateLabelWithStepCount</Anchor>
+			<Anchor>//api/name/managedObjectContext</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/isStepWithNewAvg:oldAvg:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FBCDAppDelegate/managedObjectContext</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isStepWithNewAvg:(float)avg oldAvg:(float)oldAvg</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
 			
 			
-			<Anchor>//api/name/isStepWithNewAvg:oldAvg:</Anchor>
+			<Anchor>//api/name/managedObjectContext</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setStepsCountingLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/setManagedObjectModel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
 			
 			
-			<Anchor>//api/name/stepsCountingLabel</Anchor>
+			<Anchor>//api/name/managedObjectModel</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/stepsCountingLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/managedObjectModel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
 			
 			
-			<Anchor>//api/name/stepsCountingLabel</Anchor>
+			<Anchor>//api/name/managedObjectModel</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/stepsCountingLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FBCDAppDelegate/managedObjectModel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) UILabel *stepsCountingLabel</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
 			
 			
-			<Anchor>//api/name/stepsCountingLabel</Anchor>
+			<Anchor>//api/name/managedObjectModel</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setCmStepCounter:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/setPersistentStoreCoordinator:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
 			
 			
-			<Anchor>//api/name/cmStepCounter</Anchor>
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/cmStepCounter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/persistentStoreCoordinator</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
 			
 			
-			<Anchor>//api/name/cmStepCounter</Anchor>
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/cmStepCounter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FBCDAppDelegate/persistentStoreCoordinator</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) CMStepCounter *cmStepCounter</Declaration>
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
 			
 			
-			<Anchor>//api/name/cmStepCounter</Anchor>
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setOperationQueue:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/setClient:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			<Declaration>@property (strong, nonatomic) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/operationQueue</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/operationQueue</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/client</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			<Declaration>@property (strong, nonatomic) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/operationQueue</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/operationQueue</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FBCDAppDelegate/client</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSOperationQueue *operationQueue</Declaration>
+			<Declaration>@property (strong, nonatomic) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/operationQueue</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/setAccelSamples:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/saveContext</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			<Declaration>- (void)saveContext</Declaration>
 			
 			
-			<Anchor>//api/name/accelSamples</Anchor>
+			<Anchor>//api/name/saveContext</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CoreMotionTest/accelSamples</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationDocumentsDirectory</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			<Declaration>- (NSURL *)applicationDocumentsDirectory</Declaration>
 			
 			
-			<Anchor>//api/name/accelSamples</Anchor>
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CoreMotionTest/accelSamples</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/application:didFinishLaunchingWithOptions:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CoreMotionTest.m</DeclaredIn>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSMutableArray *accelSamples</Declaration>
+			<Declaration>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</Declaration>
 			
 			
-			<Anchor>//api/name/accelSamples</Anchor>
+			<Anchor>//api/name/application:didFinishLaunchingWithOptions:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationWillResignActive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillResignActive:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillResignActive:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationDidEnterBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidEnterBackground:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDidEnterBackground:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationWillEnterForeground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillEnterForeground:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillEnterForeground:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationDidBecomeActive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidBecomeActive:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDidBecomeActive:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/applicationWillTerminate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillTerminate:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillTerminate:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBCDAppDelegate/application:openURL:sourceApplication:annotation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBCDAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</Declaration>
+			
+			
+			<Anchor>//api/name/application:openURL:sourceApplication:annotation:</Anchor>
             <NodeRef refid="11"/>
 		</Token>
 		

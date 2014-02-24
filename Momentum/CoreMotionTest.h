@@ -1,14 +1,14 @@
+////
+////  CoreMotionTest.h
+////  Momentum
+////
+////  Created by Joe on 14/01/14.
+////  Copyright (c) 2014 Joe. All rights reserved.
+////
 //
-//  CoreMotionTest.h
-//  Momentum
+//#import <UIKit/UIKit.h>
 //
-//  Created by Joe on 14/01/14.
-//  Copyright (c) 2014 Joe. All rights reserved.
+//@interface CoreMotionTest : UIViewController 
 //
-
-#import <UIKit/UIKit.h>
-
-@interface CoreMotionTest : UIViewController 
-
-@end
-
+//@end
+//

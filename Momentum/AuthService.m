@@ -101,24 +101,8 @@ static AuthService *singletonInstance;
 
 - (void) testForced401:(BOOL)shouldRetry withCompletion:(CompletionWithStringBlock) completion {
     
-    MSTable *badAuthTable = [_client tableWithName:@"BadAuth"];
-    NSDictionary *item = @{ @"data" : @"data"};
-    self.shouldRetryAuth = shouldRetry;
-    [badAuthTable insert:item completion:^(NSDictionary *item, NSError *error) {
-        [self logErrorIfNotNil:error];
-        completion(@"Retried auth success");
-    }];
 }
 
-- (void) logErrorIfNotNil:(NSError *) error {
-    if (error) {
-        NSLog(@"ERROR %@", error);
-    }
-}
-
-//need to implement this delegate method, it is part
-//of the MSFilter delegate protocol and is called
-//whenever a request is made to the service
 - (void) handleRequest:(NSURLRequest *)request
                   next:(MSFilterNextBlock)onNext
               response:(MSFilterResponseBlock)onResponse {
@@ -133,6 +117,7 @@ static AuthService *singletonInstance;
     
     NSLog(@"%@", request.description);
 }
+
 
 - (void) filterResponse: (NSHTTPURLResponse *) response
                 forData: (NSData *) data

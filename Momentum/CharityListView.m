@@ -40,6 +40,7 @@
     
     self.charityList.delegate = self;
     self.charityList.dataSource = self;
+   
     
     self.charityList.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.charityList.showsHorizontalScrollIndicator = NO;
@@ -58,6 +59,7 @@
     
     [self downloadCharityData];
 }
+
 
 //fetches challenge data from core data. The data is assigned in
 //cellForIndexPath
@@ -231,14 +233,13 @@
 
 - (IBAction)startChallenge:(id)sender {
     Charity *c = self.charityArray[[self.charityList indexPathForSelectedRow].row];
-    //NSLog(@"%@", s.challengeName);
-    [self.coreData setCurrentCharity:c];
+
     
     //get the users info
     User *currentUser = [self.coreData getUserInfo];
     
     //send data to update the users current challenge
-    [self.authService.client invokeAPI:@"selectsolochallenge" body:@{@"soloChallenge_idsoloChallenge": currentUser.userChallenge.challengeID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
+    [self.authService.client invokeAPI:@"selectsolochallenge" body:@{@"soloChallenge_idsoloChallenge": self.selectedChallenge.challengeID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
         if(error){
             NSLog(@"%@", [error localizedDescription]);
         }
@@ -254,8 +255,13 @@
                 }else{
                     NSLog(@"%ld", (long)response.statusCode);
                     NSLog(@"%@", result);
+                    
+                    //set the user challenges to the selected challenge
+                    [self.coreData setCurrentChallenge:self.selectedChallenge];
+                    [self.coreData setCurrentCharity:c];
+
                     //if updating the user charity is successful, go to the results screen
-                    [self performSegueWithIdentifier:@"CharityToResultsPage" sender:nil];
+                    [self.navigationController popToRootViewControllerAnimated:YES];
                 }
             }];
         }

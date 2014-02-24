@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoloChallenge.h"
 
 @interface CharityListView : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) SoloChallenge *selectedChallenge;
 
 @end

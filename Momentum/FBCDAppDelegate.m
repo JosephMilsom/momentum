@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
+    //set the font of the navigation bars within the app
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:24.0], NSFontAttributeName, nil]];
     
     self.client = [MSClient clientWithApplicationURLString:@"https://momencogotake2.azure-mobile.net/" applicationKey:@"FBKsklKXtAqRvPEoKzNLpwPuzwBpjn12"];

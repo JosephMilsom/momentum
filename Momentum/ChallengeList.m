@@ -12,6 +12,7 @@
 #import "AuthService.h"
 #import "CoreDataSingleton.h"
 #import "SoloChallenge.h"
+#import "CharityListView.h"
 
 @interface ChallengeList ()
 //define iboutlets
@@ -30,6 +31,8 @@
 @property (strong, nonatomic) AuthService* authService;
 @property (strong, nonatomic) CoreDataSingleton *coreData;
 
+@property (strong, nonatomic) SoloChallenge* currentChallenge;
+
 - (IBAction)AcceptChallenge:(id)sender;
 
 @end
@@ -41,6 +44,7 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.backBarButtonItem.tintColor = [UIColor redColor];
     self.challengeList.delegate = self;
     self.challengeList.dataSource = self;
     
@@ -247,11 +251,17 @@
     return 150.0;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"ChallengesToCharities"]){
+        CharityListView *controller = (CharityListView *)segue.destinationViewController;
+        controller.selectedChallenge = self.currentChallenge;
+    }
+}
+
 - (IBAction)AcceptChallenge:(id)sender {
     SoloChallenge *s = self.challengeArray[[self.challengeList indexPathForSelectedRow].row];
-    //NSLog(@"%@", s.challengeName);
-    [self.coreData setCurrentChallenge:s];
+    self.currentChallenge = s;
     //temporary transition to the charity page
-    [self performSegueWithIdentifier:@"ChallengesToCharities" sender:nil];
+    [self performSegueWithIdentifier:@"ChallengesToCharities" sender:self];
 }
 @end

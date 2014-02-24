@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Sponsor.html">
+	<File path="Classes/UpdateHandler.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Sponsor</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UpdateHandler</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.h</DeclaredIn>
             
 			
 			<NodeRef refid="37"/>
@@ -13,86 +13,146 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/setSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/challengeUpdateWithCompletion:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (void)challengeUpdateWithCompletion:(void ( ^ ) ( void ))completion</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/challengeUpdateWithCompletion:</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/charityUpdate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (void)charityUpdate</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/charityUpdate</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Sponsor/sponsorsChallenges</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/init</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *sponsorsChallenges</Declaration>
+			<Declaration>- (UpdateHandler *)init</Declaration>
 			
 			
-			<Anchor>//api/name/sponsorsChallenges</Anchor>
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallengesObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/setAuthService:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
 			
-			<Declaration>- (void)addSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
 			
 			
-			<Anchor>//api/name/addSponsorsChallengesObject:</Anchor>
+			<Anchor>//api/name/authService</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallengesObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/authService</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
 			
-			<Declaration>- (void)removeSponsorsChallengesObject:(AbstractChallenge *)value</Declaration>
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
 			
 			
-			<Anchor>//api/name/removeSponsorsChallengesObject:</Anchor>
+			<Anchor>//api/name/authService</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/addSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/UpdateHandler/authService</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
 			
-			<Declaration>- (void)addSponsorsChallenges:(NSSet *)values</Declaration>
+			<Declaration>@property (strong, nonatomic) AuthService *authService</Declaration>
 			
 			
-			<Anchor>//api/name/addSponsorsChallenges:</Anchor>
+			<Anchor>//api/name/authService</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sponsor/removeSponsorsChallenges:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/setCoreData:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Sponsor.h</DeclaredIn>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
 			
-			<Declaration>- (void)removeSponsorsChallenges:(NSSet *)values</Declaration>
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
 			
 			
-			<Anchor>//api/name/removeSponsorsChallenges:</Anchor>
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UpdateHandler/coreData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CoreDataSingleton *coreData</Declaration>
+			
+			
+			<Anchor>//api/name/coreData</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/setLoadFromServer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperationQueue *loadFromServer</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromServer</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UpdateHandler/loadFromServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperationQueue *loadFromServer</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromServer</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UpdateHandler/loadFromServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UpdateHandler.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSOperationQueue *loadFromServer</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromServer</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		

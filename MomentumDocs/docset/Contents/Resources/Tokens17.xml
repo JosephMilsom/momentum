@@ -1,16 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GroupRunningChallenge.html">
+	<File path="Classes/KeychainWrapper.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GroupRunningChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KeychainWrapper</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GroupRunningChallenge.h</DeclaredIn>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
             
 			
 			<NodeRef refid="17"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/searchKeychainCopyMatchingIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)searchKeychainCopyMatchingIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/searchKeychainCopyMatchingIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/keychainStringFromMatchingIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)keychainStringFromMatchingIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/keychainStringFromMatchingIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/compareKeychainValueForMatchingPIN:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)compareKeychainValueForMatchingPIN:(NSUInteger)pinHash</Declaration>
+			
+			
+			<Anchor>//api/name/compareKeychainValueForMatchingPIN:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/createKeychainValue:forIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)createKeychainValue:(NSString *)value forIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/createKeychainValue:forIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/updateKeychainValue:forIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)updateKeychainValue:(NSString *)value forIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/updateKeychainValue:forIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/deleteItemFromKeychainWithIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (void)deleteItemFromKeychainWithIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/deleteItemFromKeychainWithIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/securedSHA256DigestHashForPIN:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)securedSHA256DigestHashForPIN:(NSUInteger)pinHash</Declaration>
+			
+			
+			<Anchor>//api/name/securedSHA256DigestHashForPIN:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/computeSHA256DigestForString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)computeSHA256DigestForString:(NSString *)input</Declaration>
+			
+			
+			<Anchor>//api/name/computeSHA256DigestForString:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KeychainWrapper/setupSearchDirectoryForIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KeychainWrapper.m</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *)setupSearchDirectoryForIdentifier:(NSString *)identifier</Declaration>
+			
+			
+			<Anchor>//api/name/setupSearchDirectoryForIdentifier:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
 		
         
 	</File>

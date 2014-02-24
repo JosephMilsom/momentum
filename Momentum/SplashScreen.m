@@ -31,10 +31,13 @@
 //needs a strong reference, else the controller gets released
 @property (strong, nonatomic) UIViewController *currentController;
 
+@property (strong, nonatomic) AuthService *authService;
+
+
 //custom methods for the ui elements, fancy stuff like
 //fading in views and junk
 -(void) createSignInRegister;
--(void) animateLogo;
+-(void) createAndAnimateLogo;
 -(void) removeCurrentControllerFromContainer;
 
 
@@ -44,52 +47,54 @@
 @implementation SplashScreen
 
 -(void) viewDidLoad{
-    //need to declare the logo here as it will not reset the position like it would
-    //if you define in the interface builder
     
-    self.momentumLogo = [[UIImageView alloc] initWithFrame:CGRectMake(80, 134, 161, 171)];
-    self.momentumLogo.image = [UIImage imageNamed:@"LogoLarge.png"];
-    [self.scrollViewContainer addSubview:self.momentumLogo];
+    self.authService = [AuthService getInstance];
+    CoreDataSingleton *coreData = [CoreDataSingleton new];
     
-    AuthService *service = [AuthService getInstance];
-    CoreDataSingleton *coreData = [[CoreDataSingleton alloc] init];
-    
+    //if there is no user info stored in coredata, clear all
+    //possible authentication data
     if(coreData.getUserInfo == nil){
-    [coreData deleteUserInfo];
-    [service killAuthInfo];
-    [FBSession.activeSession closeAndClearTokenInformation];
-    [FBSession.activeSession close];
-    [FBSession setActiveSession:nil];
+        [coreData deleteUserInfo];
+        [self.authService killAuthInfo];
+        [FBSession.activeSession closeAndClearTokenInformation];
+        [FBSession.activeSession close];
+        [FBSession setActiveSession:nil];
     }
-    
-    
-    //automatically transition to the next screen if
-    //there is an authentication token
-    
-     if(service.client.currentUser.userId){
-        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
-     }
+
 }
+
 
 
 //this is where all the view data logic will be handled, as the view
 //needs to be loaded for this stuff to happened
 - (void) viewDidAppear:(BOOL)animated{
-    if(firstTime){
-    [self animateLogo];
-    //ignore the warning, it still runs
-        //NOTE SHOULD BE 4
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
-                                                      selector: @selector(initViewController) userInfo: nil repeats: NO];
-        firstTime = NO;
+    //automatically transition to the next screen if
+    //there is an authentication token
+    if(self.authService.client.currentUser.userId){
+        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
     }
-
+    else{
+        if(firstTime){
+            [self createAndAnimateLogo];
+            //ignore the warning, it still runs
+            //NOTE SHOULD BE 4
+            NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
+                                                            selector: @selector(initViewController) userInfo: nil repeats: NO];
+            firstTime = NO;
+        }
+    }
  }
 
 
 //method to do some sweet animation for the logo by moving
 //it around and whatever
--(void) animateLogo{
+-(void) createAndAnimateLogo{
+    //need to declare the logo here as it will not reset the position like it would
+    //if you define in the interface builder
+    self.momentumLogo = [[UIImageView alloc] initWithFrame:CGRectMake(80, 134, 161, 171)];
+    self.momentumLogo.image = [UIImage imageNamed:@"LogoLarge.png"];
+    [self.scrollViewContainer addSubview:self.momentumLogo];
+
     //grab the frame for the logo image so we can
     //animate that biatch!!
     CGRect logoFrame = self.momentumLogo.frame;
@@ -194,9 +199,7 @@
     [self createSignInRegister];
 }
 
--(void) userDidChooseExternalRegistration:(RegisterController *)registerController{
-    [self performSegueWithIdentifier:@"CompleteRegistrationSegue" sender:nil];
-}
+
 
 -(void) userDidCompleteRegistration:(RegisterController *)registerController{
     [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];

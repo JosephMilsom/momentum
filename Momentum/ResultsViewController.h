@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResultsViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+@interface ResultsViewController : UIViewController 
 
 @end

@@ -27,6 +27,9 @@ typedef void (^CompletionWithIndexBlock) (NSUInteger index);
 
 @interface AuthService : NSObject <MSFilter>
 @property (nonatomic, strong)   NSString *authProvider;
+/**
+ *  Client that interfaces with the server
+ */
 @property (nonatomic, strong)   MSClient *client;
 
 /**
@@ -82,6 +85,16 @@ typedef void (^CompletionWithIndexBlock) (NSUInteger index);
  */
 - (void)killAuthInfo;
 
+
+/**
+ *  A method that is automatically invoked whenever there is a 
+    request made to the azure service, this method is part of 
+    the MSFilter protocol
+ *
+ *  @param request    request made to the azure service
+ *  @param onNext     onNext 
+ *  @param onResponse response of the service
+ */
 - (void) handleRequest:(NSURLRequest *)request
                   next:(MSFilterNextBlock)onNext
               response:(MSFilterResponseBlock)onResponse;

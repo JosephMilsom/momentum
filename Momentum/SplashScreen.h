@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SignInOrRegisterController.h"
 #import "RegisterController.h"
-#import "ExternalLoginAndRegister.h"
 #import "LoginController.h"
 
 @interface SplashScreen : UIViewController <SignUpOrRegisterDelegate, LoginControllerDelegate, RegisterControllerDelegate>

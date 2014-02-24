@@ -13,6 +13,42 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setSelectedChallenge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *selectedChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/selectedChallenge</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/selectedChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *selectedChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/selectedChallenge</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/selectedChallenge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) SoloChallenge *selectedChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/selectedChallenge</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/viewDidLoad</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CharityListView.m</DeclaredIn>
