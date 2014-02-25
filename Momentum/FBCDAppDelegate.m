@@ -8,6 +8,7 @@
 
 #import "FBCDAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "Flurry.h"
 
 @implementation FBCDAppDelegate
 
@@ -22,8 +23,10 @@
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:24.0], NSFontAttributeName, nil]];
     
     self.client = [MSClient clientWithApplicationURLString:@"https://momentum.azure-mobile.net/" applicationKey:@"ExNBpNygNJlFAErutjwrDlPFZRxGkN55"];
-    //change the default properties of bar buttons
-   // [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"googleline.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+
+    //initialise flurry
+    [Flurry setCrashReportingEnabled:YES];
+    [Flurry startSession:@"SYT8PFNRBCJF9PTQ485Y"];
     
     return YES;
 }

@@ -184,7 +184,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>challenge list set up*</p>
+		<pre><code>Method that deals with downloading the challenge data from the database
+The custom API challengeupdate is called, which takes an NSDictionary as
+a parameter containing the names of the challenges stored in coredata.
+The api then returns the challenges that are not in this list, which are
+then saved to the phone.
+</code></pre>
 	</div>		
 	
     
@@ -198,6 +203,12 @@
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>Based on the number of challenges returned number of rows are incremented.
+</code></pre>
+	</div>
 	
 	
 	
@@ -220,10 +231,13 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<ul>
-<li><h2>ChallengeList&rsquo;s implementation of view did load deals with several factors.</h2></li>
-</ul>
-
+		<pre><code> ChallengeList's implementation of view did load deals with several factors.
+ - back button from the ui navigation controller is replaced with a custom one 
+ - delegate for challenge list is assigned as well as attributes set appropirately
+ - authservice and coredata are initialised
+ - methods for fetching challenges from coredata and downloading challenges from the server
+ are called
+</code></pre>
 	</div>		
 	
     

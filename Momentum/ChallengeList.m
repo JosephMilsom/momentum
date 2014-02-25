@@ -48,8 +48,12 @@
 
 
 /**
- *  ChallengeList's implementation of view did load deals with several factors.
-     - 
+     ChallengeList's implementation of view did load deals with several factors.
+     - back button from the ui navigation controller is replaced with a custom one 
+     - delegate for challenge list is assigned as well as attributes set appropirately
+     - authservice and coredata are initialised
+     - methods for fetching challenges from coredata and downloading challenges from the server
+     are called
  */
 - (void)viewDidLoad
 {
@@ -58,7 +62,8 @@
     //hide the default ui button
     self.navigationItem.hidesBackButton=YES;
     
-    //creates a new back button to replace the navigation controller one
+    //creates a new back button to replace the navigation controller one.
+    //suprisingly difficult, THANKS APPLE
     UIButton* backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 30)];
     [backButton setTitle:@"Back" forState:UIControlStateNormal];
     [backButton setContentEdgeInsets:UIEdgeInsetsMake(-2.5, 0, 0, 0)];
@@ -69,7 +74,7 @@
     UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     [self.navigationItem setLeftBarButtonItem:backBarButtonItem];
     
-    /**challenge list set up**/
+    //challenge list set up
     self.challengeList.delegate = self;
     self.challengeList.dataSource = self;
     
@@ -93,13 +98,22 @@
     //will only really need to be done if user exits the app while imaegs are downloading
     [self.coreData purgeBrokenChallenges];
     
+    //populate the challenge list
     [self setChallengesFromCoreData];
-
     [self downloadChallengeData];
     
 }
 
-
+/**
+    Method that deals with downloading the challenge data from the database
+    The custom API challengeupdate is called, which takes an NSDictionary as
+    a parameter containing the names of the challenges stored in coredata.
+    The api then returns the challenges that are not in this list, which are
+    then saved to the phone.
+ 
+    Based on the number of challenges returned number of rows are incremented.
+ 
+*/
 -(void) downloadChallengeData{
 
     NSDictionary *storedChallenges = [self getStoredChallenges];
@@ -146,9 +160,8 @@
             
             //select the first row after download, if there are no rows that are selected
             if([self.challengeList indexPathForSelectedRow] == nil){
-            [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+                [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             }
-            
             [self.loadingView removeFromSuperview];
         }
     }];    

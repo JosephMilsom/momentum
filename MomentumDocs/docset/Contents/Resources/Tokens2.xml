@@ -18,8 +18,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/viewDidLoad</TokenIdentifier>
-			<Abstract type="html">*  ChallengeList&apos;s implementation of view did load deals with several factors.
-     - </Abstract>
+			<Abstract type="html">     ChallengeList&apos;s implementation of view did load deals with several factors.
+     - back button from the ui navigation controller is replaced with a custom one 
+     - delegate for challenge list is assigned as well as attributes set appropirately
+     - authservice and coredata are initialised
+     - methods for fetching challenges from coredata and downloading challenges from the server
+     are called</Abstract>
 			<DeclaredIn>ChallengeList.m</DeclaredIn>
 			
 			<Declaration>- (void)viewDidLoad</Declaration>
@@ -31,7 +35,11 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/downloadChallengeData</TokenIdentifier>
-			<Abstract type="html">challenge list set up*</Abstract>
+			<Abstract type="html">    Method that deals with downloading the challenge data from the database
+    The custom API challengeupdate is called, which takes an NSDictionary as
+    a parameter containing the names of the challenges stored in coredata.
+    The api then returns the challenges that are not in this list, which are
+    then saved to the phone.</Abstract>
 			<DeclaredIn>ChallengeList.m</DeclaredIn>
 			
 			<Declaration>- (void)downloadChallengeData</Declaration>
