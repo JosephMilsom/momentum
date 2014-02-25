@@ -49,6 +49,19 @@
             <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/getStoredChallenges</TokenIdentifier>
+			<Abstract type="html">    Method that returns the names of challenges stored on the
+    phone as an array.</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getStoredChallenges</Declaration>
+			
+			<ReturnValue><Abstract type="html">array of challenge names stored on the phone</Abstract></ReturnValue>
+			<Anchor>//api/name/getStoredChallenges</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

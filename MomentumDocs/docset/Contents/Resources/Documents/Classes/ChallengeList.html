@@ -45,6 +45,8 @@
 	
 	<option value="//api/name/downloadChallengeData">&nbsp;&nbsp;&nbsp;&nbsp;- downloadChallengeData</option>
 	
+	<option value="//api/name/getStoredChallenges">&nbsp;&nbsp;&nbsp;&nbsp;- getStoredChallenges</option>
+	
 	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
 	
 	
@@ -76,6 +78,8 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadChallengeData">downloadChallengeData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStoredChallenges">getStoredChallenges</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
 	
@@ -160,6 +164,12 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStoredChallenges">&ndash;&nbsp;getStoredChallenges</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -206,9 +216,55 @@ then saved to the phone.
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<pre><code>Based on the number of challenges returned number of rows are incremented.
+		<pre><code>Based on the number of challenges returned number of rows are incremented,
+and a new index path is also created per new challenge, for inserting once
+completed. The index path is determined by the value of numberOfRows at the
+time of use.
 </code></pre>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ChallengeList.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStoredChallenges" title="getStoredChallenges"></a>
+	<h3 class="subsubtitle method-title">getStoredChallenges</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>Method that returns the names of challenges stored on the
+phone as an array.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getStoredChallenges</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>array of challenge names stored on the phone</p>
+	</div>
+	
+	
+	
+	
 	
 	
 	

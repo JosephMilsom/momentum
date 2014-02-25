@@ -43,7 +43,6 @@
     //self.resultsBackground.image = img;
     
     CoreDataSingleton *coreData = [[CoreDataSingleton alloc] init];
-    
     User *user = [coreData getUserInfo];
     
     self.layoutStoryboard = [UIStoryboard storyboardWithName:@"ResultsStoryboard" bundle:[NSBundle mainBundle]];
@@ -54,14 +53,11 @@
     else{
         self.results = [self.layoutStoryboard instantiateViewControllerWithIdentifier:@"ResultsMilestoneProgress"];
     }
+    
     [self addChildViewController:self.results];
     [self.results didMoveToParentViewController:self];
     
-    //these are for testing
-
-    
     self.authService = [AuthService getInstance];
-
 }
 
 -(void) viewDidAppear:(BOOL)animated{

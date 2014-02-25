@@ -40,6 +40,8 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"%@", self.selectedChallenge.challengeName);
+    
     self.charityList.delegate = self;
     self.charityList.dataSource = self;
    

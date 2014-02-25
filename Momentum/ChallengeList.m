@@ -111,8 +111,10 @@
     The api then returns the challenges that are not in this list, which are
     then saved to the phone.
  
-    Based on the number of challenges returned number of rows are incremented.
- 
+    Based on the number of challenges returned number of rows are incremented,
+    and a new index path is also created per new challenge, for inserting once
+    completed. The index path is determined by the value of numberOfRows at the
+    time of use.
 */
 -(void) downloadChallengeData{
 
@@ -128,9 +130,6 @@
             
             //these are the indices of the rows to add to the table
             NSMutableArray* rows = [NSMutableArray new];
-        
-            //an async task to fetch data from the server
-            self.imgDownloadQueue = [[NSOperationQueue alloc] init];
             
             for (int i = 0; i < challenges.count; i++) {
                 //add to the list of index paths for the tableview insert row method,
@@ -167,6 +166,14 @@
     }];    
 }
 
+
+
+/**
+    Method that returns the names of challenges stored on the
+    phone as an array.
+ 
+   @return array of challenge names stored on the phone
+ */
 - (NSDictionary *) getStoredChallenges{
     //get the list of challenges that are stored in coredata, we send this
     //data to the service to check for updates
@@ -194,7 +201,12 @@
     return storedChallenges;
 }
 
+
+
 -(void) downloadAndSetChallengeImages:(NSDictionary *) challenge withChallengePath:(NSIndexPath*) path{
+    //an async task to fetch data from the server
+    self.imgDownloadQueue = [[NSOperationQueue alloc] init];
+    
     //asynchronous fetch for the images
     [self.imgDownloadQueue addOperationWithBlock:^{
         //image for the challenge
