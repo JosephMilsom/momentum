@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ChallengeNavigationController.html">
+	<File path="Classes/RegisterViewContainer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ChallengeNavigationController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterViewContainer</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengeNavigationController.h</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,26 +13,38 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengeNavigationController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengeNavigationController.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow1:</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/interestRow1</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengeNavigationController/viewDidAppear:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengeNavigationController.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
-			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidAppear:</Anchor>
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

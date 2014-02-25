@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/AbstractChallenge.html">
+	<File path="Classes/AuthService.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/AbstractChallenge</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/AuthService</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<DeclaredIn>AuthService.h</DeclaredIn>
             
 			
 			<NodeRef refid="1"/>
@@ -13,410 +13,166 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeBottomImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/setClient:</TokenIdentifier>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/challengeBottomImage</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeBottomImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/client</TokenIdentifier>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/challengeBottomImage</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeBottomImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/AuthService/client</TokenIdentifier>
+			<Abstract type="html">Client that interfaces with the server</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *challengeBottomImage</Declaration>
+			<Declaration>@property (nonatomic, strong) MSClient *client</Declaration>
 			
 			
-			<Anchor>//api/name/challengeBottomImage</Anchor>
+			<Anchor>//api/name/client</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeDescription:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/AuthService/getInstance</TokenIdentifier>
+			<Abstract type="html">Creates a new static instance(will stay in memory) of authService,
+a singleton implementation. If an instance is already in memory it
+will return that instance. Implemented as a singleton for ease of use
+across multiple classes</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			<Declaration>+ (AuthService *)getInstance</Declaration>
 			
-			
-			<Anchor>//api/name/challengeDescription</Anchor>
+			<ReturnValue><Abstract type="html">reference to current authService</Abstract></ReturnValue>
+			<Anchor>//api/name/getInstance</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeDescription</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/registerAccount:completion:</TokenIdentifier>
+			<Abstract type="html">*  register an account using azure and get authentication
+token back using the custom register. Uses a custom REST
+api
+*
+*  @param item       NSDictionary that sends login info to server
+*  @param completion completion handler for the method</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			<Declaration>- (void)registerAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
 			
 			
-			<Anchor>//api/name/challengeDescription</Anchor>
+			<Anchor>//api/name/registerAccount:completion:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeDescription</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/loginAccount:completion:</TokenIdentifier>
+			<Abstract type="html">Logins in a user using their custom auth account</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *challengeDescription</Declaration>
+			<Declaration>- (void)loginAccount:(NSDictionary *)item completion:(MSAPIBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>item</Name>
+					<Abstract type="html">NSDictionary to hold login credentials to send to the server</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion handler</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/challengeDescription</Anchor>
+			<Anchor>//api/name/loginAccount:completion:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeID:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/testForced401:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Calls a server side method that will by deftault return a 401
+The retry parameter indicates if we should retry it after making the user
+relogin.</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			<Declaration>- (void)testForced401:(BOOL)shouldRetry withCompletion:(CompletionWithStringBlock)completion</Declaration>
 			
 			
-			<Anchor>//api/name/challengeID</Anchor>
+			<Anchor>//api/name/testForced401:withCompletion:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/saveAuthInfo</TokenIdentifier>
+			<Abstract type="html">Method that will save authentication info from azure. The method will
+be encrypted into the keychain using an auxillary keychain wrapper
+class. The data encrypted is the data that has been stored inside
+the MSClient; the authentication token and the user id.
+When the information needs to be loaded again, loadAuthdata is
+called which will load the data into the MSClient</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			<Declaration>- (void)saveAuthInfo</Declaration>
 			
 			
-			<Anchor>//api/name/challengeID</Anchor>
+			<Anchor>//api/name/saveAuthInfo</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/loadAuthInfo</TokenIdentifier>
+			<Abstract type="html">Method that will load the authentication info into the MSClient from
+the data stores in the keychain. This is called in the init method of the class</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeID</Declaration>
+			<Declaration>- (void)loadAuthInfo</Declaration>
 			
 			
-			<Anchor>//api/name/challengeID</Anchor>
+			<Anchor>//api/name/loadAuthInfo</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/killAuthInfo</TokenIdentifier>
+			<Abstract type="html">Removes all the authentication info from the keychain. This
+method is used when an error has occurred during authentication
+or if the user wants to log out.</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
+			<Declaration>- (void)killAuthInfo</Declaration>
 			
 			
-			<Anchor>//api/name/challengeImage</Anchor>
+			<Anchor>//api/name/killAuthInfo</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
-			
-			
-			<Anchor>//api/name/challengeImage</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSData *challengeImage</Declaration>
-			
-			
-			<Anchor>//api/name/challengeImage</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeName:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
-			
-			
-			<Anchor>//api/name/challengeName</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
-			
-			
-			<Anchor>//api/name/challengeName</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeName</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSString *challengeName</Declaration>
-			
-			
-			<Anchor>//api/name/challengeName</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeType:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
-			
-			
-			<Anchor>//api/name/challengeType</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeType</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
-			
-			
-			<Anchor>//api/name/challengeType</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeType</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *challengeType</Declaration>
-			
-			
-			<Anchor>//api/name/challengeType</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeMilestones:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
-			
-			
-			<Anchor>//api/name/challengeMilestones</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeMilestones</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
-			
-			
-			<Anchor>//api/name/challengeMilestones</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeMilestones</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *challengeMilestones</Declaration>
-			
-			
-			<Anchor>//api/name/challengeMilestones</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setChallengeSponsor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
-			
-			
-			<Anchor>//api/name/challengeSponsor</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/challengeSponsor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
-			
-			
-			<Anchor>//api/name/challengeSponsor</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/challengeSponsor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Sponsor *challengeSponsor</Declaration>
-			
-			
-			<Anchor>//api/name/challengeSponsor</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setUser:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) User *user</Declaration>
-			
-			
-			<Anchor>//api/name/user</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/user</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) User *user</Declaration>
-			
-			
-			<Anchor>//api/name/user</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/user</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) User *user</Declaration>
-			
-			
-			<Anchor>//api/name/user</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/setCharity:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
-			
-			
-			<Anchor>//api/name/charity</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/charity</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
-			
-			
-			<Anchor>//api/name/charity</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AbstractChallenge/charity</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) Charity *charity</Declaration>
-			
-			
-			<Anchor>//api/name/charity</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/addChallengeMilestonesObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>- (void)addChallengeMilestonesObject:(Milestones *)value</Declaration>
-			
-			
-			<Anchor>//api/name/addChallengeMilestonesObject:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/removeChallengeMilestonesObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>- (void)removeChallengeMilestonesObject:(Milestones *)value</Declaration>
-			
-			
-			<Anchor>//api/name/removeChallengeMilestonesObject:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/addChallengeMilestones:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>- (void)addChallengeMilestones:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/addChallengeMilestones:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AbstractChallenge/removeChallengeMilestones:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AbstractChallenge.h</DeclaredIn>
-			
-			<Declaration>- (void)removeChallengeMilestones:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/removeChallengeMilestones:</Anchor>
+			<TokenIdentifier>//apple_ref/occ/instm/AuthService/handleRequest:next:response:</TokenIdentifier>
+			<Abstract type="html">*  A method that is automatically invoked whenever there is a
+    request made to the azure service, this method is part of 
+    the MSFilter protocol
+*
+*  @param request    request made to the azure service
+*  @param onNext     onNext
+*  @param onResponse response of the service</Abstract>
+			<DeclaredIn>AuthService.h</DeclaredIn>
+			
+			<Declaration>- (void)handleRequest:(NSURLRequest *)request next:(MSFilterNextBlock)onNext response:(MSFilterResponseBlock)onResponse</Declaration>
+			
+			
+			<Anchor>//api/name/handleRequest:next:response:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

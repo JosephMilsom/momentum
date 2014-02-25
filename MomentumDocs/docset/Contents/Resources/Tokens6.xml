@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ChallengePageController.html">
+	<File path="Classes/SplashScreen.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ChallengePageController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SplashScreen</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.h</DeclaredIn>
+			<DeclaredIn>SplashScreen.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,86 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/initWithNibName:bundle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidSelectTextBox:</TokenIdentifier>
+			<Abstract type="html">NOTE THAT THIS IS NOT USE OF PROPER DELEGATION, THERE ARE 2 DELEGATE METHODS REFERRING TO THE SAME METHOD*</Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
 			
-			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
-			
-			
-			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)Controller</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/didReceiveMemoryWarning</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
-			
-			
-			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/back:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)back:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/back:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/setTextDescription:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
-			
-			
-			<Anchor>//api/name/textDescription</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ChallengePageController/textDescription</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
-			
-			
-			<Anchor>//api/name/textDescription</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/ChallengePageController/textDescription</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ChallengePageController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UITextView *textDescription</Declaration>
-			
-			
-			<Anchor>//api/name/textDescription</Anchor>
+			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

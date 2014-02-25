@@ -6,7 +6,9 @@
         <attribute name="challengeID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="challengeImage" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="challengeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="challengeSponsorImage" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="challengeType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="currentMilestone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="challengeMilestones" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Milestones" inverseName="userChallenge" inverseEntity="Milestones" syncable="YES"/>
         <relationship name="challengeSponsor" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Sponsor" inverseName="sponsorsChallenges" inverseEntity="Sponsor" syncable="YES"/>
         <relationship name="charity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Charity" inverseName="challenge" inverseEntity="Charity" syncable="YES"/>
@@ -56,7 +58,7 @@
         <relationship name="userChallenge" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AbstractChallenge" inverseName="user" inverseEntity="AbstractChallenge" syncable="YES"/>
     </entity>
     <elements>
-        <element name="AbstractChallenge" positionX="115" positionY="-133" width="128" height="193"/>
+        <element name="AbstractChallenge" positionX="115" positionY="-133" width="128" height="223"/>
         <element name="Charity" positionX="88" positionY="-315" width="128" height="133"/>
         <element name="GroupChallenge" positionX="331" positionY="110" width="128" height="43"/>
         <element name="GroupCyclingChallenge" positionX="225" positionY="225" width="128" height="43"/>
