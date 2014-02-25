@@ -21,7 +21,7 @@
     //set the font of the navigation bars within the app
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:24.0], NSFontAttributeName, nil]];
     
-    self.client = [MSClient clientWithApplicationURLString:@"https://momencogotake2.azure-mobile.net/" applicationKey:@"FBKsklKXtAqRvPEoKzNLpwPuzwBpjn12"];
+    self.client = [MSClient clientWithApplicationURLString:@"https://momentum.azure-mobile.net/" applicationKey:@"ExNBpNygNJlFAErutjwrDlPFZRxGkN55"];
     //change the default properties of bar buttons
    // [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"googleline.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     

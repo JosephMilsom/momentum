@@ -30,7 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.pedometer = [[Pedometer alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStepsLabel) name:@"UpdateSteps" object:nil];
+    [self.pedometer startPedometer];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -38,9 +40,6 @@
     User *user = [coreData getUserInfo];
     self.challengeName.text = user.userChallenge.challengeName;
     NSLog(@"%@",user.userChallenge.challengeName);
-    self.pedometer = [[Pedometer alloc] init];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStepsLabel) name:@"UpdateSteps" object:nil];
-    [self.pedometer startPedometer];
 }
 
 - (void) updateStepsLabel{

@@ -297,11 +297,9 @@
                                     [FBSession setActiveSession:nil];
                                     
                                 }else{
-                                    NSArray *data = result;
-                                    NSLog(@"%@", data[0]);
+                                    NSDictionary *data = result;
                                     //save info into coredata
-                                    [self.coreData saveUserInfo:data[0]];
-                                    NSLog(@"fhfhf");
+                                    [self.coreData saveUserInfo:data];
                                     [self.authService saveAuthInfo];
                                     [self.delegate userDidCompleteRegistration:self];
                                 }

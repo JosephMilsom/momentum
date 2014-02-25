@@ -91,6 +91,7 @@ BOOL isStep = NO;
     
     //NSLog(@"%f", thresh);
     
+    //should be thresh??
     if ((thresh) < 0.998 && (oldValue > 0.9))
     {
         if (!hasChanged && waitStep)

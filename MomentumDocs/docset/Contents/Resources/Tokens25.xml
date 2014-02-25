@@ -233,7 +233,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>ResultsViewController.m</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) ResultsMilestoneProgress *results</Declaration>
+			<Declaration>@property (strong, nonatomic) UIViewController *results</Declaration>
 			
 			
 			<Anchor>//api/name/results</Anchor>
@@ -245,7 +245,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>ResultsViewController.m</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) ResultsMilestoneProgress *results</Declaration>
+			<Declaration>@property (strong, nonatomic) UIViewController *results</Declaration>
 			
 			
 			<Anchor>//api/name/results</Anchor>
@@ -257,46 +257,10 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>ResultsViewController.m</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) ResultsMilestoneProgress *results</Declaration>
+			<Declaration>@property (strong, nonatomic) UIViewController *results</Declaration>
 			
 			
 			<Anchor>//api/name/results</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/setResultsBackground:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *resultsBackground</Declaration>
-			
-			
-			<Anchor>//api/name/resultsBackground</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ResultsViewController/resultsBackground</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *resultsBackground</Declaration>
-			
-			
-			<Anchor>//api/name/resultsBackground</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/ResultsViewController/resultsBackground</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ResultsViewController.m</DeclaredIn>
-			
-			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *resultsBackground</Declaration>
-			
-			
-			<Anchor>//api/name/resultsBackground</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		

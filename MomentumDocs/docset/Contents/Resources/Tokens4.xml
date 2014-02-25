@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/ChallengeList</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">ChallengeList is a view controller that shows the user the current list of challenges.</Abstract>
 			<DeclaredIn>ChallengeList.h</DeclaredIn>
             
 			
@@ -21,6 +21,18 @@
 			
 			
 			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/getStoredChallenges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getStoredChallenges</Declaration>
+			
+			
+			<Anchor>//api/name/getStoredChallenges</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
@@ -117,6 +129,18 @@
 			
 			
 			<Anchor>//api/name/AcceptChallenge:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/backButtonAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)backButtonAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/backButtonAction:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
@@ -549,6 +573,78 @@
 			
 			
 			<Anchor>//api/name/currentChallenge</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setDimView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dimView</Declaration>
+			
+			
+			<Anchor>//api/name/dimView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/dimView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dimView</Declaration>
+			
+			
+			<Anchor>//api/name/dimView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/dimView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIView *dimView</Declaration>
+			
+			
+			<Anchor>//api/name/dimView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setLoadingView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/loadingView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/loadingView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loadingView</Declaration>
+			
+			
+			<Anchor>//api/name/loadingView</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -53,9 +55,13 @@
 	
 	<option value="//api/name/currentChallenge">&nbsp;&nbsp;&nbsp;&nbsp;currentChallenge</option>
 	
+	<option value="//api/name/dimView">&nbsp;&nbsp;&nbsp;&nbsp;dimView</option>
+	
 	<option value="//api/name/infoTextView">&nbsp;&nbsp;&nbsp;&nbsp;infoTextView</option>
 	
 	<option value="//api/name/lazyLoad">&nbsp;&nbsp;&nbsp;&nbsp;lazyLoad</option>
+	
+	<option value="//api/name/loadingView">&nbsp;&nbsp;&nbsp;&nbsp;loadingView</option>
 	
 	<option value="//api/name/numberOfRows">&nbsp;&nbsp;&nbsp;&nbsp;numberOfRows</option>
 	
@@ -70,9 +76,13 @@
 	
 	<option value="//api/name/AcceptChallenge:">&nbsp;&nbsp;&nbsp;&nbsp;- AcceptChallenge:</option>
 	
+	<option value="//api/name/backButtonAction:">&nbsp;&nbsp;&nbsp;&nbsp;- backButtonAction:</option>
+	
 	<option value="//api/name/downloadChallengeData">&nbsp;&nbsp;&nbsp;&nbsp;- downloadChallengeData</option>
 	
 	<option value="//api/name/getChallengeData">&nbsp;&nbsp;&nbsp;&nbsp;- getChallengeData</option>
+	
+	<option value="//api/name/getStoredChallenges">&nbsp;&nbsp;&nbsp;&nbsp;- getStoredChallenges</option>
 	
 	<option value="//api/name/prepareForSegue:sender:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareForSegue:sender:</option>
 	
@@ -95,6 +105,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -126,9 +138,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentChallenge">currentChallenge</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dimView">dimView</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/infoTextView">infoTextView</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lazyLoad">lazyLoad</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadingView">loadingView</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfRows">numberOfRows</a></span></li>
 	
@@ -144,9 +160,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/AcceptChallenge:">AcceptChallenge:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backButtonAction:">backButtonAction:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadChallengeData">downloadChallengeData</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getChallengeData">getChallengeData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStoredChallenges">getStoredChallenges</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareForSegue:sender:">prepareForSegue:sender:</a></span></li>
 	
@@ -197,6 +217,14 @@
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ChallengeList is a view controller that shows the user the current list of challenges.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -211,6 +239,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStoredChallenges">&ndash;&nbsp;getStoredChallenges</a></code>
 	</span>
 	
 	
@@ -259,6 +293,12 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/AcceptChallenge:">&ndash;&nbsp;AcceptChallenge:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backButtonAction:">&ndash;&nbsp;backButtonAction:</a></code>
 	</span>
 	
 	
@@ -339,6 +379,18 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/currentChallenge">&nbsp;&nbsp;currentChallenge</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dimView">&nbsp;&nbsp;dimView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadingView">&nbsp;&nbsp;loadingView</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -444,6 +496,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/dimView" title="dimView"></a>
+	<h3 class="subsubtitle method-title">dimView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIView *dimView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/infoTextView" title="infoTextView"></a>
 	<h3 class="subsubtitle method-title">infoTextView</h3>
 	
@@ -461,6 +524,17 @@
 	
 
 	<div class="method-subsection method-declaration"><code>@property NSOperationQueue *lazyLoad</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadingView" title="loadingView"></a>
+	<h3 class="subsubtitle method-title">loadingView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIActivityIndicatorView *loadingView</code></div>
 
     
 </div>
@@ -509,6 +583,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/backButtonAction:" title="backButtonAction:"></a>
+	<h3 class="subsubtitle method-title">backButtonAction:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)backButtonAction:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/downloadChallengeData" title="downloadChallengeData"></a>
 	<h3 class="subsubtitle method-title">downloadChallengeData</h3>
 	
@@ -526,6 +611,17 @@
 	
 
 	<div class="method-subsection method-declaration"><code>- (void)getChallengeData</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStoredChallenges" title="getStoredChallenges"></a>
+	<h3 class="subsubtitle method-title">getStoredChallenges</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getStoredChallenges</code></div>
 
     
 </div>

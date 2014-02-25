@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D843607418BC61F8008EC59A /* Milestones.m in Sources */ = {isa = PBXBuildFile; fileRef = D843607318BC61F8008EC59A /* Milestones.m */; };
 		D849FE84187E28B500206CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE83187E28B500206CA9 /* Foundation.framework */; };
 		D849FE86187E28B500206CA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE85187E28B500206CA9 /* CoreGraphics.framework */; };
 		D849FE88187E28B500206CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE87187E28B500206CA9 /* UIKit.framework */; };
@@ -228,7 +229,6 @@
 		D8C33E4A18AD7DE2003A9876 /* adidaslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C33E4918AD7DE2003A9876 /* adidaslogo.png */; };
 		D8C33E5518AD871C003A9876 /* CoreDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E5418AD871C003A9876 /* CoreDataSingleton.m */; };
 		D8C33E9118B19ECB003A9876 /* GroupChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9018B19ECB003A9876 /* GroupChallenge.m */; };
-		D8C33E9418B19ECB003A9876 /* Milestones.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9318B19ECB003A9876 /* Milestones.m */; };
 		D8C33E9718B19ECB003A9876 /* Reward.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9618B19ECB003A9876 /* Reward.m */; };
 		D8C33EA018B19ECC003A9876 /* GroupWalkingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33E9F18B19ECC003A9876 /* GroupWalkingChallenge.m */; };
 		D8C33EA318B19ECC003A9876 /* GroupRunningChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C33EA218B19ECC003A9876 /* GroupRunningChallenge.m */; };
@@ -277,6 +277,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D843607218BC61F8008EC59A /* Milestones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestones.h; sourceTree = "<group>"; };
+		D843607318BC61F8008EC59A /* Milestones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestones.m; sourceTree = "<group>"; };
 		D849FE80187E28B500206CA9 /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D849FE83187E28B500206CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D849FE85187E28B500206CA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -512,8 +514,6 @@
 		D8C33E5418AD871C003A9876 /* CoreDataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataSingleton.m; sourceTree = "<group>"; };
 		D8C33E8F18B19ECB003A9876 /* GroupChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChallenge.h; sourceTree = "<group>"; };
 		D8C33E9018B19ECB003A9876 /* GroupChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChallenge.m; sourceTree = "<group>"; };
-		D8C33E9218B19ECB003A9876 /* Milestones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestones.h; sourceTree = "<group>"; };
-		D8C33E9318B19ECB003A9876 /* Milestones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestones.m; sourceTree = "<group>"; };
 		D8C33E9518B19ECB003A9876 /* Reward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reward.h; sourceTree = "<group>"; };
 		D8C33E9618B19ECB003A9876 /* Reward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reward.m; sourceTree = "<group>"; };
 		D8C33E9E18B19ECC003A9876 /* GroupWalkingChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWalkingChallenge.h; sourceTree = "<group>"; };
@@ -1059,8 +1059,6 @@
 				D88C334518B6FBED00162113 /* Charity.m */,
 				D8C33E8F18B19ECB003A9876 /* GroupChallenge.h */,
 				D8C33E9018B19ECB003A9876 /* GroupChallenge.m */,
-				D8C33E9218B19ECB003A9876 /* Milestones.h */,
-				D8C33E9318B19ECB003A9876 /* Milestones.m */,
 				D8C33E9518B19ECB003A9876 /* Reward.h */,
 				D8C33E9618B19ECB003A9876 /* Reward.m */,
 				D8C33E9E18B19ECC003A9876 /* GroupWalkingChallenge.h */,
@@ -1081,6 +1079,8 @@
 				D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */,
 				D8C33EB318B19EEB003A9876 /* Sponsor.h */,
 				D8C33EB418B19EEB003A9876 /* Sponsor.m */,
+				D843607218BC61F8008EC59A /* Milestones.h */,
+				D843607318BC61F8008EC59A /* Milestones.m */,
 			);
 			name = EntityImplementation;
 			sourceTree = "<group>";
@@ -1561,6 +1561,7 @@
 				D88C334018B6F36F00162113 /* SoloWalkingChallenge.m in Sources */,
 				D86CE0A41888A0D100EDEA6D /* RegisterViewContainer.m in Sources */,
 				D8D050C018BB65AC00CF27E0 /* Pedometer.m in Sources */,
+				D843607418BC61F8008EC59A /* Milestones.m in Sources */,
 				D88C331718B69B2D00162113 /* ResultsViewController.m in Sources */,
 				D8F084F61891D3A000A1DF2D /* ChallengeNavigationController.m in Sources */,
 				D8F084E5188F748900A1DF2D /* LoginController.m in Sources */,
@@ -1574,7 +1575,6 @@
 				D8FEC50E18848E450035EDF1 /* SplashToFirstViewSegue.m in Sources */,
 				D8C33EA318B19ECC003A9876 /* GroupRunningChallenge.m in Sources */,
 				D8C33EA018B19ECC003A9876 /* GroupWalkingChallenge.m in Sources */,
-				D8C33E9418B19ECB003A9876 /* Milestones.m in Sources */,
 				D8AE539E189F21640059D0C1 /* KeychainWrapper.m in Sources */,
 				D8AE539B189F125F0059D0C1 /* AuthService.m in Sources */,
 				D8FEC5121884974F0035EDF1 /* CoreMotionTest.m in Sources */,

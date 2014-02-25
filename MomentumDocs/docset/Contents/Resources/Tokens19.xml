@@ -13,6 +13,114 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setNumStepsDone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *numStepsDone</Declaration>
+			
+			
+			<Anchor>//api/name/numStepsDone</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/numStepsDone</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *numStepsDone</Declaration>
+			
+			
+			<Anchor>//api/name/numStepsDone</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Milestones/numStepsDone</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *numStepsDone</Declaration>
+			
+			
+			<Anchor>//api/name/numStepsDone</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setSequenceNum:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sequenceNum</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNum</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/sequenceNum</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sequenceNum</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNum</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Milestones/sequenceNum</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sequenceNum</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNum</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Milestones/target</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Milestones/target</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Milestones.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/Milestones/setRewardLinkedToMilestones:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>Milestones.h</DeclaredIn>

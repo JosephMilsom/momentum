@@ -25,6 +25,9 @@
     <entity name="GroupRunningChallenge" representedClassName="GroupRunningChallenge" parentEntity="GroupChallenge" syncable="YES"/>
     <entity name="GroupWalkingChallenge" representedClassName="GroupWalkingChallenge" parentEntity="GroupChallenge" syncable="YES"/>
     <entity name="Milestones" representedClassName="Milestones" syncable="YES">
+        <attribute name="numStepsDone" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sequenceNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="target" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="rewardLinkedToMilestones" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reward" inverseName="milestonesLinkedToReward" inverseEntity="Reward" syncable="YES"/>
         <relationship name="userChallenge" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AbstractChallenge" inverseName="challengeMilestones" inverseEntity="AbstractChallenge" syncable="YES"/>
     </entity>
@@ -55,15 +58,15 @@
     <elements>
         <element name="AbstractChallenge" positionX="115" positionY="-133" width="128" height="193"/>
         <element name="Charity" positionX="88" positionY="-315" width="128" height="133"/>
-        <element name="GroupChallenge" positionX="331" positionY="110" width="128" height="45"/>
-        <element name="GroupCyclingChallenge" positionX="225" positionY="225" width="128" height="45"/>
-        <element name="GroupRunningChallenge" positionX="369" positionY="227" width="128" height="45"/>
-        <element name="GroupWalkingChallenge" positionX="511" positionY="225" width="128" height="45"/>
-        <element name="Milestones" positionX="358" positionY="-54" width="128" height="73"/>
+        <element name="GroupChallenge" positionX="331" positionY="110" width="128" height="43"/>
+        <element name="GroupCyclingChallenge" positionX="225" positionY="225" width="128" height="43"/>
+        <element name="GroupRunningChallenge" positionX="369" positionY="227" width="128" height="43"/>
+        <element name="GroupWalkingChallenge" positionX="511" positionY="225" width="128" height="43"/>
+        <element name="Milestones" positionX="358" positionY="-81" width="128" height="118"/>
         <element name="Reward" positionX="529" positionY="-117" width="128" height="58"/>
         <element name="SoloChallenge" positionX="-45" positionY="110" width="128" height="43"/>
-        <element name="SoloCyclingChallenge" positionX="-182" positionY="227" width="128" height="45"/>
-        <element name="SoloRunningChallenge" positionX="-47" positionY="225" width="128" height="45"/>
+        <element name="SoloCyclingChallenge" positionX="-182" positionY="227" width="128" height="43"/>
+        <element name="SoloRunningChallenge" positionX="-47" positionY="225" width="128" height="43"/>
         <element name="SoloWalkingChallenge" positionX="88" positionY="225" width="128" height="43"/>
         <element name="Sponsor" positionX="349" positionY="-355" width="128" height="58"/>
         <element name="User" positionX="-119" positionY="-243" width="128" height="223"/>

@@ -145,6 +145,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/backButtonAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>- (void)backButtonAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/backButtonAction:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setCharityList:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CharityListView.m</DeclaredIn>
@@ -501,6 +513,78 @@
 			
 			
 			<Anchor>//api/name/charityArray</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setStartChallengeButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *startChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/startChallengeButton</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/startChallengeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *startChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/startChallengeButton</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/startChallengeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *startChallengeButton</Declaration>
+			
+			
+			<Anchor>//api/name/startChallengeButton</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/setLoading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CharityListView/loading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CharityListView/loading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CharityListView.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIActivityIndicatorView *loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

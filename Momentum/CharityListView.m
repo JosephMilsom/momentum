@@ -26,6 +26,8 @@
 @property (strong, nonatomic) CoreDataSingleton *coreData;
 
 @property (strong, nonatomic) NSArray* charityArray;
+@property (weak, nonatomic) IBOutlet UIButton *startChallengeButton;
+@property (strong, nonatomic) UIActivityIndicatorView *loading;
 
 - (IBAction)startChallenge:(id)sender;
 
@@ -41,6 +43,20 @@
     self.charityList.delegate = self;
     self.charityList.dataSource = self;
    
+    //hide the default ui button
+    self.navigationItem.hidesBackButton=YES;
+    
+    //set the new back button
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 30)];
+    //adjust the insets to move to the correct position
+    [backButton setContentEdgeInsets:UIEdgeInsetsMake(-2.5, 0, 0, 0)];
+    [backButton setTitle:@"Back" forState:UIControlStateNormal];
+    backButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:15.0];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setShowsTouchWhenHighlighted:YES];
+    UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    [self.navigationItem setLeftBarButtonItem:backBarButtonItem];
     
     self.charityList.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.charityList.showsHorizontalScrollIndicator = NO;
@@ -49,6 +65,11 @@
     
     self.authService = [AuthService getInstance];
     self.coreData = [[CoreDataSingleton alloc] init];
+    
+    [self.startChallengeButton.layer setBorderColor: [[UIColor whiteColor] CGColor]];
+    [self.startChallengeButton.layer setBorderWidth: 1.0];
+    
+    
     
     //[self.coreData deleteAllEntitiesOfType:@"Charity"];
     //[self.coreData deleteSpecificChallenge:@"Charity"];
@@ -87,6 +108,13 @@
         Charity *c = charities[i];
         //NSLog(@"%@", c.charityName);
         [charityNames addObject:c.charityName];
+    }
+    
+    if(charities.count == 0){
+        self.loading =[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        self.loading.center = CGPointMake(160, 250);
+        [self.view addSubview:self.loading];
+        [self.loading startAnimating];
     }
     
     NSDictionary *storedCharities = [[NSDictionary alloc] initWithObjectsAndKeys:charityNames, @"charitynames", nil];
@@ -175,6 +203,8 @@
             //select the first row after download
             [self tableView:self.charityList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             }
+            
+            [self.loading removeFromSuperview];
         }
     }];
     
@@ -189,6 +219,7 @@
     self.charityLabel.text = cell.charityTitle;
     self.information.selectable = YES;
     //set information text here
+    self.information.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0];
     self.information.text = cell.information;
     self.information.selectable = NO;
 
@@ -249,7 +280,7 @@
             NSLog(@"%@", result);
 
             
-            [self.authService.client invokeAPI:@"selectcharity" body:@{@"Charity_idCharity": currentUser.userChallenge.charity.charityID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
+            [self.authService.client invokeAPI:@"selectcharity" body:@{@"Charity_idCharity": c.charityID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
                 if(error){
                     NSLog(@"%@", [error localizedDescription]);
                 }else{
@@ -266,5 +297,10 @@
             }];
         }
     }];
+}
+
+-(void) backButtonAction:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

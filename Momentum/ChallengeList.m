@@ -33,6 +33,9 @@
 
 @property (strong, nonatomic) SoloChallenge* currentChallenge;
 
+@property (strong, nonatomic) UIView *dimView;
+@property (strong, nonatomic) UIActivityIndicatorView *loadingView;
+
 - (IBAction)AcceptChallenge:(id)sender;
 
 @end
@@ -44,7 +47,20 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.backBarButtonItem.tintColor = [UIColor redColor];
+    //hide the default ui button
+    self.navigationItem.hidesBackButton=YES;
+    
+    //set the new back button
+    UIButton* backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 30)];
+    [backButton setTitle:@"Back" forState:UIControlStateNormal];
+    [backButton setContentEdgeInsets:UIEdgeInsetsMake(-2.5, 0, 0, 0)];
+    backButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:15.0];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setShowsTouchWhenHighlighted:YES];
+    UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    [self.navigationItem setLeftBarButtonItem:backBarButtonItem];
+    
     self.challengeList.delegate = self;
     self.challengeList.dataSource = self;
     
@@ -64,21 +80,19 @@
     self.authService = [AuthService getInstance];
     self.coreData = [[CoreDataSingleton alloc] init];
     
-//    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
-//    [self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
+    //[self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
+    //[self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
     
-    //purge any challenges that have no image data,
-    //redownload again
+
     [self.coreData purgeBrokenChallenges];
     
     [self getChallengeData];
 
     [self downloadChallengeData];
+    
 }
 
--(void) downloadChallengeData{
-    /*FOR GETTING A LIST TO SEND TO THE SERVER*/
-    
+-(NSDictionary *) getStoredChallenges{
     //get the list of challenges that are stored in coredata, we send this
     //data to the service to check for updates
     NSArray *challenges = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
@@ -93,14 +107,26 @@
     //to send to server
     NSDictionary *storedChallenges = [[NSDictionary alloc] initWithObjectsAndKeys:challengeNames,@"challengenames", nil];
     
+    //if there are no stored challenges 
+    if(challengeNames.count == 0){
+        self.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        self.loadingView.center = CGPointMake(160, 250);
+        [self.view addSubview:self.loadingView];
+        [self.loadingView startAnimating];
+    }
+    return storedChallenges;
+}
+
+
+-(void) downloadChallengeData{
+
+    NSDictionary *storedChallenges = [self getStoredChallenges];
     
     [self.authService.client invokeAPI:@"challengeupdate" body:storedChallenges HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
         if(error){
             NSLog(@"%@", [error localizedDescription]);
         }
         else{
-            //NSLog(@"%@", result);
-            
             //result is an array of dictionaries
             NSArray *challenges = result;
             
@@ -136,13 +162,13 @@
                     NSURL *urlBottom = [NSURL URLWithString:[challenges[i] valueForKey:@"sChallengeImageBtm"]];
                     NSData *dataBottom = [NSData dataWithContentsOfURL:urlBottom];
                     
-                    /*NOTE: cell is used here since we want to fade in images, otherwise use reloadData which is much nicer*/
                     //get the cell to assign
                     ChallengeCell *cell = (ChallengeCell *)[self.challengeList cellForRowAtIndexPath:path];
                     
-                    //NSLog(@"%@", cell.challengeTitle);
                     //update the ui
                     [[NSOperationQueue mainQueue] addOperationWithBlock: ^ {
+                        self.challengeList.backgroundColor = [UIColor blackColor];
+                        
                         //set this here as we want to fade in the images
                         cell.imageBackground.alpha = 0;
                         cell.bottomImage = [UIImage imageWithData:dataBottom];
@@ -179,6 +205,8 @@
             if([self.challengeList indexPathForSelectedRow] == nil){
             [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             }
+            
+            [self.loadingView removeFromSuperview];
         }
     }];    
 }
@@ -192,7 +220,7 @@
     self.bottomImage.alpha = 1;
     
     if(self.challengeArray.count != 0){
-    [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+        [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     }
 }
 
@@ -201,13 +229,11 @@
     [tableView selectRowAtIndexPath:indexPath
                            animated:YES
                      scrollPosition:UITableViewScrollPositionMiddle];
-    
+
     ChallengeCell *cell = (ChallengeCell*)[tableView cellForRowAtIndexPath:indexPath];
-    
-    self.infoTextView.selectable = YES;
     self.infoTextView.text = cell.information;
+    self.infoTextView.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0];
     self.challengeNameLabel.text = cell.challengeTitle;
-    self.infoTextView.selectable = NO;
     self.bottomImage.image = cell.bottomImage;
     
 }
@@ -228,7 +254,7 @@
         }
     }
     
-    //for data loaded from core data
+    //uses the data from core data
     SoloChallenge *s = self.challengeArray[indexPath.row];
 
     cell.imageBackground.image = [UIImage imageWithData:s.challengeImage];
@@ -241,7 +267,6 @@
     return cell;
 }
 
-#pragma mark number of rows in section
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.numberOfRows;
 }
@@ -261,7 +286,16 @@
 - (IBAction)AcceptChallenge:(id)sender {
     SoloChallenge *s = self.challengeArray[[self.challengeList indexPathForSelectedRow].row];
     self.currentChallenge = s;
+    
+    //just a temporary test
+    User *u = [self.coreData getUserInfo];
+    u.userChallenge = s;
     //temporary transition to the charity page
     [self performSegueWithIdentifier:@"ChallengesToCharities" sender:self];
+}
+
+-(void) backButtonAction:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
