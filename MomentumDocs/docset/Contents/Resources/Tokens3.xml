@@ -13,6 +13,78 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/addSoloChallenge:</TokenIdentifier>
+			<Abstract type="html">add a new solo challenge to core data</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (void)addSoloChallenge:(NSDictionary *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">nsdictionary of what has been returned from the server</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSoloChallenge:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/setCurrentChallenge:</TokenIdentifier>
+			<Abstract type="html">    Set the current challenge to the user. Also handles
+    situation if the user is already part of a challenge
+    and it resets all the progress
+*
+*  @param challenge the users new challenge</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (void)setCurrentChallenge:(AbstractChallenge *)challenge</Declaration>
+			
+			
+			<Anchor>//api/name/setCurrentChallenge:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/removeCurrentChallenge</TokenIdentifier>
+			<Abstract type="html">    removes the current challenge and it will reset all
+    the progress that has been done ie by removing the challenge
+    progress from the total step count as well as resetting all the 
+    milestones to 0</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (void)removeCurrentChallenge</Declaration>
+			
+			
+			<Anchor>//api/name/removeCurrentChallenge</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/getCurrentChallenge</TokenIdentifier>
+			<Abstract type="html">Method for getting the users current challenge</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (AbstractChallenge *)getCurrentChallenge</Declaration>
+			
+			<ReturnValue><Abstract type="html">the users current challenge</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentChallenge</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/addChallengeImageData:andBottomImageData:forChallenge:</TokenIdentifier>
+			<Abstract type="html">*  This will add image data from the challenges to core data</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (void)addChallengeImageData:(NSData *)chalImg andBottomImageData:(NSData *)btmImg forChallenge:(NSString *)challenge</Declaration>
+			
+			
+			<Anchor>//api/name/addChallengeImageData:andBottomImageData:forChallenge:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/purgeBrokenChallenges</TokenIdentifier>
 			<Abstract type="html">Method that gets rid of malformed challenges</Abstract>
 			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
@@ -21,6 +93,80 @@
 			
 			
 			<Anchor>//api/name/purgeBrokenChallenges</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/countSteps</TokenIdentifier>
+			<Abstract type="html">    Increment the number of steps in both the current milestone
+    and the total number of steps done.</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)countSteps</Declaration>
+			
+			<ReturnValue><Abstract type="html">the new value of steps for the current milestone</Abstract></ReturnValue>
+			<Anchor>//api/name/countSteps</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/getSteps</TokenIdentifier>
+			<Abstract type="html">    Return the number of steps that have been done in the
+    current milestone.</Abstract>
+			<DeclaredIn>CoreDataSingleton.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)getSteps</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSInteger number of steps</Abstract></ReturnValue>
+			<Anchor>//api/name/getSteps</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/init</TokenIdentifier>
+			<Abstract type="html">override the init method</Abstract>
+			<DeclaredIn>CoreDataSingleton.m</DeclaredIn>
+			
+			<Declaration>- (CoreDataSingleton *)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">new instance of the core data class</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/setContext:</TokenIdentifier>
+			<Abstract type="html">this is the managed object context which is used to save information</Abstract>
+			<DeclaredIn>CoreDataSingleton.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSManagedObjectContext *context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CoreDataSingleton/context</TokenIdentifier>
+			<Abstract type="html">this is the managed object context which is used to save information</Abstract>
+			<DeclaredIn>CoreDataSingleton.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSManagedObjectContext *context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CoreDataSingleton/context</TokenIdentifier>
+			<Abstract type="html">this is the managed object context which is used to save information</Abstract>
+			<DeclaredIn>CoreDataSingleton.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSManagedObjectContext *context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

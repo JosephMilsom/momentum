@@ -11,5 +11,6 @@
 @interface Pedometer : NSObject
 
 - (void)startPedometer;
+- (void) killPedometerUpdates;
 
 @end

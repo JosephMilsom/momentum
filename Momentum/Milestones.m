@@ -2,7 +2,7 @@
 //  Milestones.m
 //  Momentum
 //
-//  Created by Joe on 25/02/14.
+//  Created by Joe on 27/02/14.
 //  Copyright (c) 2014 Joe. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @dynamic numStepsDone;
 @dynamic sequenceNum;
 @dynamic target;
+@dynamic milestoneDesc;
 @dynamic rewardLinkedToMilestones;
 @dynamic userChallenge;
 

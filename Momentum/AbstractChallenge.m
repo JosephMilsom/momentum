@@ -2,11 +2,12 @@
 //  AbstractChallenge.m
 //  Momentum
 //
-//  Created by Joe on 21/02/14.
+//  Created by Joe on 27/02/14.
 //  Copyright (c) 2014 Joe. All rights reserved.
 //
 
 #import "AbstractChallenge.h"
+#import "ChallengeProgress.h"
 #import "Charity.h"
 #import "Milestones.h"
 #import "Sponsor.h"
@@ -20,10 +21,14 @@
 @dynamic challengeID;
 @dynamic challengeImage;
 @dynamic challengeName;
+@dynamic challengeSponsorImage;
 @dynamic challengeType;
+@dynamic currentMilestone;
+@dynamic numberOfMilestones;
 @dynamic challengeMilestones;
+@dynamic challengeProgress;
 @dynamic challengeSponsor;
-@dynamic user;
 @dynamic charity;
+@dynamic user;
 
 @end

@@ -21,7 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D843607418BC61F8008EC59A /* Milestones.m in Sources */ = {isa = PBXBuildFile; fileRef = D843607318BC61F8008EC59A /* Milestones.m */; };
+		D801306018BEA26000091559 /* logoNew.png in Resources */ = {isa = PBXBuildFile; fileRef = D801305F18BEA26000091559 /* logoNew.png */; };
+		D801306318BEA47A00091559 /* ChallengeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D801306218BEA47A00091559 /* ChallengeProgress.m */; };
+		D801306918BEE45E00091559 /* AbstractChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D801306818BEE45E00091559 /* AbstractChallenge.m */; };
+		D801307218BEE6A000091559 /* Milestones.m in Sources */ = {isa = PBXBuildFile; fileRef = D801307118BEE6A000091559 /* Milestones.m */; };
 		D843611118BC9D4C008EC59A /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D843607918BC9D4B008EC59A /* libFlurry_4.3.2.a */; };
 		D843611218BC9D4C008EC59A /* _flurry_8h_source.html in Resources */ = {isa = PBXBuildFile; fileRef = D843607B18BC9D4B008EC59A /* _flurry_8h_source.html */; };
 		D843611318BC9D4C008EC59A /* _flurry_ad_delegate_8h_source.html in Resources */ = {isa = PBXBuildFile; fileRef = D843607C18BC9D4B008EC59A /* _flurry_ad_delegate_8h_source.html */; };
@@ -156,7 +159,6 @@
 		D843619418BC9D4C008EC59A /* tab_s.png in Resources */ = {isa = PBXBuildFile; fileRef = D84360FE18BC9D4C008EC59A /* tab_s.png */; };
 		D843619518BC9D4C008EC59A /* tabs.css in Resources */ = {isa = PBXBuildFile; fileRef = D84360FF18BC9D4C008EC59A /* tabs.css */; };
 		D843619618BC9D4C008EC59A /* Flurry iOS-4.x-Upgrade-README .pdf in Resources */ = {isa = PBXBuildFile; fileRef = D843610018BC9D4C008EC59A /* Flurry iOS-4.x-Upgrade-README .pdf */; };
-		D843619718BC9D4C008EC59A /* libFlurryAds_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D843610418BC9D4C008EC59A /* libFlurryAds_4.3.2.a */; };
 		D843619818BC9D4C008EC59A /* FlurryiOSAdvertisingREADMEv4.3.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D843610518BC9D4C008EC59A /* FlurryiOSAdvertisingREADMEv4.3.2.pdf */; };
 		D843619918BC9D4C008EC59A /* FlurryiOSAnalyticsREADMEv4.3.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D843610618BC9D4C008EC59A /* FlurryiOSAnalyticsREADMEv4.3.2.pdf */; };
 		D843619A18BC9D4C008EC59A /* FlurryiOSReleaseNotesv4.3.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D843610718BC9D4C008EC59A /* FlurryiOSReleaseNotesv4.3.2.pdf */; };
@@ -169,6 +171,9 @@
 		D84361A118BC9D4C008EC59A /* Jansson-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D843610F18BC9D4C008EC59A /* Jansson-LICENSE.txt */; };
 		D84361A218BC9D4C008EC59A /* ProjectApiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = D843611018BC9D4C008EC59A /* ProjectApiKey.txt */; };
 		D84361A418BC9D79008EC59A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84361A318BC9D79008EC59A /* SystemConfiguration.framework */; };
+		D84361AA18BD5815008EC59A /* NoChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84361A918BD5815008EC59A /* NoChallengeViewController.m */; };
+		D84361AC18BD62C5008EC59A /* SignInAndRegisterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84361AB18BD62C5008EC59A /* SignInAndRegisterStoryboard.storyboard */; };
+		D84361B618BD7429008EC59A /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D84361B518BD7429008EC59A /* Facebook.png */; };
 		D849FE84187E28B500206CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE83187E28B500206CA9 /* Foundation.framework */; };
 		D849FE86187E28B500206CA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE85187E28B500206CA9 /* CoreGraphics.framework */; };
 		D849FE88187E28B500206CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849FE87187E28B500206CA9 /* UIKit.framework */; };
@@ -210,12 +215,6 @@
 		D86CE08D18872B6500EDEA6D /* Apparel.png in Resources */ = {isa = PBXBuildFile; fileRef = D86CE08218872B6500EDEA6D /* Apparel.png */; };
 		D86CE09018873DCF00EDEA6D /* Arts.png in Resources */ = {isa = PBXBuildFile; fileRef = D86CE08E18873DCF00EDEA6D /* Arts.png */; };
 		D86CE09118873DCF00EDEA6D /* Travel.png in Resources */ = {isa = PBXBuildFile; fileRef = D86CE08F18873DCF00EDEA6D /* Travel.png */; };
-		D86CE09918887C2500EDEA6D /* SignInRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE09818887C2500EDEA6D /* SignInRegisterView.xib */; };
-		D86CE09C18887DF400EDEA6D /* SignInRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86CE09B18887DF400EDEA6D /* SignInRegisterView.m */; };
-		D86CE0A41888A0D100EDEA6D /* RegisterViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = D86CE0A31888A0D100EDEA6D /* RegisterViewContainer.m */; };
-		D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A51888A51700EDEA6D /* RegisterViewContainer.xib */; };
-		D86CE0A81888CB4200EDEA6D /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86CE0A71888CB4200EDEA6D /* SignInView.xib */; };
-		D86CE0AB1888CBAE00EDEA6D /* SignInView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86CE0AA1888CBAE00EDEA6D /* SignInView.m */; };
 		D88AE20C18B98CC6008045FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17018B98CC6008045FB /* Info.plist */; };
 		D88AE20D18B98CC6008045FB /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17218B98CC6008045FB /* docSet.dsidx */; };
 		D88AE20E18B98CC6008045FB /* docSet.dsidx-shm in Resources */ = {isa = PBXBuildFile; fileRef = D88AE17318B98CC6008045FB /* docSet.dsidx-shm */; };
@@ -271,7 +270,8 @@
 		D88C333A18B6F36F00162113 /* SoloCyclingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333918B6F36F00162113 /* SoloCyclingChallenge.m */; };
 		D88C334018B6F36F00162113 /* SoloWalkingChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */; };
 		D88C334618B6FBED00162113 /* Charity.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C334518B6FBED00162113 /* Charity.m */; };
-		D88C334918B705DF00162113 /* AbstractChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = D88C334818B705DF00162113 /* AbstractChallenge.m */; };
+		D88F2FBD18C7B56700D767CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F2FBC18C7B56700D767CF /* AVFoundation.framework */; };
+		D88F2FC518C7C6DD00D767CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88F2FC418C7C6DD00D767CF /* CoreLocation.framework */; };
 		D899EC9C18AC61F8004F45A8 /* CharityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D899EC9B18AC61F8004F45A8 /* CharityCell.m */; };
 		D899EC9F18AC622B004F45A8 /* CharityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D899EC9E18AC622B004F45A8 /* CharityListView.m */; };
 		D899ECA118AC62D8004F45A8 /* CharityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899ECA018AC62D8004F45A8 /* CharityCell.xib */; };
@@ -331,8 +331,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D843607218BC61F8008EC59A /* Milestones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestones.h; sourceTree = "<group>"; };
-		D843607318BC61F8008EC59A /* Milestones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestones.m; sourceTree = "<group>"; };
+		D801305F18BEA26000091559 /* logoNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNew.png; sourceTree = "<group>"; };
+		D801306118BEA47A00091559 /* ChallengeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeProgress.h; sourceTree = "<group>"; };
+		D801306218BEA47A00091559 /* ChallengeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeProgress.m; sourceTree = "<group>"; };
+		D801306718BEE45E00091559 /* AbstractChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractChallenge.h; sourceTree = "<group>"; };
+		D801306818BEE45E00091559 /* AbstractChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractChallenge.m; sourceTree = "<group>"; };
+		D801307018BEE6A000091559 /* Milestones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Milestones.h; sourceTree = "<group>"; };
+		D801307118BEE6A000091559 /* Milestones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Milestones.m; sourceTree = "<group>"; };
 		D843607818BC9D4B008EC59A /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		D843607918BC9D4B008EC59A /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		D843607B18BC9D4B008EC59A /* _flurry_8h_source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _flurry_8h_source.html; sourceTree = "<group>"; };
@@ -483,6 +488,10 @@
 		D843610F18BC9D4C008EC59A /* Jansson-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jansson-LICENSE.txt"; sourceTree = "<group>"; };
 		D843611018BC9D4C008EC59A /* ProjectApiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProjectApiKey.txt; sourceTree = "<group>"; };
 		D84361A318BC9D79008EC59A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D84361A818BD5815008EC59A /* NoChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoChallengeViewController.h; sourceTree = "<group>"; };
+		D84361A918BD5815008EC59A /* NoChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoChallengeViewController.m; sourceTree = "<group>"; };
+		D84361AB18BD62C5008EC59A /* SignInAndRegisterStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignInAndRegisterStoryboard.storyboard; sourceTree = "<group>"; };
+		D84361B518BD7429008EC59A /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		D849FE80187E28B500206CA9 /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D849FE83187E28B500206CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D849FE85187E28B500206CA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -530,15 +539,6 @@
 		D86CE08218872B6500EDEA6D /* Apparel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apparel.png; sourceTree = "<group>"; };
 		D86CE08E18873DCF00EDEA6D /* Arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arts.png; sourceTree = "<group>"; };
 		D86CE08F18873DCF00EDEA6D /* Travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Travel.png; sourceTree = "<group>"; };
-		D86CE09818887C2500EDEA6D /* SignInRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInRegisterView.xib; sourceTree = "<group>"; };
-		D86CE09A18887DF400EDEA6D /* SignInRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInRegisterView.h; sourceTree = "<group>"; };
-		D86CE09B18887DF400EDEA6D /* SignInRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInRegisterView.m; sourceTree = "<group>"; };
-		D86CE0A21888A0D100EDEA6D /* RegisterViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewContainer.h; sourceTree = "<group>"; };
-		D86CE0A31888A0D100EDEA6D /* RegisterViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewContainer.m; sourceTree = "<group>"; };
-		D86CE0A51888A51700EDEA6D /* RegisterViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewContainer.xib; sourceTree = "<group>"; };
-		D86CE0A71888CB4200EDEA6D /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
-		D86CE0A91888CBAE00EDEA6D /* SignInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInView.h; sourceTree = "<group>"; };
-		D86CE0AA1888CBAE00EDEA6D /* SignInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInView.m; sourceTree = "<group>"; };
 		D88AE17018B98CC6008045FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88AE17218B98CC6008045FB /* docSet.dsidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.dsidx; sourceTree = "<group>"; };
 		D88AE17318B98CC6008045FB /* docSet.dsidx-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "docSet.dsidx-shm"; sourceTree = "<group>"; };
@@ -698,8 +698,8 @@
 		D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloWalkingChallenge.m; sourceTree = "<group>"; };
 		D88C334418B6FBED00162113 /* Charity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Charity.h; sourceTree = "<group>"; };
 		D88C334518B6FBED00162113 /* Charity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Charity.m; sourceTree = "<group>"; };
-		D88C334718B705DF00162113 /* AbstractChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractChallenge.h; sourceTree = "<group>"; };
-		D88C334818B705DF00162113 /* AbstractChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractChallenge.m; sourceTree = "<group>"; };
+		D88F2FBC18C7B56700D767CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D88F2FC418C7C6DD00D767CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D899EC9A18AC61F8004F45A8 /* CharityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityCell.h; sourceTree = "<group>"; };
 		D899EC9B18AC61F8004F45A8 /* CharityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharityCell.m; sourceTree = "<group>"; };
 		D899EC9D18AC622B004F45A8 /* CharityListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharityListView.h; sourceTree = "<group>"; };
@@ -773,10 +773,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88F2FC518C7C6DD00D767CF /* CoreLocation.framework in Frameworks */,
+				D88F2FBD18C7B56700D767CF /* AVFoundation.framework in Frameworks */,
 				D84361A418BC9D79008EC59A /* SystemConfiguration.framework in Frameworks */,
 				D8D050BD18BB5D6600CF27E0 /* ImageIO.framework in Frameworks */,
 				D8AE52FE189B07E80059D0C1 /* WindowsAzureMobileServices.framework in Frameworks */,
-				D843619718BC9D4C008EC59A /* libFlurryAds_4.3.2.a in Frameworks */,
 				D849FEDA187F706400206CA9 /* QuartzCore.framework in Frameworks */,
 				D849FE86187E28B500206CA9 /* CoreGraphics.framework in Frameworks */,
 				D849FE8A187E28B500206CA9 /* CoreData.framework in Frameworks */,
@@ -1031,6 +1032,8 @@
 		D849FE82187E28B500206CA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D88F2FC418C7C6DD00D767CF /* CoreLocation.framework */,
+				D88F2FBC18C7B56700D767CF /* AVFoundation.framework */,
 				D84361A318BC9D79008EC59A /* SystemConfiguration.framework */,
 				D8D050BC18BB5D6600CF27E0 /* ImageIO.framework */,
 				D8AE53A7189F65170059D0C1 /* FacebookSDK.framework */,
@@ -1095,6 +1098,8 @@
 		D849FEB8187E28CA00206CA9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D84361B518BD7429008EC59A /* Facebook.png */,
+				D801305F18BEA26000091559 /* logoNew.png */,
 				D8D0509418BB5D2800CF27E0 /* giphy.gif */,
 				D849FEBE187E2A9900206CA9 /* app hannah */,
 			);
@@ -1412,6 +1417,8 @@
 			children = (
 				D88AE2A718BAC679008045FB /* ResultsMilestoneProgress.h */,
 				D88AE2A818BAC679008045FB /* ResultsMilestoneProgress.m */,
+				D84361A818BD5815008EC59A /* NoChallengeViewController.h */,
+				D84361A918BD5815008EC59A /* NoChallengeViewController.m */,
 				D88AE2B118BAC770008045FB /* ResultsStoryboard.storyboard */,
 			);
 			name = ResultsScreens;
@@ -1466,8 +1473,6 @@
 		D8D0509218BB4D8200CF27E0 /* EntityImplementation */ = {
 			isa = PBXGroup;
 			children = (
-				D88C334718B705DF00162113 /* AbstractChallenge.h */,
-				D88C334818B705DF00162113 /* AbstractChallenge.m */,
 				D88C334418B6FBED00162113 /* Charity.h */,
 				D88C334518B6FBED00162113 /* Charity.m */,
 				D8C33E8F18B19ECB003A9876 /* GroupChallenge.h */,
@@ -1492,8 +1497,12 @@
 				D88C333F18B6F36F00162113 /* SoloWalkingChallenge.m */,
 				D8C33EB318B19EEB003A9876 /* Sponsor.h */,
 				D8C33EB418B19EEB003A9876 /* Sponsor.m */,
-				D843607218BC61F8008EC59A /* Milestones.h */,
-				D843607318BC61F8008EC59A /* Milestones.m */,
+				D801306118BEA47A00091559 /* ChallengeProgress.h */,
+				D801306218BEA47A00091559 /* ChallengeProgress.m */,
+				D801306718BEE45E00091559 /* AbstractChallenge.h */,
+				D801306818BEE45E00091559 /* AbstractChallenge.m */,
+				D801307018BEE6A000091559 /* Milestones.h */,
+				D801307118BEE6A000091559 /* Milestones.m */,
 			);
 			name = EntityImplementation;
 			sourceTree = "<group>";
@@ -1516,6 +1525,7 @@
 				D8F084EE188F8E2A00A1DF2D /* SignInOrRegister */,
 				D8F084EC188F8DE900A1DF2D /* Login */,
 				D8F084ED188F8E0500A1DF2D /* Register */,
+				D84361AB18BD62C5008EC59A /* SignInAndRegisterStoryboard.storyboard */,
 			);
 			name = "Custom View Controllers";
 			sourceTree = "<group>";
@@ -1525,9 +1535,6 @@
 			children = (
 				D8F084E3188F748900A1DF2D /* LoginController.h */,
 				D8F084E4188F748900A1DF2D /* LoginController.m */,
-				D86CE0A91888CBAE00EDEA6D /* SignInView.h */,
-				D86CE0AA1888CBAE00EDEA6D /* SignInView.m */,
-				D86CE0A71888CB4200EDEA6D /* SignInView.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -1537,9 +1544,6 @@
 			children = (
 				D8F084E9188F826100A1DF2D /* RegisterController.h */,
 				D8F084EA188F826100A1DF2D /* RegisterController.m */,
-				D86CE0A21888A0D100EDEA6D /* RegisterViewContainer.h */,
-				D86CE0A31888A0D100EDEA6D /* RegisterViewContainer.m */,
-				D86CE0A51888A51700EDEA6D /* RegisterViewContainer.xib */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -1549,9 +1553,6 @@
 			children = (
 				D8F084E6188F798900A1DF2D /* SignInOrRegisterController.h */,
 				D8F084E7188F798900A1DF2D /* SignInOrRegisterController.m */,
-				D86CE09A18887DF400EDEA6D /* SignInRegisterView.h */,
-				D86CE09B18887DF400EDEA6D /* SignInRegisterView.m */,
-				D86CE09818887C2500EDEA6D /* SignInRegisterView.xib */,
 			);
 			name = SignInOrRegister;
 			sourceTree = "<group>";
@@ -1727,7 +1728,6 @@
 				D843613918BC9D4C008EC59A /* ftv2splitbar.png in Resources */,
 				D88AE23B18B98CC6008045FB /* button_bar_background.png in Resources */,
 				D843612218BC9D4C008EC59A /* dir_2c12105386bcc5c3935feab96f296a41.html in Resources */,
-				D86CE09918887C2500EDEA6D /* SignInRegisterView.xib in Resources */,
 				D88AE23F18B98CC6008045FB /* title_background.png in Resources */,
 				D843611C18BC9D4C008EC59A /* closed.png in Resources */,
 				D843613D18BC9D4C008EC59A /* hierarchy.html in Resources */,
@@ -1774,7 +1774,6 @@
 				D843615518BC9D4C008EC59A /* all_64.html in Resources */,
 				D843617618BC9D4C008EC59A /* functions_66.html in Resources */,
 				D843611818BC9D4C008EC59A /* bdwn.png in Resources */,
-				D86CE0A61888A51700EDEA6D /* RegisterViewContainer.xib in Resources */,
 				D86CE08918872B6500EDEA6D /* Books.png in Resources */,
 				D843612E18BC9D4C008EC59A /* ftv2folderclosed.png in Resources */,
 				D843611A18BC9D4C008EC59A /* class_flurry_ads-members.html in Resources */,
@@ -1811,6 +1810,7 @@
 				D88AE23418B98CC6008045FB /* SplashScreen.html in Resources */,
 				D8F9911018860C9D0064E872 /* Up&Go white 60px.png in Resources */,
 				D843613518BC9D4C008EC59A /* ftv2node.png in Resources */,
+				D84361B618BD7429008EC59A /* Facebook.png in Resources */,
 				D849FEE4187F7E7300206CA9 /* googlewhite.png in Resources */,
 				D849FEE1187F7E7300206CA9 /* facebookline.png in Resources */,
 				D843615B18BC9D4C008EC59A /* all_67.html in Resources */,
@@ -1821,6 +1821,7 @@
 				D843611E18BC9D4C008EC59A /* dir_108335c8efcef354a5e56ea2739114b7.html in Resources */,
 				D843613318BC9D4C008EC59A /* ftv2mnode.png in Resources */,
 				D843618F18BC9D4C008EC59A /* sync_off.png in Resources */,
+				D84361AC18BD62C5008EC59A /* SignInAndRegisterStoryboard.storyboard in Resources */,
 				D88AE29518B98CC6008045FB /* disclosure.png in Resources */,
 				D843613A18BC9D4C008EC59A /* ftv2vertline.png in Resources */,
 				D843612D18BC9D4C008EC59A /* ftv2doc.png in Resources */,
@@ -1839,7 +1840,6 @@
 				D88AE26818B98CC6008045FB /* Tokens6.xml in Resources */,
 				D88AE26E18B98CC6008045FB /* AuthService.html in Resources */,
 				D843614018BC9D4C008EC59A /* interface_flurry.html in Resources */,
-				D86CE0A81888CB4200EDEA6D /* SignInView.xib in Resources */,
 				D843617818BC9D4C008EC59A /* functions_67.html in Resources */,
 				D843614918BC9D4C008EC59A /* open.png in Resources */,
 				D88AE20D18B98CC6008045FB /* docSet.dsidx in Resources */,
@@ -1910,6 +1910,7 @@
 				D86CE08418872B6500EDEA6D /* SnowWhite.png in Resources */,
 				D843616118BC9D4C008EC59A /* all_70.html in Resources */,
 				D88AE27518B98CC6008045FB /* CoreDataSingleton.html in Resources */,
+				D801306018BEA26000091559 /* logoNew.png in Resources */,
 				D8F99125188633350064E872 /* musicWhite.png in Resources */,
 				D843617E18BC9D4C008EC59A /* functions_70.html in Resources */,
 				D843615318BC9D4C008EC59A /* all_63.html in Resources */,
@@ -1932,14 +1933,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		D88AE16C18B984AD008045FB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Joe\" \\\n--company-id \"Joe\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;\n\ngit add . -A\ngit commit -m \"Update\"\ngit push Momentum &";
 		};
@@ -1964,11 +1965,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D88C333418B6F36F00162113 /* User.m in Sources */,
+				D84361AA18BD5815008EC59A /* NoChallengeViewController.m in Sources */,
 				D8C33E5518AD871C003A9876 /* CoreDataSingleton.m in Sources */,
 				D843616618BC9D4C008EC59A /* all_73.js in Sources */,
 				D899EC9C18AC61F8004F45A8 /* CharityCell.m in Sources */,
 				D843614818BC9D4C008EC59A /* navtreeindex0.js in Sources */,
 				D843614E18BC9D4C008EC59A /* resize.js in Sources */,
+				D801306918BEE45E00091559 /* AbstractChallenge.m in Sources */,
 				D849FEBD187E2A5A00206CA9 /* SplashScreen.m in Sources */,
 				D843611F18BC9D4C008EC59A /* dir_108335c8efcef354a5e56ea2739114b7.js in Sources */,
 				D843618918BC9D4C008EC59A /* pages_64.js in Sources */,
@@ -1984,9 +1987,7 @@
 				D8C33EB518B19EEB003A9876 /* Sponsor.m in Sources */,
 				D843615818BC9D4C008EC59A /* all_65.js in Sources */,
 				D843616418BC9D4C008EC59A /* all_72.js in Sources */,
-				D86CE0AB1888CBAE00EDEA6D /* SignInView.m in Sources */,
 				D8C33E9718B19ECB003A9876 /* Reward.m in Sources */,
-				D88C334918B705DF00162113 /* AbstractChallenge.m in Sources */,
 				D843618518BC9D4C008EC59A /* functions_76.js in Sources */,
 				D843617918BC9D4C008EC59A /* functions_67.js in Sources */,
 				D8D050B518BB5D3900CF27E0 /* UIImage+animatedGIF.m in Sources */,
@@ -1994,19 +1995,16 @@
 				D88C333718B6F36F00162113 /* SoloRunningChallenge.m in Sources */,
 				D843616818BC9D4C008EC59A /* all_76.js in Sources */,
 				D899EC9F18AC622B004F45A8 /* CharityListView.m in Sources */,
-				D86CE09C18887DF400EDEA6D /* SignInRegisterView.m in Sources */,
 				D843615C18BC9D4C008EC59A /* all_67.js in Sources */,
 				D843616D18BC9D4C008EC59A /* functions_5f.js in Sources */,
 				D843616A18BC9D4C008EC59A /* classes_66.js in Sources */,
 				D88C334018B6F36F00162113 /* SoloWalkingChallenge.m in Sources */,
 				D843612818BC9D4C008EC59A /* dynsections.js in Sources */,
 				D843614D18BC9D4C008EC59A /* protocol_flurry_ad_delegate-p.js in Sources */,
-				D86CE0A41888A0D100EDEA6D /* RegisterViewContainer.m in Sources */,
 				D843617118BC9D4C008EC59A /* functions_63.js in Sources */,
 				D8D050C018BB65AC00CF27E0 /* Pedometer.m in Sources */,
 				D843618118BC9D4C008EC59A /* functions_72.js in Sources */,
 				D843615618BC9D4C008EC59A /* all_64.js in Sources */,
-				D843607418BC61F8008EC59A /* Milestones.m in Sources */,
 				D843617D18BC9D4C008EC59A /* functions_6c.js in Sources */,
 				D843613E18BC9D4C008EC59A /* hierarchy.js in Sources */,
 				D843612518BC9D4C008EC59A /* dir_67affc9b7e21a68bb569004d4a6e00c8.js in Sources */,
@@ -2021,6 +2019,7 @@
 				D88AE2A918BAC679008045FB /* ResultsMilestoneProgress.m in Sources */,
 				D8C33E9118B19ECB003A9876 /* GroupChallenge.m in Sources */,
 				D843617518BC9D4C008EC59A /* functions_65.js in Sources */,
+				D801307218BEE6A000091559 /* Milestones.m in Sources */,
 				D843618B18BC9D4C008EC59A /* search.js in Sources */,
 				D8F084EB188F826100A1DF2D /* RegisterController.m in Sources */,
 				D843616218BC9D4C008EC59A /* all_70.js in Sources */,
@@ -2028,6 +2027,7 @@
 				D8F084E8188F798900A1DF2D /* SignInOrRegisterController.m in Sources */,
 				D88C333118B6F36E00162113 /* SoloChallenge.m in Sources */,
 				D843617B18BC9D4C008EC59A /* functions_69.js in Sources */,
+				D801306318BEA47A00091559 /* ChallengeProgress.m in Sources */,
 				D843611618BC9D4C008EC59A /* annotated.js in Sources */,
 				D843615018BC9D4C008EC59A /* all_5f.js in Sources */,
 				D849FEF2187F943600206CA9 /* ChallengeCell.m in Sources */,

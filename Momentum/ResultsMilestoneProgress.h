@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ResultsMilestoneProgress : UIViewController
+@interface ResultsMilestoneProgress : UIViewController <CLLocationManagerDelegate>
+
+- (void) killPedometer;
 
 @end

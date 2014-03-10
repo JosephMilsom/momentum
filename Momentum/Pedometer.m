@@ -8,15 +8,22 @@
 
 #import "Pedometer.h"
 #import <CoreMotion/CoreMotion.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface Pedometer()
 
 @property (nonatomic, retain) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) NSMutableArray *accelSamples;
+@property (nonatomic, strong) AVAudioPlayer *audio;
+
+
 
 @end
 
 CMMotionManager *motionManager;
+CMMotionActivityManager *activityType;
+
 
 float accelX;
 float accelY;
@@ -25,6 +32,8 @@ float lastX=1;
 float lastY=1;
 float lastZ=1;
 
+float thresh;
+
 int steps;
 
 BOOL waitStep = YES;
@@ -32,6 +41,8 @@ BOOL firstFlag= NO;
 
 BOOL hasChanged = NO;
 BOOL isStep = NO;
+
+BOOL canUpdate = NO;
 
 @implementation Pedometer
 
@@ -46,34 +57,49 @@ BOOL isStep = NO;
 
 - (void)startPedometer
 {
+    steps = 0;
+    
     motionManager = [[CMMotionManager alloc] init];
     motionManager.showsDeviceMovementDisplay = YES;
     motionManager.deviceMotionUpdateInterval = 1.0/50.0;
+    
+    activityType = [[CMMotionActivityManager alloc] init];
     
     //store the samples for the acceleration
     self.accelSamples = [[NSMutableArray alloc] init];
     
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     
-    CMDeviceMotionHandler  motionHandler = ^ (CMDeviceMotion *motion, NSError *error) {
-        accelX = ABS(motionManager.deviceMotion.userAcceleration.x + motionManager.deviceMotion.gravity.x);
-        accelY = ABS(motionManager.deviceMotion.userAcceleration.y + motionManager.deviceMotion.gravity.y);
-        accelZ = ABS(motionManager.deviceMotion.userAcceleration.z + motionManager.deviceMotion.gravity.z);
-        [self handleSteps];
-    };
+    UIApplication* app = [UIApplication sharedApplication];
     
-    [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:motionHandler];
+    UIBackgroundTaskIdentifier bgTask = 0;
     
+    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+        [app endBackgroundTask:bgTask];
+        __block bgTask = UIBackgroundTaskInvalid;
+    }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CMDeviceMotionHandler  motionHandler = ^ (CMDeviceMotion *motion, NSError *error) {
+            accelX = ABS(motionManager.deviceMotion.userAcceleration.x + motionManager.deviceMotion.gravity.x);
+            accelY = ABS(motionManager.deviceMotion.userAcceleration.y + motionManager.deviceMotion.gravity.y);
+            accelZ = ABS(motionManager.deviceMotion.userAcceleration.z + motionManager.deviceMotion.gravity.z);
+            [self handleSteps];
+        };
+        
+        //self.operationQueue = [self operationQueue];
+        //NSLog(@"%d", (int)[app backgroundTimeRemaining]);
+        [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:motionHandler];
+    });
+
 }
 
 -(void) handleSteps{
-    float thresh = 1;
+    thresh = 1;
     if(self.accelSamples.count == 8){
-        float sum =0;
+        float sum = 0;
         for(NSNumber *n in self.accelSamples){
             sum += [n doubleValue];
-            //NSLog(@"%f", [n doubleValue]);
-            
         }
         thresh = sum/8;
         [self.accelSamples removeObjectAtIndex:0];
@@ -92,7 +118,8 @@ BOOL isStep = NO;
     //NSLog(@"%f", thresh);
     
     //should be thresh??
-    if ((thresh) < 0.998 && (oldValue > 0.9))
+    //0.998??
+    if ((thresh) < 0.998 && (thresh > 0.9))
     {
         if (!hasChanged && waitStep)
         {
@@ -110,11 +137,18 @@ BOOL isStep = NO;
         hasChanged = NO;
     }
     
-    if(isStep == YES && waitStep == YES && hasChanged == NO){
+    if(isStep == YES && waitStep == YES && hasChanged == YES){
         isStep = NO;
         waitStep = NO;
+        
+        
+        NSLog(@"%f",[[UIApplication sharedApplication] backgroundTimeRemaining]);
+        
         [self updateSteps];
+        
+        NSLog(@"%f", thresh);
         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(wakeUp) userInfo:NO repeats:NO];
+        
     }
     
     lastX = accelX;

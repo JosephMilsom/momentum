@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/RegisterViewContainer.html">
+	<File path="Classes/RegisterScrollView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/RegisterViewContainer</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterScrollView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,9 +13,9 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow1:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow1:</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
@@ -25,9 +25,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow1</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
@@ -37,9 +37,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow1</TokenIdentifier>
 			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			

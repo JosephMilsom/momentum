@@ -33,6 +33,7 @@
 
 @property (strong, nonatomic) AuthService *authService;
 
+@property (strong, nonatomic) UIStoryboard* layoutStoryboard;
 
 //custom methods for the ui elements, fancy stuff like
 //fading in views and junk
@@ -60,7 +61,8 @@
         [FBSession.activeSession close];
         [FBSession setActiveSession:nil];
     }
-
+    
+    self.layoutStoryboard = [UIStoryboard storyboardWithName:@"SignInAndRegisterStoryboard" bundle:[NSBundle mainBundle]];
 }
 
 
@@ -71,14 +73,20 @@
     //automatically transition to the next screen if
     //there is an authentication token
     if(self.authService.client.currentUser.userId){
-        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+        CoreDataSingleton *coreData = [CoreDataSingleton new];
+        if ([coreData getCurrentChallenge] == nil) {
+            [self performSegueWithIdentifier:@"NoChallengeSegue" sender:nil];
+        }
+        else{
+            [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+        }
     }
     else{
         if(firstTime){
             [self createAndAnimateLogo];
             //ignore the warning, it still runs
             //NOTE SHOULD BE 4
-            NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
+            NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 2.0 target: self
                                                             selector: @selector(initViewController) userInfo: nil repeats: NO];
             firstTime = NO;
         }
@@ -91,26 +99,21 @@
 -(void) createAndAnimateLogo{
     //need to declare the logo here as it will not reset the position like it would
     //if you define in the interface builder
-    self.momentumLogo = [[UIImageView alloc] initWithFrame:CGRectMake(80, 134, 161, 171)];
-    self.momentumLogo.image = [UIImage imageNamed:@"LogoLarge.png"];
+    self.momentumLogo = [[UIImageView alloc] initWithFrame:CGRectMake(60, 134, 200, 165)];
+    self.momentumLogo.image = [UIImage imageNamed:@"logoNew.png"];
     [self.scrollViewContainer addSubview:self.momentumLogo];
 
     //grab the frame for the logo image so we can
     //animate that biatch!!
-    CGRect logoFrame = self.momentumLogo.frame;
     
     //create and execute animation that moves up the
     //logo to the top of the screen
     //NOTE: ACTUAL DELAY IS 3, DURATION IS 2
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDelay:0];
+    [UIView setAnimationDelay:1];
     [UIView setAnimationDuration:1];
-    logoFrame.origin.x = 110;
-    logoFrame.origin.y = 60;
-    logoFrame.size.height = 100;
-    logoFrame.size.width = 100;
+    self.momentumLogo.alpha = 0;
     
-    self.momentumLogo.frame = logoFrame;
     [UIView commitAnimations];
 }
 
@@ -133,14 +136,13 @@
 }
 
 -(void) createSignInRegister{
-    SignInOrRegisterController *controller = [[SignInOrRegisterController alloc] init];
+    SignInOrRegisterController *controller = [self.layoutStoryboard instantiateViewControllerWithIdentifier:@"SignInOrRegister"];
     controller.delegate = self;
     
     self.currentController = controller;
     
     self.currentController.view.frame = self.scrollViewContainer.bounds;
     [self addChildViewController:controller];
-    NSLog(@"%@",[controller parentViewController]);
     
     [self.scrollViewContainer addSubview:self.currentController.view];
     
@@ -152,7 +154,7 @@
     
     [self removeCurrentControllerFromContainer];
     
-    LoginController *controller = [[LoginController alloc] init];
+    LoginController *controller = [self.layoutStoryboard instantiateViewControllerWithIdentifier:@"LoginController"];
     
     self.currentController = controller;
     controller.delegate = self;
@@ -168,7 +170,8 @@
     
     [self removeCurrentControllerFromContainer];
     
-    RegisterController *controller = [[RegisterController alloc] init];
+    RegisterController *controller = [self.layoutStoryboard instantiateViewControllerWithIdentifier:@"RegisterController"];
+    
     controller.delegate = self;
     
     self.currentController = controller;
@@ -201,12 +204,28 @@
 
 
 
--(void) userDidCompleteRegistration:(RegisterController *)registerController{
-    [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+-(void) userDidCompleteRegistration:(UIViewController *)registerController{
+    CoreDataSingleton *coreData = [CoreDataSingleton new];
+    
+    NSLog(@"%@", [coreData getCurrentChallenge]);
+    
+    if([coreData getCurrentChallenge] != nil){
+        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+    }
+    else{
+        [self performSegueWithIdentifier:@"NoChallengeSegue" sender:nil];
+    }
 }
 
 -(void) userDidCompleteLogin:(LoginController *)loginController{
-    [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+    CoreDataSingleton *coreData = [CoreDataSingleton new];
+    
+    if([coreData getCurrentChallenge] != nil){
+        [self performSegueWithIdentifier:@"ResultsSegue" sender:nil];
+    }
+    else{
+        [self performSegueWithIdentifier:@"NoChallengeSegue" sender:nil];
+    }
 }
 
 

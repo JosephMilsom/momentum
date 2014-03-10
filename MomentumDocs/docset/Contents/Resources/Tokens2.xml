@@ -19,7 +19,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/viewDidLoad</TokenIdentifier>
 			<Abstract type="html">     ChallengeList&apos;s implementation of view did load deals with several factors.
-     - back button from the ui navigation controller is replaced with a custom one 
+     - method for initialising display is called, which initialises a custom button
      - delegate for challenge list is assigned as well as attributes set appropirately
      - authservice and coredata are initialised
      - methods for fetching challenges from coredata and downloading challenges from the server
@@ -30,6 +30,31 @@
 			
 			
 			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/initDisplay</TokenIdentifier>
+			<Abstract type="html">    Init display is just a helper class that initialises and customises all the
+    display elements. Quite nice to keep seperated from the rest of the code</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)initDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/initDisplay</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengesFromCoreData</TokenIdentifier>
+			<Abstract type="html">If there are any challenges contained within core data, load them up from the store.</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)setChallengesFromCoreData</Declaration>
+			
+			
+			<Anchor>//api/name/setChallengesFromCoreData</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
@@ -50,6 +75,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/downloadAndSetChallengeImages:withChallengePath:</TokenIdentifier>
+			<Abstract type="html">Create a new request</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadAndSetChallengeImages:(NSDictionary *)challenge withChallengePath:(NSIndexPath *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>challenge</Name>
+					<Abstract type="html">nsdictionary for the challenge that has been downloaded from the server</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">&lt;#path description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAndSetChallengeImages:withChallengePath:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/getStoredChallenges</TokenIdentifier>
 			<Abstract type="html">    Method that returns the names of challenges stored on the
     phone as an array.</Abstract>
@@ -59,6 +104,183 @@
 			
 			<ReturnValue><Abstract type="html">array of challenge names stored on the phone</Abstract></ReturnValue>
 			<Anchor>//api/name/getStoredChallenges</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">*  In this cellForRowAtIndexPath implementation, all the data for the cells are assigned from the
+    data that is in
+*
+*  @param tableView the challenge list
+*  @param indexPaths to be reloaded
+*
+*  @return the cell that is to be reloaded</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">*  Prepare for segue is needed here as we need to let the charity know what
+    challenge has been selected.
+*
+*  @param segue  segue (always going to be challengestocharities)
+*  @param sender sender is going to be the accept button</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/AcceptChallenge:</TokenIdentifier>
+			<Abstract type="html">This button action handles the transition to the charity list, pushing onto the navigation stack</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)AcceptChallenge:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">the accept challenge button</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/AcceptChallenge:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/backButtonAction:</TokenIdentifier>
+			<Abstract type="html">return to the root view which is the results page</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)backButtonAction:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">the back button</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/backButtonAction:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/buttonHighlight:</TokenIdentifier>
+			<Abstract type="html">This changes the colour of the buttons background to white when the user presses down on the button</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)buttonHighlight:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">the accept challenge button</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/buttonHighlight:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/buttonNormal:</TokenIdentifier>
+			<Abstract type="html">This changes it back to normal, after the user either drags outside the button, or touches up</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>- (void)buttonNormal:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">the accept challenge button</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/buttonNormal:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengeList:</TokenIdentifier>
+			<Abstract type="html">This is the main tableview</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/challengeList</TokenIdentifier>
+			<Abstract type="html">This is the main tableview</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/challengeList</TokenIdentifier>
+			<Abstract type="html">This is the main tableview</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UITableView *challengeList</Declaration>
+			
+			
+			<Anchor>//api/name/challengeList</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/setChallengeArray:</TokenIdentifier>
+			<Abstract type="html">    this is the main container for all the challenges in the table view
+    but it is a pretty gross way of doing it. Must be a better way??</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChallengeList/challengeArray</TokenIdentifier>
+			<Abstract type="html">    this is the main container for all the challenges in the table view
+    but it is a pretty gross way of doing it. Must be a better way??</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChallengeList/challengeArray</TokenIdentifier>
+			<Abstract type="html">    this is the main container for all the challenges in the table view
+    but it is a pretty gross way of doing it. Must be a better way??</Abstract>
+			<DeclaredIn>ChallengeList.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSArray *challengeArray</Declaration>
+			
+			
+			<Anchor>//api/name/challengeArray</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

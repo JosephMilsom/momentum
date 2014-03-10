@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SplashScreen.html">
+	<File path="Classes/RegisterViewContainer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SplashScreen</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/RegisterViewContainer</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SplashScreen.h</DeclaredIn>
+			<DeclaredIn>RegisterViewContainer.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,14 +13,38 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidSelectTextBox:</TokenIdentifier>
-			<Abstract type="html">NOTE THAT THIS IS NOT USE OF PROPER DELEGATION, THERE ARE 2 DELEGATE METHODS REFERRING TO THE SAME METHOD*</Abstract>
-			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/setInterestRow1:</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
 			
-			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)Controller</Declaration>
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
 			
 			
-			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RegisterViewContainer/interestRow1</TokenIdentifier>
+			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
+			<DeclaredIn>RegisterViewContainer.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			
+			
+			<Anchor>//api/name/interestRow1</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

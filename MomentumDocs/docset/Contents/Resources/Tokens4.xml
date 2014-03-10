@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/RegisterScrollView.html">
+	<File path="Classes/LoginController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/RegisterScrollView</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LoginController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>RegisterScrollView.h</DeclaredIn>
+			<DeclaredIn>LoginController.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -13,38 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/setInterestRow1:</TokenIdentifier>
-			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/LoginController/touchesBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html">/#pragma mark delegate methods</Abstract>
+			<DeclaredIn>LoginController.m</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
-			
-			
-			<Anchor>//api/name/interestRow1</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/RegisterScrollView/interestRow1</TokenIdentifier>
-			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
+			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
 			
 			
-			<Anchor>//api/name/interestRow1</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/RegisterScrollView/interestRow1</TokenIdentifier>
-			<Abstract type="html">OUTLET COLLECTIONS FOR THE VIEWS*</Abstract>
-			<DeclaredIn>RegisterScrollView.m</DeclaredIn>
-			
-			<Declaration>@property (strong, nonatomic) IBOutletCollection ( UIButton ) NSArray *interestRow1</Declaration>
-			
-			
-			<Anchor>//api/name/interestRow1</Anchor>
+			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

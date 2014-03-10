@@ -9,6 +9,7 @@
 #import "FBCDAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "Flurry.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation FBCDAppDelegate
 

@@ -47,7 +47,9 @@
 
 - (void) purgeBrokenCharities;
 
+- (NSInteger) countSteps;
 
+- (NSInteger) getSteps;
 
 
 //TEST FUNCTION

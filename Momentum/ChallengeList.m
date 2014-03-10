@@ -13,10 +13,14 @@
 #import "CoreDataSingleton.h"
 #import "SoloChallenge.h"
 #import "CharityListView.h"
+#import "Flurry.h"
+#import "ResultsViewController.h"
 
 @interface ChallengeList ()
 
-//main challenge list
+/**
+ *  This is the main tableview
+ */
 @property (strong, nonatomic) IBOutlet UITableView *challengeList;
 
 //image views for the sponsor logos and bottom images
@@ -29,6 +33,10 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *acceptChallengeButton;
 
+/**
+    this is the main container for all the challenges in the table view
+    but it is a pretty gross way of doing it. Must be a better way??
+ */
 @property (strong, nonatomic) NSArray* challengeArray;
 
 @property NSInteger numberOfRows;
@@ -47,9 +55,10 @@
 @implementation ChallengeList
 
 
+#pragma mark view did load
 /**
      ChallengeList's implementation of view did load deals with several factors.
-     - back button from the ui navigation controller is replaced with a custom one 
+     - method for initialising display is called, which initialises a custom button
      - delegate for challenge list is assigned as well as attributes set appropirately
      - authservice and coredata are initialised
      - methods for fetching challenges from coredata and downloading challenges from the server
@@ -58,6 +67,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //challenge list set up delegate
+    self.challengeList.delegate = self;
+    self.challengeList.dataSource = self;
+    
+    //initialise the display elements, kept in it's own method
+    //as it involves a lot of tedious code
+    [self initDisplay];
+    
+    //initialise variables
+    self.authService = [AuthService getInstance];
+    self.coreData = [[CoreDataSingleton alloc] init];
+    
+    //[self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
+    //[self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
+    
+    UIColor *colour = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.4];
+    self.acceptChallengeButton.backgroundColor = colour;
+    
+    //if at some point, img data has been malformed, remove this data from the database.
+    //will only really need to be done if user exits the app while imaegs are downloading
+    [self.coreData purgeBrokenChallenges];
+    
+    //populate the challenge list.
+    // TO DO: How can we change this so that it loads upon first load??
+    [self setChallengesFromCoreData];
+    [self downloadChallengeData];
+    
+}
+
+/**
+    Init display is just a helper class that initialises and customises all the
+    display elements. Quite nice to keep seperated from the rest of the code
+ */
+- (void) initDisplay{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     //hide the default ui button
     self.navigationItem.hidesBackButton=YES;
@@ -74,36 +119,40 @@
     UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     [self.navigationItem setLeftBarButtonItem:backBarButtonItem];
     
-    //challenge list set up
-    self.challengeList.delegate = self;
-    self.challengeList.dataSource = self;
-    
     //initialise display for the tableview
     self.challengeList.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.challengeList.showsVerticalScrollIndicator = NO;
+    //actually rotate the tableview. Hilarious!
     self.challengeList.transform = CGAffineTransformMakeRotation(-M_PI * 0.5);
-   
+    
     //add a border around the button
     [self.acceptChallengeButton.layer setBorderColor: [[UIColor whiteColor] CGColor]];
-    [self.acceptChallengeButton.layer setBorderWidth: 1.0];
+    [self.acceptChallengeButton.layer setBorderWidth: 0.5];
+    [self.acceptChallengeButton.layer setCornerRadius:3.0f];
     
-    //initialise variables
-    self.authService = [AuthService getInstance];
-    self.coreData = [[CoreDataSingleton alloc] init];
-    
-    [self.coreData deleteAllEntitiesOfType:@"SoloWalkingChallenge"];
-    //[self.coreData deleteSpecificChallenge:@"SoloWalkingChallenge"];
-    
-    //if at some point, img data has been malformed, remove this data from the database.
-    //will only really need to be done if user exits the app while imaegs are downloading
-    [self.coreData purgeBrokenChallenges];
-    
-    //populate the challenge list
-    [self setChallengesFromCoreData];
-    [self downloadChallengeData];
-    
+    //initialise selector methods for the button for creating the correct highlighted button
+    //effects
+    [self.acceptChallengeButton addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
+    [self.acceptChallengeButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchUpInside];
+    [self.acceptChallengeButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchDragOutside];
 }
 
+#pragma mark load challenges from core data
+/**
+ *  If there are any challenges contained within core data, load them up from the store.
+ */
+- (void) setChallengesFromCoreData{
+    //update the number of rows currently stored in coredata
+    self.challengeArray = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
+    self.numberOfRows = self.challengeArray.count;
+    self.bottomImage.alpha = 1;
+    
+    if(self.challengeArray.count != 0){
+        [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    }
+}
+
+#pragma mark download challenges from the server
 /**
     Method that deals with downloading the challenge data from the database
     The custom API challengeupdate is called, which takes an NSDictionary as
@@ -166,43 +215,12 @@
     }];    
 }
 
-
-
 /**
-    Method that returns the names of challenges stored on the
-    phone as an array.
- 
-   @return array of challenge names stored on the phone
+ *  Create a new request 
+ *
+ *  @param challenge nsdictionary for the challenge that has been downloaded from the server
+ *  @param path      <#path description#>
  */
-- (NSDictionary *) getStoredChallenges{
-    //get the list of challenges that are stored in coredata, we send this
-    //data to the service to check for updates
-    NSArray *challenges = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
-    NSMutableArray *challengeNames = [NSMutableArray new];
-    
-    for(int i = 0; i < challenges.count; i++){
-        SoloChallenge *s = challenges[i];
-        [challengeNames addObject:s.challengeName];
-    }
-    
-    //dictionary containing all the stored challenges
-    //to send to server
-    NSDictionary *storedChallenges = [[NSDictionary alloc] initWithObjectsAndKeys:challengeNames,@"challengenames", nil];
-    
-    //if there are no stored challenges we need a loading
-    //gif, so add this to the view/plain white background
-    if(challengeNames.count == 0){
-        self.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        self.loadingView.center = CGPointMake(160, 250);
-        [self.view addSubview:self.loadingView];
-        [self.loadingView startAnimating];
-    }
-    
-    return storedChallenges;
-}
-
-
-
 -(void) downloadAndSetChallengeImages:(NSDictionary *) challenge withChallengePath:(NSIndexPath*) path{
     //an async task to fetch data from the server
     self.imgDownloadQueue = [[NSOperationQueue alloc] init];
@@ -243,25 +261,52 @@
             [UIView animateWithDuration:0.3 animations:^{
                 cell.imageBackground.alpha = 1;
                 self.bottomImage.alpha = 1;
+                self.acceptChallengeButton.alpha = 1;
+                
             }];
             
         }];
     }];
 }
 
-
-- (void) setChallengesFromCoreData{
-    //update the number of rows currently stored in coredata
-    self.challengeArray = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
-    self.numberOfRows = self.challengeArray.count;
-    self.bottomImage.alpha = 1;
+/**
+    Method that returns the names of challenges stored on the
+    phone as an array.
+ 
+   @return array of challenge names stored on the phone
+ */
+- (NSDictionary *) getStoredChallenges{
+    //get the list of challenges that are stored in coredata, we send this
+    //data to the service to check for updates
+    NSArray *challenges = [self.coreData fetchEntitiesOfType:@"SoloWalkingChallenge"];
+    NSMutableArray *challengeIDs = [NSMutableArray new];
     
-    if(self.challengeArray.count != 0){
-        [self tableView:self.challengeList didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    for(int i = 0; i < challenges.count; i++){
+        SoloChallenge *s = challenges[i];
+        [challengeIDs addObject:s.challengeID];
     }
+    
+    //dictionary containing all the stored challenges
+    //to send to server
+    NSDictionary *storedChallenges = [[NSDictionary alloc] initWithObjectsAndKeys:challengeIDs,@"challengeID", nil];
+    
+    //if there are no stored challenges we need a loading
+    //gif, so add this to the view/plain white background
+    if(challengeIDs.count == 0){
+        self.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        self.loadingView.center = CGPointMake(160, 250);
+        [self.view addSubview:self.loadingView];
+        [self.loadingView startAnimating];
+        
+        self.acceptChallengeButton.alpha = 0;
+
+    }
+    
+    return storedChallenges;
 }
 
 
+#pragma mark table view delegate methods
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView selectRowAtIndexPath:indexPath
                            animated:YES
@@ -276,8 +321,17 @@
     
 }
 
-#pragma mark cell for row at index path
+/**
+ *  In this cellForRowAtIndexPath implementation, all the data for the cells are assigned from the 
+    data that is in
+ *
+ *  @param tableView the challenge list
+ *  @param indexPaths to be reloaded
+ *
+ *  @return the cell that is to be reloaded
+ */
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     static NSString *CellIdentifier = @"Cell";
     
     ChallengeCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -314,6 +368,15 @@
     return 150.0;
 }
 
+
+#pragma mark other methods
+/**
+ *  Prepare for segue is needed here as we need to let the charity know what
+    challenge has been selected.
+ *
+ *  @param segue  segue (always going to be challengestocharities)
+ *  @param sender sender is going to be the accept button
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"ChallengesToCharities"]){
         CharityListView *controller = (CharityListView *)segue.destinationViewController;
@@ -321,19 +384,53 @@
     }
 }
 
+
+/**
+ *  This button action handles the transition to the charity list, pushing onto the navigation stack
+ *
+ *  @param sender the accept challenge button
+ */
 - (IBAction)AcceptChallenge:(id)sender {
     SoloChallenge *s = self.challengeArray[[self.challengeList indexPathForSelectedRow].row];
     self.currentChallenge = s;
-    
-    //just a temporary test
-    User *u = [self.coreData getUserInfo];
-    u.userChallenge = s;
+
     //temporary transition to the charity page
     [self performSegueWithIdentifier:@"ChallengesToCharities" sender:self];
 }
 
+
+/**
+ *  return to the root view which is the results page
+ *
+ *  @param sender the back button
+ */
 -(void) backButtonAction:(id)sender
 {
+    if([self.coreData getCurrentChallenge] == nil){
+    [self.navigationController setNavigationBarHidden: YES animated:YES];
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+/**
+ *  This changes the colour of the buttons background to white when the user presses down on the button
+ *
+ *  @param sender the accept challenge button
+ */
+- (void) buttonHighlight:(UIButton*)sender{
+    sender.backgroundColor = [UIColor whiteColor];
+    sender.titleLabel.textColor = [UIColor blackColor];
+}
+
+/**
+ *  This changes it back to normal, after the user either drags outside the button, or touches up
+ *
+ *  @param sender the accept challenge button
+ */
+- (void) buttonNormal:(UIButton*)sender{
+    UIColor *colour = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.4];
+    sender.backgroundColor = colour;
+    sender.titleLabel.textColor = [UIColor whiteColor];
+}
+
 @end

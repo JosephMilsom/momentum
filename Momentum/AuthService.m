@@ -111,7 +111,7 @@ static AuthService *singletonInstance;
                   onResponse:onResponse];
     });
     
-    NSLog(@"%@", request.description);
+    //NSLog(@"%@", request.description);
 }
 
 
@@ -123,7 +123,7 @@ static AuthService *singletonInstance;
              onResponse: (MSFilterResponseBlock) onResponse
 {
     //NSLog(@"%ld",(long)response.statusCode);
-    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    //NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
     
     //this deals with expired tokens
     //401 refers to unauthorized status code

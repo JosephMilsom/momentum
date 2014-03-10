@@ -23,6 +23,6 @@
 
 -(void) userChoseSignIn:(SignInOrRegisterController *)signUpOrRegister;
 -(void) userChoseRegister:(SignInOrRegisterController *)signUpOrRegister;
-
+-(void) userDidCompleteRegistration:(UIViewController * ) signUpOrRegister;
 
 @end

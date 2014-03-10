@@ -11,6 +11,7 @@
 #import "AuthService.h"
 #import "CoreDataSingleton.h"
 #import "Charity.h"
+#import "ResultsViewController.h"
 
 @interface CharityListView ()
 @property (weak, nonatomic) IBOutlet UITableView *charityList;
@@ -40,8 +41,6 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"%@", self.selectedChallenge.challengeName);
-    
     self.charityList.delegate = self;
     self.charityList.dataSource = self;
    
@@ -69,7 +68,15 @@
     self.coreData = [[CoreDataSingleton alloc] init];
     
     [self.startChallengeButton.layer setBorderColor: [[UIColor whiteColor] CGColor]];
-    [self.startChallengeButton.layer setBorderWidth: 1.0];
+    [self.startChallengeButton.layer setBorderWidth: 0.5];
+    [self.startChallengeButton.layer setCornerRadius:3.0f];
+
+    UIColor *colour = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.4];
+    self.startChallengeButton.backgroundColor = colour;
+    
+    [self.startChallengeButton addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
+    [self.startChallengeButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchUpInside];
+    [self.startChallengeButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchDragOutside];
     
     
     
@@ -117,6 +124,8 @@
         self.loading.center = CGPointMake(160, 250);
         [self.view addSubview:self.loading];
         [self.loading startAnimating];
+        
+        self.startChallengeButton.alpha = 0;
     }
     
     NSDictionary *storedCharities = [[NSDictionary alloc] initWithObjectsAndKeys:charityNames, @"charitynames", nil];
@@ -187,6 +196,7 @@
                         [UIView animateWithDuration:0.3 animations:^{
                             cell.cellImage.alpha = 1;
                             self.bottomImageView.alpha = 1;
+                            self.startChallengeButton.alpha = 1;
                         }];
                     }];
                 }];
@@ -267,42 +277,71 @@
 - (IBAction)startChallenge:(id)sender {
     Charity *c = self.charityArray[[self.charityList indexPathForSelectedRow].row];
 
-    
     //get the users info
     User *currentUser = [self.coreData getUserInfo];
-    
+
     //send data to update the users current challenge
     [self.authService.client invokeAPI:@"selectsolochallenge" body:@{@"soloChallenge_idsoloChallenge": self.selectedChallenge.challengeID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
         if(error){
-            NSLog(@"%@", [error localizedDescription]);
+            NSLog(@"Error: %@", [error localizedDescription]);
+            
+            NSLog(@"%ld", (long)response.statusCode);
         }
         else{
             //if the update is successful, update the users current charity
             NSLog(@"%ld", (long)response.statusCode);
             NSLog(@"%@", result);
 
+            NSLog(@"%@", currentUser.idUser);
+            NSLog(@"%@",c.charityID);
             
             [self.authService.client invokeAPI:@"selectcharity" body:@{@"Charity_idCharity": c.charityID, @"User_idUser": currentUser.idUser} HTTPMethod:@"POST" parameters:nil headers:nil completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
                 if(error){
                     NSLog(@"%@", [error localizedDescription]);
-                }else{
                     NSLog(@"%ld", (long)response.statusCode);
+
+                }else{
                     NSLog(@"%@", result);
                     
-                    //set the user challenges to the selected challenge
-                    [self.coreData setCurrentChallenge:self.selectedChallenge];
-                    [self.coreData setCurrentCharity:c];
-
+                    //if the user is trying to set the same challenge
+                    //do nothing
+                    if(currentUser.userChallenge != self.selectedChallenge){
+                        
+                        //set the user challenges to the selected challenge
+                        [self.coreData setCurrentChallenge:self.selectedChallenge];
+                        [self.coreData setCurrentCharity:c];
+                    }
+                    
+                    ResultsViewController *resultsView = [self.navigationController viewControllers][0];
+                    [resultsView setResultsBackground];
                     //if updating the user charity is successful, go to the results screen
                     [self.navigationController popToRootViewControllerAnimated:YES];
                 }
             }];
         }
     }];
+    
 }
 
 -(void) backButtonAction:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void) buttonHighlight:(UIButton*)sender{
+    sender.backgroundColor = [UIColor whiteColor];
+    sender.titleLabel.textColor = [UIColor blackColor];
+}
+
+- (void) buttonNormal:(UIButton*)sender{
+    UIColor *colour = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.4];
+    sender.backgroundColor = colour;
+    sender.titleLabel.textColor = [UIColor whiteColor];
+}
+
+- (void) setResultsBackground{
+    ResultsViewController *results = [self.navigationController viewControllers][0];
+    [results setResultsBackground];
+}
+
 @end

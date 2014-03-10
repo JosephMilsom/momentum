@@ -7,7 +7,6 @@
 //
 
 #import "RegisterController.h"
-#import "RegisterViewContainer.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import "FBCDAppDelegate.h"
 #import <Security/Security.h>
@@ -18,7 +17,6 @@
 
 @interface RegisterController ()
 
-@property (strong, nonatomic) RegisterViewContainer *registerContainer;
 @property (strong, nonatomic) UIScrollView *scrollView;
 -(void) createRegister;
 -(void) fadeInRegister;
@@ -39,6 +37,12 @@
 
 @property (strong, nonatomic) CoreDataSingleton *coreData;
 @property (strong, nonatomic) AuthService* authService;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @end
 
@@ -50,9 +54,62 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self createRegister];
     self.authService = [AuthService getInstance];
     self.coreData = [[CoreDataSingleton alloc] init];
+    self.view.alpha = 0;
+    self.emailTextField.backgroundColor = [UIColor whiteColor];
+    self.passwordTextField.backgroundColor = [UIColor whiteColor];
+    self.firstNameTextField.backgroundColor = [UIColor whiteColor];
+    self.lastNameTextField.backgroundColor = [UIColor whiteColor];
+    
+    
+    self.passwordTextField.secureTextEntry = YES;
+    
+    //method to indent the text
+    self.emailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    self.passwordTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    self.firstNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    self.lastNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    
+    self.emailTextField.tag = 0;
+    self.passwordTextField.tag = 1;
+    self.firstNameTextField.tag = 2;
+    self.lastNameTextField.tag = 3;
+    
+    self.emailTextField.tag = 0;
+    self.passwordTextField.tag = 1;
+    self.firstNameTextField.tag = 2;
+    self.lastNameTextField.tag = 3;
+    
+    [self.emailTextField.layer setBorderWidth: 0.5];
+    [self.emailTextField.layer setCornerRadius:3.0f];
+    [self.passwordTextField.layer setBorderWidth: 0.5];
+    [self.passwordTextField.layer setCornerRadius:3.0f];
+    [self.firstNameTextField.layer setBorderWidth: 0.5];
+    [self.firstNameTextField.layer setCornerRadius:3.0f];
+    [self.lastNameTextField.layer setBorderWidth: 0.5];
+    [self.lastNameTextField.layer setCornerRadius:3.0f];
+    
+    self.emailTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+    self.firstNameTextField.delegate = self;
+    self.lastNameTextField.delegate = self;
+    
+    [self.registerButton.layer setBorderColor: [[UIColor whiteColor] CGColor]];
+    [self.registerButton.layer setBorderWidth: 0.5];
+    [self.registerButton.layer setCornerRadius:3.0f];
+    
+    [self.registerButton addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
+    [self.registerButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchUpInside];
+    [self.registerButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchDragOutside];
+    
+    [self.backButton.layer setBorderColor: [[UIColor whiteColor] CGColor]];
+    [self.backButton.layer setBorderWidth: 0.5];
+    [self.backButton.layer setCornerRadius:3.0f];
+    
+    [self.backButton addTarget:self action:@selector(buttonHighlight:) forControlEvents:UIControlEventTouchDown];
+    [self.backButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchUpInside];
+    [self.backButton addTarget:self action:@selector(buttonNormal:) forControlEvents:UIControlEventTouchDragOutside];
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -61,59 +118,6 @@
 
 #pragma mark display methods
 
-//creates the actual register
-- (void) createRegister{
-    //load up the register view container from the xib file
-    NSArray *registerNib = [[NSBundle mainBundle] loadNibNamed:@"RegisterViewContainer" owner:self options:nil];
-    self.registerContainer = [registerNib objectAtIndex:0];
-    
-    //set the y origin of the register frame
-    CGRect registerBounds = self.registerContainer.frame;
-    registerBounds.origin.y = 170;
-    self.registerContainer.frame = registerBounds;
-    
-    //set the textfields delegate to the current view controller
-    //so we can dismiss the box/handle the data
-    self.registerContainer.emailTextField.delegate = self;
-    self.registerContainer.passwordTextField.delegate = self;
-    self.registerContainer.firstNameTextField.delegate = self;
-    self.registerContainer.lastNameTextField.delegate = self;
-
-    //assign tags to the text field for logging in
-    self.registerContainer.emailTextField.tag = 0;
-    self.registerContainer.passwordTextField.tag = 1;
-    self.registerContainer.firstNameTextField.tag = 2;
-    self.registerContainer.lastNameTextField.tag = 3;
-    
-    [self.registerContainer initData];
-    
-    [self.view addSubview:self.registerContainer];
-    
-    
-    //initialise the scrollview and its parameters
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
-    
-    //assign the contentsize for the scrollview so we can
-    //do some sweet scrolling
-    self.scrollView.contentSize = CGSizeMake(320, 966);
-    self.scrollView.bounces = NO;
-    self.scrollView.showsVerticalScrollIndicator = NO;
-    self.scrollView.delegate = self;
-    self.scrollView.delaysContentTouches = NO;
-    
-    //set up a gesture recognizer that tells when the outside of
-    //a scrollview has been touched, used for closing the text field
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured)];
-    [self.scrollView addGestureRecognizer:singleTap];
-    
-    self.scrollView.alpha = 0;
-    
-    //add the view controller and scrollview to the scrollviewcontainer
-    [self.scrollView addSubview:self.registerContainer];
-    [self.view addSubview:self.scrollView];
-    
-
-}
 
 //fades in the register
 - (void)fadeInRegister{
@@ -122,17 +126,19 @@
     [UIView setAnimationDuration:0.8];
     
     //combines the alpha with the black background to dim the image
-    self.scrollView.alpha = 1;
+    self.view.alpha = 1;
     
     [UIView commitAnimations];
 }
+
+
 
 //goes back to the sign in/register pane. This is done
 //by communication with the delegate and then calling the
 //appropriate method
 - (IBAction)backButtonHandler:(id)sender {
     [UIView animateWithDuration:1 animations:^{
-        self.registerContainer.alpha = 0;
+        self.view.alpha = 0;
     }completion:^(BOOL finished){
         [self.delegate userDidCancelRegistration:self];
     }];
@@ -142,13 +148,13 @@
 #pragma mark registration logic
 - (IBAction)completeRegistration:(id)sender {
     //set the data you want to send
-    self.email = self.registerContainer.emailTextField.text;
-    self.firstName = self.registerContainer.firstNameTextField.text;
-    self.lastName = self.registerContainer.lastNameTextField.text;
-    self.password = self.registerContainer.passwordTextField.text;
+    self.email = self.emailTextField.text;
+    self.firstName = self.firstNameTextField.text;
+    self.lastName = self.lastNameTextField.text;
+    self.password = self.passwordTextField.text;
     
     //this creates the type of item
-    NSDictionary *item = @{ @"firstName" : self.firstName, @"lastName" : self.lastName, @"emailAddress" : self.email, @"password" : self.password, @"Gender_idGender" : @"2", @"age" : @"25"};
+    NSDictionary *item = @{ @"firstName" : self.firstName, @"lastName" : self.lastName, @"emailAddress" : self.email, @"password" : self.password, @"Gender_idGender" : @"2", @"birthday" : @"11/11/1988"};
     
     //check the data to ensure everything is filled out correctly
     if([self checkData] == NO){
@@ -189,13 +195,18 @@
                 
                 NSDictionary *JSON = result;
                 
-                NSLog(@"%@", [JSON valueForKey:@"token"]);
-                MSUser *user = [[MSUser alloc] initWithUserId:[JSON valueForKey:@"userId"]];
+                NSLog(@"%@", JSON);
+                
+                NSString *s = [[NSString alloc] initWithFormat:@"%@", [JSON valueForKey:@"idUser"]];
+                
+                MSUser *user = [[MSUser alloc] initWithUserId:s];
                 user.mobileServiceAuthenticationToken = [JSON valueForKey:@"token"];
                 
                 self.authService.client.currentUser = user;
                 
                 [self.authService saveAuthInfo];
+                
+                [self.coreData saveUserInfo:JSON];
                 
                 [self.delegate userDidCompleteRegistration:self];
             }
@@ -211,105 +222,11 @@
     }
 }
 
-//this will bring up the native facebook login ui/ web client for the ios to login.
-//If successful it will save the token to the FBSession for use in authentication
-//when connecting to the azure mobile services
-- (IBAction)facebookLogin:(id)sender {
 
-    
-    //NSLog(@"LOGIN %@", FBSession.activeSession.accessTokenData.accessToken);
-    
-    self.dim = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
-    self.dim.alpha = 0;
-    self.dim.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.dim];
-    [UIView animateWithDuration:0.3 animations:^{
-        self.dim.alpha = 0.4;
-    }];
-    
-    //initialise new activity loading gif
-    self.loading = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    self.loading.center = CGPointMake(160, 530);
-    [self.loading startAnimating];
-    
-    [self.view addSubview:self.loading];
-    
-    if (FBSession.activeSession.state != FBSessionStateCreatedTokenLoaded) {
-        
-        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info", @"email",@"user_birthday"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState state, NSError *error){
-            if(error){
-                NSLog(@"There was an error obtaining the access token");
-               //remove the loading views
-                    [self.dim removeFromSuperview];
-                    [self.loading removeFromSuperview];
-            }else{
-                [self loginWithFacebook];
-            }
-        }];
-    }
-}
-
-#pragma mark facebook login logic
-
--(void) loginWithFacebook{
-        
-    [self.authService.client loginWithProvider:@"facebook" token:@{@"access_token": [NSString stringWithFormat:@"%@", FBSession.activeSession.accessTokenData.accessToken] } completion:^(MSUser *user, NSError *error) {
-        if(error){
-            NSLog(@"%@", error);
-            [UIView animateWithDuration:0.2 animations:^{
-                self.loading.alpha = 0;
-                self.dim.alpha = 0;
-            }completion:^(BOOL finished){
-                [self.dim removeFromSuperview];
-                [self.loading removeFromSuperview];
-            }];
-        }
-        else{
-            self.authService.client.currentUser = user;
-            [self.authService saveAuthInfo];
-            [self validateFacebookCredentials];
-        }
-    }];
-    
-   
-}
-
--(void) validateFacebookCredentials{
-    [self.authService.client invokeAPI:@"authprovideridentityget"
-                                  body:@{@"access_token" : FBSession.activeSession.accessTokenData.accessToken}
-                            HTTPMethod:@"POST"
-                            parameters:nil
-                               headers:nil
-                            completion:^(id result, NSHTTPURLResponse *response, NSError *error) {
-                                if(error){
-                                    NSLog(@"%@", [error localizedDescription]);
-                                    [UIView animateWithDuration:0.2 animations:^{
-                                        self.loading.alpha = 0;
-                                        self.dim.alpha = 0;
-                                    }completion:^(BOOL finished){
-                                        [self.dim removeFromSuperview];
-                                        [self.loading removeFromSuperview];
-                                    }];
-                                    
-                                    [self.authService killAuthInfo];
-                                    [FBSession.activeSession closeAndClearTokenInformation];
-                                    [FBSession.activeSession close];
-                                    [FBSession setActiveSession:nil];
-                                    
-                                }else{
-                                    NSDictionary *data = result;
-                                    //save info into coredata
-                                    [self.coreData saveUserInfo:data];
-                                    [self.authService saveAuthInfo];
-                                    [self.delegate userDidCompleteRegistration:self];
-                                }
-                            }];
-    
-
-}
 
 
 #pragma mark login logic
+
 
 //check the data to see if ok and fields filled out correctly
 -(BOOL) checkData{
@@ -321,14 +238,10 @@
     return YES;
 }
 
-#pragma mark delegate methods
-//trigger when the scroll view has been scrolling
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self.registerContainer fadeViews:scrollView];
-}
 
+#pragma mark delegate methods
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField{
-    [self.delegate userDidSelectTextBox:self];
+    //[self.delegate userDidSelectTextBox:self];
     return YES;
 }
 
@@ -337,7 +250,7 @@
     //if last text field in chain, resign and register.
     if(textField.tag == 3){
         [textField resignFirstResponder];
-        [self.delegate userDidCompleteTextFieldEntry:self];
+        //[self.delegate userDidCompleteTextFieldEntry:self];
         [self completeRegistration:nil];
         return YES;
     }else{
@@ -353,9 +266,23 @@
 //tell the view that there was a touch outside of
 //the scrollview, so that it knows to close the textfield
 -(void) singleTapGestureCaptured{
+
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     [self.view endEditing:YES];
     [self.delegate userDidCompleteTextFieldEntry:self];
 }
 
+- (void) buttonHighlight:(UIButton*)sender{
+    sender.backgroundColor = [UIColor whiteColor];
+    sender.titleLabel.textColor = [UIColor blackColor];
+}
+
+- (void) buttonNormal:(UIButton*)sender{
+    sender.backgroundColor = [UIColor clearColor];
+    sender.titleLabel.textColor = [UIColor whiteColor];
+}
 
 @end

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SplashScreen.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SplashScreen</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SplashScreen.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SplashScreen/userDidSelectTextBox:</TokenIdentifier>
+			<Abstract type="html">NOTE THAT THIS IS NOT USE OF PROPER DELEGATION, THERE ARE 2 DELEGATE METHODS REFERRING TO THE SAME METHOD*</Abstract>
+			<DeclaredIn>SplashScreen.m</DeclaredIn>
+			
+			<Declaration>- (void)userDidSelectTextBox:(UIViewController *)Controller</Declaration>
+			
+			
+			<Anchor>//api/name/userDidSelectTextBox:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
